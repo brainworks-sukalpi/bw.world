@@ -658,15 +658,16 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
-  padding: 30px;
+  padding: 28px 30px;
   position: relative;
   overflow: hidden;
   margin: 0;
   background: url("../img/Industries/skyscrapers-sunset\ copy.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   transition: all 0.3s ease-in-out;
-  border-radius: 15px;
+  border-radius: 10px;
   text-align: center;
-  border-bottom: 10px solid #fff;
 }
 
 .services .icon-box:hover {
