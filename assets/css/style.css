@@ -658,13 +658,13 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
-  padding: 28px 30px;
+  padding: 30px;
   position: relative;
   overflow: hidden;
   margin: 0;
-  background: url("../img/Industries/skyscrapers-sunset\ copy.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+  background: url("../img/Industries/skyscrapers-sunset\ copy.png") center center;
+  background-size: cover;
+  background-repeat: repeat;
   transition: all 0.3s ease-in-out;
   border-radius: 10px;
   text-align: center;
