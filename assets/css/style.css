@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: black;
+  background: #920745;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #fdd1e5;
+  background: #fff;
   color: black;
 }
 
@@ -662,11 +662,12 @@ section {
   position: relative;
   overflow: hidden;
   margin: 0;
-  background: url("../img/Industries/skyscrapers-sunset\ copy.png");
+  background: url("../img/Industries/skyscrapers-sunset\ copy.png") center center;
+  background-size: cover;
+  background-repeat: repeat;
   transition: all 0.3s ease-in-out;
-  border-radius: 15px;
+  border-radius: 10px;
   text-align: center;
-  border-bottom: 10px solid #fff;
 }
 
 .services .icon-box:hover {
@@ -1335,14 +1336,14 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: black;
+  background: #920745;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: black;
+  background: #920745;
   padding: 60px 0 30px 0;
 }
 
@@ -1469,7 +1470,7 @@ section {
 
 #footer .copyright {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 #footer .credits {
