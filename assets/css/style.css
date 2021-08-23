@@ -562,8 +562,8 @@ section {
 
 .steps .content-item {
   padding: 40px;
-  border-left: 1px solid #d4e9e6;
-  border-bottom: 1px solid #d4e9e6;
+  border-left: 1px solid #f9ebc8;
+  border-bottom: 1px solid #f9ebc8;
   margin: -1px;
 }
 
@@ -571,7 +571,7 @@ section {
   display: block;
   font-size: 24px;
   font-weight: 400;
-  color: #1bac91;
+  color: #F0BB39;
 }
 
 .steps .content-item h4 {
@@ -579,11 +579,11 @@ section {
   font-weight: 400;
   padding: 0;
   margin: 20px 0;
-  color: #21413c;
+  color: #000;
 }
 
 .steps .content-item p {
-  color: #aaaaaa;
+  color: #000;
   font-size: 15px;
   margin: 0;
   padding: 0;

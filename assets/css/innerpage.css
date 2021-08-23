@@ -6,7 +6,7 @@ section .inner-page {
 
 .inner-page .consulting {
     width: 100%;
-    min-height: 60vh;
+    min-height: 70vh;
     background: url("../img/Industries/executives-working-together-project.jpg") center center;
     background-size: cover;
     position: relative;
