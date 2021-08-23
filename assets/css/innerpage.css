@@ -6,7 +6,7 @@ section .inner-page {
 
 .inner-page .consulting {
     width: 100%;
-    height: calc(100vh - 70px);
+    height: calc(90vh - 70px);
     background: url("../img/Industries/executives-working-together-project.jpg") center center;
     background-size: cover;
     position: relative;
@@ -18,23 +18,50 @@ section .inner-page {
 }
   
 .inner-page .consulting h1 {
-    padding: 16vh 10vw;
-    font-size: 58px;
+    font-size: 45px;
     font-weight: 700;
     line-height: 56px;
     color: black;
-}
-  
-.inner-page .consulting h2 {
-    color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 35px;
-    font-size: 24px;
 }
 
 .consultingPara {
     width: 65vw;
 }
 
-.inner-page .container h6 {
-    font-size: 19px;
+.inner-page .consulting .para {
+    width: 45vw;
+}
+
+.inner-page .consulting p {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+@media (max-width: 992px) {
+    .inner-page .consulting h1 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 56px;
+    }
+
+    .inner-page .consulting .para {
+        width: 50vw;
+    }
+
+    .inner-page .container p {
+        font-size: 10px;
+    }
+}
+
+.consultingPara .features {
+    border-bottom: 1px solid black;
+}
+
+.consultingPara h6 {
+    font-size: 16px;
+}
+
+.tab-content .tab-pane p {
+    font-size: 17px;
 }

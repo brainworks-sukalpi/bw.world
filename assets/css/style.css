@@ -606,15 +606,15 @@ section {
   border: 0;
   padding: 20px;
   transition: 0.3s;
-  color: #21413c;
+  color: #000;
 }
 
 .features .nav-link:hover {
-  color: #1bac91;
+  color: #F0BB39;
 }
 
 .features .nav-link h4 {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
 }
 
@@ -628,7 +628,7 @@ section {
 }
 
 .features .nav-link.active h4 {
-  color: #1bac91;
+  color: #F0BB39;
 }
 
 .features .tab-pane.active {
