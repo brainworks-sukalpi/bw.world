@@ -129,6 +129,10 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+.twoColumn ul {
+  columns: 2;
+}
+
 .navbar > ul > li + li {
   margin-left: 30px;
 }
@@ -179,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   top: 100%;
   margin: 0;
-  padding: 10px 0;
+  padding: 40px 20px;
   z-index: 99;
   opacity: 0;
   visibility: hidden;
@@ -194,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .dropdown ul a {
-  padding: 10px 20px;
+  padding: 10px 15px;
   font-size: 14px;
   text-transform: none;
   font-weight: 500;
