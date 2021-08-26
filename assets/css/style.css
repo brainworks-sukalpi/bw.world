@@ -29,6 +29,12 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+@media (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -285,7 +291,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(16, 31, 29, 0.9);
+  background: rgba(147, 26, 46, 0.3);
   transition: 0.3s;
   z-index: 0;
 }
@@ -305,6 +311,7 @@ h6 {
   left: 15px;
   padding: 10px 0;
   background-color: #fff;
+  border-radius: 10px;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -343,6 +350,7 @@ h6 {
   z-index: 99;
   opacity: 1;
   visibility: visible;
+  border-radius: 10px;
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
@@ -684,8 +692,7 @@ section {
   position: relative;
   overflow: hidden;
   margin: 0;
-  background: url("../img/Industries/skyscrapers-sunset\ copy.png") center
-    center;
+  background: url("../img/Industries/skyscrapers-sunset\ copy.png") center center;
   background-size: cover;
   background-repeat: repeat;
   transition: all 0.3s ease-in-out;
