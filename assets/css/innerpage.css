@@ -5,6 +5,7 @@ section .inner-page {
 }
 
 .inner-page .consulting {
+    margin-top: 70px;
     width: 100%;
     min-height: 70vh;
     background: url("../img/Industries/executives-working-together-project.jpg") center center;
@@ -17,9 +18,20 @@ section .inner-page {
     width: 45vw;
 }
 
+.services .container .section-title {
+    text-align: left;
+}
+
+.inner-page .consulting h1 {
+    font-size: 55px;
+    font-weight: 700;
+    text-align: left;
+}
+
 .inner-page .consulting p {
+    text-align: left;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 550;
     color: black;
 }
 
@@ -43,7 +55,4 @@ section .inner-page {
     font-size: 16px;
 }
 
-.tab-content .tab-pane p {
-    font-size: 17px;
-}
 
