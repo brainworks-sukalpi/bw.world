@@ -1,3 +1,7 @@
+.debug {
+    border: 1px solid black;
+}
+
 section .inner-page {
     padding-top: 0;
     margin: 0;
@@ -8,10 +12,15 @@ section .inner-page {
     margin-top: 70px;
     width: 100%;
     min-height: 70vh;
-    background: url("../img/Industries/executives-working-together-project.jpg") center center;
-    background-size: cover;
+    background-color: #931a2e;
     position: relative;
     padding: 0;
+}
+
+.inner-page .consulting img {
+    height: 80vh;
+    width: auto;
+    float: right;
 }
 
 .inner-page .consulting .para {
@@ -20,19 +29,29 @@ section .inner-page {
 
 .services .container .section-title {
     text-align: left;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.titleText {
+    display: flex;
+    flex-direction: column;
 }
 
 .inner-page .consulting h1 {
     font-size: 55px;
     font-weight: 700;
     text-align: left;
+    color: #fff;
+    float: left;
 }
 
 .inner-page .consulting p {
+    float: left;
     text-align: left;
     font-size: 20px;
     font-weight: 550;
-    color: black;
+    color: #fff;
 }
 
 @media (max-width: 992px) {
