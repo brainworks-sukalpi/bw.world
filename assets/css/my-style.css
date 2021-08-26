@@ -3,5 +3,33 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  margin-top: 70px;
   min-height: 70vh !important;
+}
+.msm__banner > div > h1 {
+  font-weight: 700;
+}
+.msm__banner > div > p {
+  font-weight: 550;
+}
+.my__swiper__slide {
+  width: 20vw !important;
+}
+.my__testimonial__item {
+  width: 150px !important;
+}
+.my__testimonial__img {
+  height: 150px;
+}
+
+.services .container .section-title {
+  text-align: left !important;
+}
+
+@media (max-width: 1199px) {
+  .my__swiper__slide {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+  }
 }
