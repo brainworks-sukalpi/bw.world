@@ -20,7 +20,12 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Raleway", sans-serif;
 }
 
@@ -52,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
   color: black;
 }
 
-.back-to-top:hover i{
+.back-to-top:hover i {
   color: black;
 }
 
@@ -90,7 +95,8 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-#header .logo h1 a, #header .logo h1 a:hover {
+#header .logo h1 a,
+#header .logo h1 a:hover {
   color: #fff;
   text-decoration: none;
 }
@@ -137,7 +143,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 30px;
 }
 
-.navbar a, .navbar a:focus {
+.navbar a,
+.navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -149,7 +156,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.navbar a i, .navbar a:focus i {
+.navbar a i,
+.navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
@@ -162,18 +170,23 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: 3px;
   left: 0;
-  background-color: #F0BB39;
+  background-color: #f0bb39;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
 }
 
-.navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
+.navbar a:hover:before,
+.navbar li:hover > a:before,
+.navbar .active:before {
   visibility: visible;
   width: 100%;
 }
 
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
   color: #fff;
 }
 
@@ -209,7 +222,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 
-.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
   color: #920745;
 }
 
@@ -296,7 +311,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-.navbar-mobile a:hover:before, .navbar-mobile li:hover > a:before, .navbar-mobile .active:before {
+.navbar-mobile a:hover:before,
+.navbar-mobile li:hover > a:before,
+.navbar-mobile .active:before {
   visibility: hidden;
 }
 
@@ -306,7 +323,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #920745;
 }
 
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
   color: #920745;
 }
 
@@ -338,7 +357,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 
-.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover > a {
   color: #920745;
 }
 
@@ -575,7 +596,7 @@ section {
   display: block;
   font-size: 24px;
   font-weight: 400;
-  color: #F0BB39;
+  color: #f0bb39;
 }
 
 .steps .content-item h4 {
@@ -614,7 +635,7 @@ section {
 }
 
 .features .nav-link:hover {
-  color: #F0BB39;
+  color: #f0bb39;
 }
 
 .features .nav-link h4 {
@@ -632,7 +653,7 @@ section {
 }
 
 .features .nav-link.active h4 {
-  color: #F0BB39;
+  color: #f0bb39;
 }
 
 .features .tab-pane.active {
@@ -666,7 +687,8 @@ section {
   position: relative;
   overflow: hidden;
   margin: 0;
-  background: url("../img/Industries/skyscrapers-sunset\ copy.png") center center;
+  background: url("../img/Industries/skyscrapers-sunset\ copy.png") center
+    center;
   background-size: cover;
   background-repeat: repeat;
   transition: all 0.3s ease-in-out;
@@ -691,7 +713,7 @@ section {
 }
 
 .services .title a {
-  color: #F0BB39;
+  color: #f0bb39;
 }
 
 .services .description {
@@ -731,7 +753,8 @@ section {
   margin: 0 0 0 45px;
 }
 
-.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
   color: #a8d3cc;
   font-size: 26px;
 }
@@ -808,7 +831,8 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
   color: #1bac91;
 }
 
@@ -950,7 +974,10 @@ section {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -958,7 +985,10 @@ section {
   border: 1px solid #1bac91;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: #1bac91;
 }
 
@@ -1070,7 +1100,12 @@ section {
 }
 
 .team .member:hover .member-info {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.8) 20%,
+    rgba(0, 212, 255, 0) 100%
+  );
   opacity: 1;
   transition: 0.4s;
 }
@@ -1128,7 +1163,8 @@ section {
   color: #97cac2;
 }
 
-.faq .faq-list .icon-show, .faq .faq-list .icon-close {
+.faq .faq-list .icon-show,
+.faq .faq-list .icon-close {
   font-size: 24px;
   position: absolute;
   right: 0;
@@ -1233,7 +1269,9 @@ section {
   color: #fff;
 }
 
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
   background: #1bac91;
   color: #fff;
 }
@@ -1291,7 +1329,8 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .php-email-form input,
+.contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
