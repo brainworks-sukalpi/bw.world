@@ -138,9 +138,8 @@ h6 {
 @media (min-width: 992px) {
   .twoColumn ul {
     columns: 2;
-  }  
+  }
 }
-
 
 .navbar > ul > li + li {
   margin-left: 30px;
@@ -173,11 +172,7 @@ h6 {
   height: 2px;
   bottom: 3px;
   left: 0;
-<<<<<<< HEAD
-  background-color: #f0bb39;
-=======
   background-color: #fff;
->>>>>>> 8313f2ba0e07d324fc215cbc585e613ad7833e0e
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -229,15 +224,10 @@ h6 {
   font-size: 12px;
 }
 
-<<<<<<< HEAD
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-  color: #920745;
-=======
-.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
   color: #931a2e;
->>>>>>> 8313f2ba0e07d324fc215cbc585e613ad7833e0e
 }
 
 .navbar .dropdown:hover > ul {
@@ -335,15 +325,10 @@ h6 {
   color: #931a2e;
 }
 
-<<<<<<< HEAD
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: #920745;
-=======
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
   color: #931a2e;
->>>>>>> 8313f2ba0e07d324fc215cbc585e613ad7833e0e
 }
 
 .navbar-mobile .getstarted {
@@ -374,15 +359,10 @@ h6 {
   font-size: 12px;
 }
 
-<<<<<<< HEAD
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover > a {
-  color: #920745;
-=======
-.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
   color: #931a2e;
->>>>>>> 8313f2ba0e07d324fc215cbc585e613ad7833e0e
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -735,11 +715,7 @@ section {
 }
 
 .services .title a {
-<<<<<<< HEAD
-  color: #f0bb39;
-=======
   color: #fff;
->>>>>>> 8313f2ba0e07d324fc215cbc585e613ad7833e0e
 }
 
 .services .description {

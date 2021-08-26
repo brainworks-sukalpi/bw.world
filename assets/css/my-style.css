@@ -3,60 +3,15 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  margin-top: 70px;
   min-height: 70vh !important;
 }
-
-.carousel {
-  margin: 30px auto 50px;
-  padding: 0 68px;
+.msm__banner > div > h1 {
+  font-weight: 700;
 }
-.carousel .item {
-  text-align: center;
-  overflow: hidden;
-  height: 160px;
+.msm__banner > div > p {
+  font-weight: 550;
 }
-.carousel .item .img-box {
-  background: #fff;
-  /* box-shadow: 0 6px 20px -6px rgba(0, 0, 0, 0.4); */
-}
-.carousel .item img {
-  margin: 0 auto;
-}
-.carousel .carousel-control {
-  width: 68px;
-  background: transparent !important;
-}
-.carousel .carousel-control i {
-  font-size: 28px;
-  position: absolute;
-  top: 50%;
-  display: inline-block;
-  margin-top: -15px;
-  z-index: 5;
-  left: 0;
-  right: 0;
-  color: rgba(0, 0, 0, 0.8);
-  text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
-}
-.carousel .carousel-indicators {
-  bottom: -40px;
-}
-.carousel-indicators li,
-.carousel-indicators li.active {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin: 1px 4px;
-  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2);
-}
-.carousel-indicators li {
-  background: #999;
-  border-color: transparent;
-}
-.carousel-indicators li.active {
-  background: #555;
-}
-
 .my__swiper__slide {
   width: 20vw !important;
 }
@@ -66,6 +21,11 @@
 .my__testimonial__img {
   height: 150px;
 }
+
+.services .container .section-title {
+  text-align: left !important;
+}
+
 @media (max-width: 1199px) {
   .my__swiper__slide {
     width: 100% !important;
