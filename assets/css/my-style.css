@@ -25,6 +25,22 @@
 .services .container .section-title {
   text-align: left !important;
 }
+.swiper-pagination-bullet {
+  border: 1px solid #931a2e !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #931a2e !important;
+}
+.filter-active {
+  color: #931a2e !important;
+}
+#portfolio-flters > li:hover {
+  color: #931a2e !important;
+}
+.bxs-quote-alt-left,
+.bxs-quote-alt-right {
+  color: #931a2e !important;
+}
 
 @media (max-width: 1199px) {
   .my__swiper__slide {
