@@ -41,7 +41,22 @@
 .bxs-quote-alt-right {
   color: #931a2e !important;
 }
-
+.engagements__slide {
+  display: flex;
+  justify-content: center;
+}
+.engagements__slide > img {
+  height: 100px;
+  object-fit: contain;
+}
+#engagement__wrapper > .swiper-slide > img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+#engagement__wrapper > .swiper-slide-active > img {
+  -webkit-filter: none;
+  filter: none;
+}
 @media (max-width: 1199px) {
   .my__swiper__slide {
     width: 100% !important;
