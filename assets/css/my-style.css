@@ -42,25 +42,25 @@
   color: #931a2e !important;
 }
 .engagements__slide {
-  display: flex;
-  justify-content: center;
+  display: flex !important;
+  justify-content: center !important;
 }
 .engagements__slide > img {
-  height: 100px;
+  height: 100px !important;
   object-fit: contain;
 }
 #engagement__wrapper > .swiper-slide > img {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%) !important;
+  filter: grayscale(100%) !important;
 }
 #engagement__wrapper > .swiper-slide-active > img {
-  -webkit-filter: none;
-  filter: none;
+  -webkit-filter: none !important;
+  filter: none !important;
 }
 @media (max-width: 1199px) {
   .my__swiper__slide {
     width: 100% !important;
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important;
   }
 }
