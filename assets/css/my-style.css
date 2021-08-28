@@ -25,11 +25,46 @@
 .services .container .section-title {
   text-align: left !important;
 }
-
+.swiper-pagination-bullet {
+  border: 1px solid #931a2e !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #931a2e !important;
+}
+.filter-active {
+  color: #931a2e !important;
+}
+#portfolio-flters > li:hover {
+  color: #931a2e !important;
+}
+.bxs-quote-alt-left,
+.bxs-quote-alt-right {
+  color: white !important;
+}
+.engagements__slide {
+  display: flex !important;
+  justify-content: center !important;
+}
+.engagements__slide > img {
+  height: 100px !important;
+  object-fit: contain;
+}
+#engagement__wrapper > .swiper-slide > img {
+  -webkit-filter: grayscale(100%) !important;
+  filter: grayscale(100%) !important;
+}
+#engagement__wrapper > .swiper-slide :hover {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+.testimonial-item > p {
+  background-color: #931a2e !important;
+  color: white;
+}
 @media (max-width: 1199px) {
   .my__swiper__slide {
     width: 100% !important;
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important;
   }
 }
