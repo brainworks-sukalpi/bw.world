@@ -575,7 +575,7 @@ section {
 
 .about .icon-box p {
   font-size: 15px;
-  color: #848484;
+  color: #fff;
   margin-left: 60px;
 }
 
@@ -712,7 +712,6 @@ section {
 
 .services .title {
   font-weight: 700;
-  margin-bottom: 15px;
   font-size: 18px;
 }
 
