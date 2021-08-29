@@ -44,14 +44,15 @@
 .engagements__slide {
   min-width: 100% !important;
   display: flex !important;
-  justify-content: space-evenly !important;
+  justify-content: space-between !important;
   align-items: center;
 }
 .engagements__slide__img {
-  padding: 20px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
 }
 .engagements__slide__img > img {
-  height: 100px !important;
+  width: 200px !important;
   object-fit: contain;
   -webkit-filter: grayscale(100%) !important;
   filter: grayscale(100%) !important;
@@ -87,12 +88,12 @@
   }
 }
 @media (max-width: 748px) {
-  .engagements__slide__img > img {
+  /* .engagements__slide__img > img {
     height: 50px !important;
   }
   .engagements__slide__img {
     padding: 0px !important;
-  }
+  } */
 }
 @media (max-width: 400px) {
   .testimonial-item > p {
