@@ -22,25 +22,6 @@
     align-items: center;
 }
 
-@media (max-width: 768px) {
-
-    .inner-page {
-        margin-top: 40px;
-    }
-
-    .inner-page .consulting {
-        height: 50vh !important; 
-    }
-
-    .inner-page .consulting .container img {
-        padding-right: 0;
-        margin-right: 0;
-        height: 40vh;
-        width: auto;
-        float: right;
-    }
-}
-
 .heroTitle {
     float: left;
     margin-left: 0;
@@ -81,11 +62,6 @@
   margin-bottom: 25px;
 }
 
-.titleText {
-  display: flex;
-  flex-direction: column;
-}
-
 .inner-page .consulting h1 {
     font-size: 55px;
     font-weight: 700;
@@ -101,6 +77,10 @@
 }
 
 @media (max-width: 992px) {
+    .inner-page .consulting {
+        height: 100vh;
+    }
+  
   .inner-page .consulting h1 {
     font-size: 30px;
     font-weight: 700;
@@ -124,6 +104,45 @@
   .inner-page .consulting p {
     font-size: 14px;
   }
+}
+
+@media (max-width: 768px) {
+
+    .hero-img {
+        z-index: 5;
+        position: absolute;
+        height: auto;
+        width: 100%;
+    }
+    
+    .hero-img img {
+        margin-top: 30px;
+        height: 50vh;
+        float: right;
+    }
+
+    .inner-page .consulting {
+        height: 50vh;
+    }
+
+    .inner-page .consulting .para {
+        width: 35vw;
+    }
+
+    .inner-page .consulting h1 {
+        width: 35vw;
+        font-size: 25px;
+        font-weight: 500;
+        text-align: left;
+        color: #fff;
+    }
+    
+    .inner-page .consulting p {
+        text-align: left;
+        font-size: 15px;
+        font-weight: 350;
+        color: #fff;
+    }
 }
 
 .services .container .section-title p {
