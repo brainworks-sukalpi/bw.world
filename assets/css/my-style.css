@@ -60,6 +60,8 @@
 .testimonial-item > p {
   background-color: #931a2e !important;
   color: white;
+  min-height: 250px !important;
+  max-height: 250px !important;
 }
 /* .navbar-mobile li:hover > a {
   color: #931a2e !important;
@@ -75,5 +77,14 @@
     width: 100% !important;
     display: flex !important;
     justify-content: center !important;
+  }
+  .testimonial-item > p {
+    min-height: 20px !important;
+  }
+}
+@media (max-width: 400px) {
+  .testimonial-item > p {
+    min-height: 280px !important;
+    max-height: 280px !important;
   }
 }
