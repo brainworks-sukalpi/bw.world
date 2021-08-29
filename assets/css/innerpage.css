@@ -1,137 +1,136 @@
 .debug {
-    border: 3px solid black;
+  border: 3px solid black;
 }
 
 .inner-page {
-    padding-top: 0;
-    margin: 0;
-    overflow: hidden;
+  padding-top: 0;
+  margin: 0;
+  overflow: hidden;
 }
 
 .inner-page .consulting {
-    padding-left: 0 !important;
-    padding-bottom: 0 !important;
-    padding-right: 0 !important;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    width: 100%;
-    min-height: 75vh;
-    background-color: #931a2e;
-    position: relative;
-    padding: 0;
+  padding-left: 0 !important;
+  padding-bottom: 0 !important;
+  padding-right: 0 !important;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  width: 100%;
+  min-height: 75vh;
+  background-color: #931a2e;
+  position: relative;
+  padding: 0;
 }
 
 .consultingHero {
-    padding-right: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
+  padding-right: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .inner-page img {
-    padding-right: 0;
-    margin-right: 0;
-    height: 80vh;
-    width: auto;
-    float: right;
+  padding-right: 0;
+  margin-right: 0;
+  height: 80vh;
+  width: auto;
+  float: right;
 }
 
 .inner-page .consulting .para {
-    width: 45vw;
+  width: 45vw;
 }
 
 .services .container {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .services .container .section-title {
-    text-align: left;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+  text-align: left;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .services .container .row {
-    margin-top: 25px;
-    margin-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .titleText {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .inner-page .consulting h1 {
-    font-size: 55px;
-    font-weight: 700;
-    text-align: left;
-    color: #fff;
-    float: left;
+  font-size: 55px;
+  font-weight: 700;
+  text-align: left;
+  color: #fff;
+  float: left;
 }
 
 .inner-page .consulting p {
-    float: left;
-    text-align: left;
-    font-size: 20px;
-    font-weight: 550;
-    color: #fff;
+  float: left;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 550;
+  color: #fff;
 }
 
 @media (max-width: 992px) {
+  .inner-page .consulting h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 56px;
+    line-height: 35px;
+  }
 
-    .inner-page .consulting h1 {
-        font-size: 30px;
-        font-weight: 700;
-        line-height: 56px;
-        line-height: 35px;
-    }
+  .services .container .row {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
-    .services .container .row {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
+  .services .container .row .col-md-6 {
+    margin-top: 25px;
+  }
 
-    .services .container .row .col-md-6 {
-        margin-top: 25px;
-    }
+  .inner-page .consulting .para {
+    width: 50vw;
+  }
 
-    .inner-page .consulting .para {
-        width: 50vw;
-    }
-
-    .inner-page .consulting p {
-        font-size: 14px;
-    }
+  .inner-page .consulting p {
+    font-size: 14px;
+  }
 }
 
 .services .container .section-title p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .icon-box .description {
-    display: inline;
+  display: inline;
 }
 
 .bi-arrow-right {
-    color: #fff;
-    margin-left: 10px;
-    font-weight: 500;
-    transition: all 0.3s ease-in-out;
+  color: #fff;
+  margin-left: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
 }
 
 .icon-box:hover .bi-arrow-right {
-    margin-left: 17px;
-    transition: all 0.3s ease-in-out;
+  margin-left: 17px;
+  transition: all 0.3s ease-in-out;
 }
 
 .services .icon-box {
-    padding: 20px;
+  padding: 20px;
 }
 
 .icon-box .title {
-    margin: 0;
-    display: inline-block;
-    block-size: fit-content;
+  margin: 0;
+  display: inline-block;
+  block-size: fit-content;
 }
 
 .icon-box > h4 > a,

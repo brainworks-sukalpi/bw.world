@@ -692,7 +692,8 @@ section {
   position: relative;
   overflow: hidden;
   margin: 0;
-  background: url("../img/Industries/skyscrapers-sunset\ copy.png") center center;
+  background: url("../img/Industries/skyscrapers-sunset\ copy.png") center
+    center;
   background-size: cover;
   background-repeat: repeat;
   transition: all 0.3s ease-in-out;

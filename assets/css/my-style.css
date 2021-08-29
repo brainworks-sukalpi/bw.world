@@ -61,6 +61,15 @@
   background-color: #931a2e !important;
   color: white;
 }
+/* .navbar-mobile li:hover > a {
+  color: #931a2e !important;
+}
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: #931a2e !important;
+} */
 @media (max-width: 1199px) {
   .my__swiper__slide {
     width: 100% !important;
