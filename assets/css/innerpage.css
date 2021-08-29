@@ -9,32 +9,57 @@
 }
 
 .inner-page .consulting {
-    padding-left: 0 !important;
-    padding-bottom: 0 !important;
-    padding-right: 0 !important;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
+    margin-top: 20px;
     width: 100%;
-    min-height: 75vh;
+    min-height: 80vh;
     background-color: #931a2e;
     position: relative;
+}
+
+.consulting .container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+
+    .inner-page {
+        margin-top: 40px;
+    }
+
+    .inner-page .consulting {
+        height: 50vh !important; 
+    }
+
+    .inner-page .consulting .container img {
+        padding-right: 0;
+        margin-right: 0;
+        height: 40vh;
+        width: auto;
+        float: right;
+    }
+}
+
+.heroTitle {
+    float: left;
+    margin-left: 0;
     padding: 0;
 }
 
-.consultingHero {
-    padding-right: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
+.hero-img {
+    margin-top: 100px;
+    z-index: 5;
+    position: absolute;
+    height: 70vh;
+    width: 100%;
 }
 
-.inner-page img {
-    padding-right: 0;
-    margin-right: 0;
-    height: 80vh;
-    width: auto;
+.hero-img img {
+    margin-top: 0;
+    height: 82vh;
     float: right;
+
 }
 
 .inner-page .consulting .para {
@@ -66,11 +91,9 @@
     font-weight: 700;
     text-align: left;
     color: #fff;
-    float: left;
 }
 
 .inner-page .consulting p {
-    float: left;
     text-align: left;
     font-size: 20px;
     font-weight: 550;
