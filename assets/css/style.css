@@ -394,7 +394,6 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.4);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -415,10 +414,11 @@ h6 {
 }
 
 #hero h2 {
-  width: 65%;
+  width: 50%;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 35px;
   font-size: 24px;
+  line-height: 30px;
 }
 
 #hero .btn-get-started {
