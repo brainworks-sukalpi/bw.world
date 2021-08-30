@@ -456,11 +456,6 @@
                   <img src="../../../assets/img/clientLogos/Client_Logo_55.png" class="img-fluid" alt="">
                 </div> 
               </div>
-
-
-              
-
-             
             </div>
             <div class="swiper-pagination"></div>
           </div>
@@ -520,26 +515,33 @@
           <div class="row portfolio-container" data-aos="fade-up">
             <div class="col-lg-4 col-md-6 portfolio-item filter-bussiness-strategy">
               <div class="portfolio-wrap">
-                <img
+                <div class="portfolio__modify">
+                  <div class="portfolio__modify__right">
+                    <h1> Bussiness </h1>
+                    <h1> Strategy</h1>
+                  </div>
+                  <img
                   src="../../../assets/img/portfolio/portfolio-1.jpg"
                   class="img-fluid"
                   alt=""
-                />
+                  />
+                </div>
+                
                 <div class="portfolio-info">
                   <h4>Bussiness Strategy 1</h4>
                   <p>Bussiness Strategy</p>
                   <div class="portfolio-links">
+                    
                     <a
-                      href="../../../assets/img/portfolio/portfolio-1.jpg"
-                      data-gallery="portfolioGallery"
-                      class="portfolio-lightbox"
-                      title="Bussiness Strategy 1"
+                      href="#"
+                      data-bs-toggle="modal" data-bs-target="#exampleModal"
                       ><i class="bx bx-plus"></i
                     ></a>
-                    <a href="portfolio-details.html" title="More Details"
+                    <!-- <a href="../../../portfolio-details.html" title="More Details"
                       ><i class="bx bx-link"></i
-                    ></a>
+                    ></a> -->
                   </div>
+                  
                 </div>
               </div>
             </div>
@@ -562,7 +564,7 @@
                       title="Bussiness Strategy 2"
                       ><i class="bx bx-plus"></i
                     ></a>
-                    <a href="portfolio-details.html" title="More Details"
+                    <a href="../../../portfolio-details.html" title="More Details"
                       ><i class="bx bx-link"></i
                     ></a>
                   </div>
@@ -681,6 +683,7 @@
                   class="img-fluid"
                   alt=""
                 />
+                
                 <div class="portfolio-info">
                   <h4>Data Science & Analytics 1</h4>
                   <p>Data Science & Analytics</p>
@@ -1009,10 +1012,56 @@
     <!-- Template Main JS File -->
     <script src="../../../assets/js/main.js"></script>
     <!----map -->
-    
+      
+        
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Bussiness Strategy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="portfolio__show__container__body__b1">
+              <div class="portfolio__b1__left">
+                <img
+                src="../../../assets/img/portfolio/portfolio-1.jpg"
+                class="img-fluid pimg"
+                alt=""
+                />
+              </div>
+              <div class="portfolio__b1__right">
+                <h3>Problem</h3>
+               <p>gjgjhgjjhjgjhg hsfhds sdjhfdshjf dhfsdj</p>
+              </div>
+            </div>
+            <div class="portfolio__show__container__body__b2">
+              <div class="portfolio__b2__left">
+                <h3>Solution</h3>
+                <p>gjgjhgjjhjgjh gajkdhja sdjhgjhsd</p>
+              </div>
+              <div class="portfolio__b2__right">
+                <h3>Impact</h3>
+                <p>gjgjhgjjhjgjhg jhsdgfhsgfd sdffshdfghs</p>
+              </div>
+            </div>
+          
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            
+          </div> -->
+        </div>
+      </div>
+    </div>
+      
   </body>
 
 <script>
+
+
+
+
   var info_cities = [
         [-33.818233,151.180015,1],
         [-37.868891,144.846291, 2],
@@ -1111,7 +1160,7 @@ var defaultLayers = platform.createDefaultLayers();
 var map = new H.Map(document.getElementById('map'),
   defaultLayers.vector.normal.map,{
   center: {lat:20.5937,lng: 78.9629},
-  zoom: 1,
+  zoom: 2,
   pixelRatio: window.devicePixelRatio || 1
 });
 window.addEventListener('resize', () => map.getViewPort().resize());
