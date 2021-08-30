@@ -451,17 +451,42 @@ h6 {
   #hero {
     margin-top: 60px;
     height: calc(100vh - 60px);
+    background-size: 50%;
+    background-position: 95% 60%;
+  }
+  
+  #hero h1 {
+    width: 80%;
+    margin: 0 0 10px 0;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+  }
+  
+  #hero h2 {
+    width: 47%;
+    margin-bottom: 35px;
+    font-size: 20px;
   }
 }
 
 @media (max-width: 768px) {
+
+  #hero {
+    background-size: 60%;
+    background-position: 100% 40%;
+  }
+
   #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+    min-width: 90%;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 30px;
   }
   #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
+    min-width: 40%;
+    font-size: 20px;
+    line-height: 25px;
     margin-bottom: 30px;
   }
 }
