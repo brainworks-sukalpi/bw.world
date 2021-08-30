@@ -716,14 +716,11 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
-  padding: 30px;
+  padding: 0px;
   position: relative;
   overflow: hidden;
+  background: #931a2e;
   margin: 0;
-  background: url("../img/Industries/skyscrapers-sunset\ copy.png") center
-    center;
-  background-size: cover;
-  background-repeat: repeat;
   transition: all 0.3s ease-in-out;
   border-radius: 10px;
   text-align: left;
@@ -742,6 +739,7 @@ section {
 .services .title {
   font-weight: 700;
   font-size: 18px;
+  line-height: 25px;
 }
 
 .services .title a {
@@ -753,6 +751,11 @@ section {
   color: #fff;
   line-height: 22px;
   margin-bottom: 0;
+}
+
+.icon-box i {
+  color: #fff;
+  font-size: 20px;
 }
 
 /*--------------------------------------------------------------
