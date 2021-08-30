@@ -578,10 +578,6 @@ section {
   color: #931a2e;
 }
 
-.about .icon-box {
-  margin-top: 44px;
-}
-
 .about .icon-box i {
   font-size: 48px;
   float: left;
@@ -591,14 +587,14 @@ section {
 .about .icon-box h4 {
   font-size: 22px;
   font-weight: 500;
-  margin-left: 60px;
   color: #931a2e;
+  margin: 8px 0;
 }
 
 .about .icon-box p {
+  margin-bottom: 8px;
   font-size: 15px;
-  color: #fff;
-  margin-left: 60px;
+  color: #000;
 }
 
 /*--------------------------------------------------------------
