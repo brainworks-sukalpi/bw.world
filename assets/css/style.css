@@ -383,8 +383,10 @@ h6 {
 #hero {
   width: 100%;
   height: calc(100vh - 70px);
-  background: url("../img/hero-bg.jpg") center center;
-  background-size: cover;
+  background: url("../img/Home_Banner.png") 95% 75%;
+  background-color: #931a2e;
+  background-size: 40%;
+  background-repeat: no-repeat;
   position: relative;
   margin-top: 70px;
   padding: 0;
@@ -413,6 +415,7 @@ h6 {
 }
 
 #hero h2 {
+  width: 65%;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 35px;
   font-size: 24px;
