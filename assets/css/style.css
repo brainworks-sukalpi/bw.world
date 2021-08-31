@@ -7,6 +7,7 @@ Text: Black or White */
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
   color: black;
 }
 
@@ -394,7 +395,6 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.4);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -407,7 +407,7 @@ h6 {
 }
 
 #hero h1 {
-  margin: 0 0 10px 0;
+  margin: 0 0 25px 0;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
@@ -415,10 +415,11 @@ h6 {
 }
 
 #hero h2 {
-  width: 65%;
+  width: 50%;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 35px;
   font-size: 24px;
+  line-height: 33px;
 }
 
 #hero .btn-get-started {
@@ -439,12 +440,6 @@ h6 {
   border-color: #931a2e;
   background: #931a2e;
   color: #fff;
-}
-
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
 }
 
 @media (max-width: 992px) {
@@ -581,30 +576,26 @@ section {
 .about h3 {
   font-weight: 400;
   font-size: 34px;
-  color: #21413c;
-}
-
-.about .icon-box {
-  margin-top: 44px;
+  color: #931a2e;
 }
 
 .about .icon-box i {
   font-size: 48px;
   float: left;
-  color: #1bac91;
+  color: #931a2e;
 }
 
 .about .icon-box h4 {
   font-size: 22px;
   font-weight: 500;
-  margin-left: 60px;
-  color: #21413c;
+  color: #931a2e;
+  margin: 8px 0;
 }
 
 .about .icon-box p {
+  margin-bottom: 8px;
   font-size: 15px;
-  color: #fff;
-  margin-left: 60px;
+  color: #000;
 }
 
 /*--------------------------------------------------------------
@@ -620,8 +611,8 @@ section {
 
 .steps .content-item {
   padding: 40px;
-  border-left: 1px solid #f9ebc8;
-  border-bottom: 1px solid #f9ebc8;
+  border-left: 1px solid #931a2e;
+  border-bottom: 1px solid #931a2e;
   margin: -1px;
 }
 
@@ -629,7 +620,7 @@ section {
   display: block;
   font-size: 24px;
   font-weight: 400;
-  color: #f0bb39;
+  color: #931a2e;
 }
 
 .steps .content-item h4 {
@@ -668,7 +659,7 @@ section {
 }
 
 .features .nav-link:hover {
-  color: #f0bb39;
+  color: #931a2e;
 }
 
 .features .nav-link h4 {
@@ -686,7 +677,7 @@ section {
 }
 
 .features .nav-link.active h4 {
-  color: #f0bb39;
+  color: #931a2e;
 }
 
 .features .tab-pane.active {
@@ -716,14 +707,11 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
-  padding: 30px;
+  padding: 0px;
   position: relative;
   overflow: hidden;
+  background: #931a2e;
   margin: 0;
-  background: url("../img/Industries/skyscrapers-sunset\ copy.png") center
-    center;
-  background-size: cover;
-  background-repeat: repeat;
   transition: all 0.3s ease-in-out;
   border-radius: 10px;
   text-align: left;
@@ -742,6 +730,7 @@ section {
 .services .title {
   font-weight: 700;
   font-size: 18px;
+  line-height: 25px;
 }
 
 .services .title a {
@@ -753,6 +742,11 @@ section {
   color: #fff;
   line-height: 22px;
   margin-bottom: 0;
+}
+
+.icon-box i {
+  color: #fff;
+  font-size: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -776,18 +770,18 @@ section {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 45px;
-  color: #111;
+  color: #fff;
 }
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #999;
+  color: #fff;
   margin: 0 0 0 45px;
 }
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #a8d3cc;
+  color: #fff;
   font-size: 26px;
 }
 
@@ -806,9 +800,10 @@ section {
 
 .testimonials .testimonial-item p {
   font-style: italic;
+  color: #fff;
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
-  background: #eff7f6;
+  background: #931a2e;
   position: relative;
   border-radius: 6px;
   position: relative;
@@ -825,11 +820,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #1bac91;
+  border: 1px solid #931a2e;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #1bac91;
+  background-color: #931a2e;
 }
 
 /*--------------------------------------------------------------
