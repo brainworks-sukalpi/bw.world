@@ -4,6 +4,7 @@
 
 hr {
   color: black;
+  margin: 10px 0;
 }
 
 .inner-page {
@@ -253,4 +254,34 @@ hr {
   align-items: center;
   justify-content: center;
   padding: 30px;
+}
+
+.work-with-us-text {
+  font-size: 20px !important;
+  line-height: 25px !important;
+}
+
+.work-with-us-question-text {
+  font-size: 30px !important;
+}
+
+
+.recruitment-text .row .content-item {
+  padding: 20px;
+}
+
+.recruitment-text .row .content-item h4 {
+  margin: 10px 0;
+}
+
+
+.recruitment-text .row .content-item span {
+  display: inline;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.htgr {
+  border: 0;
+  background-color: #fff;
 }
