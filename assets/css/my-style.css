@@ -73,20 +73,26 @@
   max-width: 100% !important;
   height: 600px !important;
 }
+.portfolio-wrap {
+  border: 1px solid #931a2e;
+}
+.portfolio-wrap:hover .portfolio__modify__right {
+  display: none;
+}
 .portfolio__modify__right {
   width: 50%;
   height: 100%;
   position: absolute;
   right: 0;
   z-index: 2;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid #931a2e;
-  border-right: 1px solid #931a2e;
-  border-bottom: 1px solid #931a2e;
+  font-weight: 200;
+  transition: all 0.5s ease-in-out;
 }
 .portfolio__modify__right > h1 {
   font-size: 1.2rem !important;
@@ -94,35 +100,40 @@
 .portfolio-info {
   /* border-top: 3px solid #931a2e !important;
   border-left: 3px solid #931a2e !important; */
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
 }
-.portfolio-info::before {
+/* .portfolio-info::before {
   border-top: 3px solid #931a2e !important;
   border-left: 3px solid #931a2e !important;
-  /* background-color: white; */
-}
-.portfolio-info::after {
+  
+} */
+/* .portfolio-info::after {
   border-bottom: 3px solid #931a2e !important;
   border-right: 3px solid #931a2e !important;
-}
+} */
 
-.portfolio-info > h4,
+/* .portfolio-info > h4,
 .portfolio-info > p,
 .portfolio-links > a {
   color: #931a2e !important;
-}
-.bx-link,
+} */
+/* .bx-link,
 .bx-plus {
   transition: all 0.2s ease-in-out;
-}
+} */
 
-.bx-link:hover,
+/* .bx-link:hover,
 .bx-plus:hover {
   transform: scale(1.2);
-}
+} */
 
 /*test*/
-.modal {
+.modal-content {
+  border-radius: 16px !important;
+}
+.btn-close {
+  color: #931a2e !important;
 }
 .modal-body {
   display: flex !important;
@@ -139,7 +150,7 @@
   background-color: white;
 }
 .portfolio__show__container__body__b1 {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #931a2e;
 }
 .portfolio__b1__left,
 .portfolio__b1__right,
@@ -156,7 +167,11 @@
 
 .portfolio__b1__right,
 .portfolio__b2__right {
-  border-left: 1px solid gray;
+  border-left: 1px solid #931a2e;
+}
+.portfolio__modify__right > p {
+  margin-bottom: 0;
+  font-weight: 300;
 }
 .pimg {
   height: 100%;
