@@ -68,6 +68,10 @@ hr {
   width: 45vw;
 }
 
+.inner-page .consulting .para p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .services .container {
   background-color: #fff;
 }
@@ -165,6 +169,7 @@ hr {
 
 .bi-arrow-right {
   color: #fff;
+  font-size: 27px !important;
   margin-left: 10px;
   font-weight: 500;
   transition: all 0.3s ease-in-out;
@@ -185,8 +190,8 @@ hr {
   block-size: fit-content;
 }
 
-.icon-box > h4 > a,
-.icon-box > h4 > a:focus {
+/* .icon-box .row .col-5 .col-12 > h4 > a,
+.icon-box .row .col-5 .col-12 > h4 > a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -198,13 +203,13 @@ hr {
   position: relative;
 }
 
-.icon-box > h4 > a,
-.icon-box > h4 > a:focus {
+.icon-box .row .col-5 .col-12 > h4 > a,
+.icon-box .row .col-5 .col-12 > h4 > a:focus {
   font-size: 17px;
   line-height: 0;
 }
 
-.icon-box > h4 > a:before {
+.icon-box .row .col-5 .col-12 > h4 > a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -217,33 +222,37 @@ hr {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.icon-box > h4 > a:hover:before,
-.icon-box > h4:hover > a:before,
+.icon-box .row .col-5 .col-12 > h4 > a:hover:before,
+.icon-box .row .col-5 .col-12 > h4:hover > a:before,
 .navbar .active:before {
   visibility: visible;
   width: 102%;
 }
 
-.icon-box > h4 > a:hover,
-.icon-box > h4.active,
-.icon-box > h4.active:focus,
-.icon-box > h4:hover > a {
+.icon-box .row .col-5 .col-12 > h4 > a:hover,
+.icon-box .row .col-5 .col-12 > h4.active,
+.icon-box .row .col-5 .col-12 > h4.active:focus,
+.icon-box .row .col-5 .col-12 > h4:hover > a {
   color: #fff;
-}
+} */
 
 .services .icon-box {
   padding-right: 0;
   margin-right: 0;
 }
 
-.icon-box .row {
+/* .icon-box .row {
   margin-top: 0;
   margin-bottom: 0;
-}
+} */
 
 .icon-box .row .col-5 {
   margin-right: 0;
   padding-right: 0;
+}
+
+.icon-box .row .col-7{
+  padding: 0;
 }
 
 .icon-box .row .col-7 img {
@@ -252,8 +261,8 @@ hr {
   margin: 0;
   padding: 0;
   float: right;
-  width: auto;
-  height: 300px;
+  width: 300px;
+  height: auto;
 }
 
 .about .container .row .section-title p {
@@ -294,3 +303,8 @@ hr {
   border: 0;
   background-color: #fff;
 }
+
+/* .retail {
+  height: 200px;
+  width: auto;
+} */
