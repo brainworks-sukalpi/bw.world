@@ -163,20 +163,23 @@ hr {
   font-size: 16px;
 }
 
-.icon-box .description {
-  display: inline;
+.services .icon-box .row {
+  height: 160px;
+}
+
+.retail .row .col-5 {
+  padding-top: 25px;
 }
 
 .bi-arrow-right {
   color: #fff;
-  font-size: 27px !important;
   margin-left: 10px;
   font-weight: 500;
   transition: all 0.3s ease-in-out;
 }
 
 .icon-box:hover .bi-arrow-right {
-  margin-left: 17px;
+  margin-left: 20px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -184,11 +187,11 @@ hr {
   padding-left: 20px;
 }
 
-.icon-box .title {
+/* .icon-box .title {
   margin: 0;
   display: inline-block;
   block-size: fit-content;
-}
+} */
 
 /* .icon-box .row .col-5 .col-12 > h4 > a,
 .icon-box .row .col-5 .col-12 > h4 > a:focus {
@@ -241,11 +244,6 @@ hr {
   margin-right: 0;
 }
 
-/* .icon-box .row {
-  margin-top: 0;
-  margin-bottom: 0;
-} */
-
 .icon-box .row .col-5 {
   margin-right: 0;
   padding-right: 0;
@@ -256,13 +254,11 @@ hr {
 }
 
 .icon-box .row .col-7 img {
-  display: flex;
-  align-items: center;
   margin: 0;
   padding: 0;
   float: right;
-  width: 300px;
-  height: auto;
+  width: max-content;
+  height: max-content;
 }
 
 .about .container .row .section-title p {
@@ -283,7 +279,6 @@ hr {
   font-size: 30px !important;
 }
 
-
 .recruitment-text .row .content-item {
   padding: 20px;
 }
@@ -303,8 +298,3 @@ hr {
   border: 0;
   background-color: #fff;
 }
-
-/* .retail {
-  height: 200px;
-  width: auto;
-} */
