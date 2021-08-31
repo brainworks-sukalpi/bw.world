@@ -14,13 +14,13 @@ hr {
 }
 
 .inner-page .consulting {
+    border: 0px;
     margin-top: 20px;
     width: 100%;
     min-height: 80vh;
     background-color: #931a2e;
     position: relative;
 }
-
 
 .inner-page .consulting h1 {
     font-size: 55px;
@@ -36,25 +36,32 @@ hr {
     color: #fff;
 }
 
+.p-4 {
+  padding: 0 !important;
+}
+
+.p-md-5 {
+  padding: 0 !important;
+}
+
 .consulting .container {
-    min-height: 80vh;
+    height: calc(80vh + 50px);
     display: flex;
     align-items: center;
 }
 
 .hero-img {
-    margin-top: 100px;
+    margin-top: 70px;
     z-index: 5;
     position: absolute;
-    height: 70vh;
+    height: 80vh;
     width: 100%;
 }
 
 .hero-img img {
-    margin-top: 0;
-    height: 82vh;
+    bottom: 0;
+    height: 80vh;
     float: right;
-
 }
 
 .inner-page .consulting .para {
