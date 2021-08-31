@@ -132,9 +132,9 @@
 .modal-content {
   border-radius: 16px !important;
 }
-.btn-close {
-  color: #931a2e !important;
-}
+/* .btn-close path {
+  fill: #931a2e !important;
+} */
 .modal-body {
   display: flex !important;
   flex-direction: column !important;
