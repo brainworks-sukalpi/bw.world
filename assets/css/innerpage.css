@@ -246,12 +246,14 @@ hr {
   padding-right: 0;
 }
 
-.icon-box .row img {
+.icon-box .row .col-7 img {
+  display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   float: right;
-  width: 300px;
-  height: auto;
+  width: auto;
+  height: 300px;
 }
 
 .about .container .row .section-title p {
