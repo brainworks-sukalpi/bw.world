@@ -186,6 +186,10 @@
 .emgagement__mob__container {
   display: none;
 }
+
+.emgagement__web__container {
+  display: flex;
+}
 /*test*/
 /* .navbar-mobile li:hover > a {
   color: #931a2e !important;
