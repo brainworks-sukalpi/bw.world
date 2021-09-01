@@ -154,7 +154,7 @@
   /**
    * Testimonials slider
    */
-  new Swiper(".engagements-slider", {
+  new Swiper(".engagements-mob-slider", {
     speed: 600,
     loop: true,
     autoplay: {
@@ -163,7 +163,40 @@
     },
     slidesPerView: "auto",
     pagination: {
-      el: ".swiper-pagination",
+      el: ".swiper-mob-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+    breakpoints: {
+      200: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      450: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      500: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1200: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+    },
+  });
+
+  new Swiper(".engagements-web-slider", {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    slidesPerView: "auto",
+    pagination: {
+      el: ".swiper-web-pagination",
       type: "bullets",
       clickable: true,
     },

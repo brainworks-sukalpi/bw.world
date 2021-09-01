@@ -188,8 +188,20 @@
 }
 
 .emgagement__web__container {
-  display: flex;
+  display: inherit;
 }
+.swiper-mob-pagination,
+.swiper-web-pagination {
+  text-align: center;
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #931a2e;
+}
+
 /*test*/
 /* .navbar-mobile li:hover > a {
   color: #931a2e !important;
