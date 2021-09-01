@@ -134,9 +134,10 @@
 .btn-close {
   background: transparent url() !important;
   opacity: 1 !important;
+  color: #444444 !important;
 }
-.modal-close {
-  color: #931a2e;
+.btn-close:hover {
+  color: #931a2e !important;
 }
 .modal-body {
   display: flex !important;
@@ -212,7 +213,9 @@
   border-radius: 20px;
   background-color: white;
 }
-
+.portfolio #portfolio-flters {
+  box-shadow: none !important;
+}
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
