@@ -240,6 +240,7 @@ hr {
 } */
 
 .services .icon-box {
+  width: 300px;
   padding-right: 0;
   margin-right: 0;
 }
@@ -250,10 +251,13 @@ hr {
 }
 
 .icon-box .row .col-7{
+  position: relative;
   padding: 0;
 }
 
 .icon-box .row .col-7 img {
+  position: absolute;
+  bottom: 0;
   margin: 0;
   padding: 0;
   float: right;
