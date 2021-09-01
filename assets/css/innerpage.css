@@ -302,3 +302,74 @@ hr {
   border: 0;
   background-color: #fff;
 }
+
+.selection-process .nav-pills {
+  display: flex;
+  justify-content: space-around;
+}
+
+.selection-process .nav-item {
+  width: 220px;
+}
+
+.selection-process .nav-pills li {
+  display: flex;
+  justify-content: center;
+}
+
+.selection-process .icon-pills::before {
+  content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #000;
+	position: relative;
+	top: 45px;
+}
+
+.selection-process .nav-item > a > span > .bi {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.selection-process .nav-item h5 {
+  color: #000;
+	font-size: 15px;
+	font-weight: 600;
+	display: block;
+	margin-top: 20px;
+}
+
+.selection-process .nav-pills a {
+  color: #000;
+}
+
+.selection-process .nav-pills .active {
+  color: #931a2e;
+}
+
+.selection-process .nav-item a:hover i {
+  color: #931a2e !important;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease;
+}
+
+.selection-process .nav-item a:hover i:after {
+  color: #931a2e !important;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease;
+}
+
+.selection-process .nav-item .bi::after {
+  content: "";
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	position: relative;
+	background: #000;
+	top: 41px;
+	right: 20px;
+}
