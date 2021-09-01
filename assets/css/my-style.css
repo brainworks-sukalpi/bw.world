@@ -34,9 +34,7 @@
 .filter-active {
   color: #931a2e !important;
 }
-#portfolio-flters > li:hover {
-  color: #931a2e !important;
-}
+
 .bxs-quote-alt-left,
 .bxs-quote-alt-right {
   color: white !important;
@@ -200,6 +198,43 @@
   background-color: #fff;
   opacity: 1;
   border: 1px solid #931a2e;
+}
+.portfolio__options {
+  padding: 24px !important;
+}
+.portfolio__options > li {
+  border: 1px solid #931a2e;
+  border-radius: 20px;
+  background-color: white;
+}
+#portfolio-flters > li:hover {
+  border: 1px solid #931a2e;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px 8px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.portfolio__options > li {
+  border: 1px solid #931a2e;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+  background-color: #931a2e !important;
+  color: white !important;
 }
 
 /*test*/
