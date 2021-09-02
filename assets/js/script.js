@@ -50,7 +50,7 @@ var all_questions = [{
     $('#quiz-results').hide();
     
     // Write the name of the quiz
-    $('#quiz-name').text(this.quiz_name);
+    // $('#quiz-name').text(this.quiz_name);
     
     // Create a container for questions
     var question_container = $('<div>').attr('id', 'question').insertAfter('#quiz-name');
@@ -224,7 +224,7 @@ var all_questions = [{
   }
   
   // "Main method" which will create all the objects and render the Quiz.
-$(document).ready(function() {
+  $(document).ready(function() {
     // Create an instance of the Quiz object
     var quiz = new Quiz('My Quiz');
     

@@ -273,12 +273,15 @@
             
           </h3>
 
-          <button id="prev-question-button"><i class="bi bi-arrow-left-circle-fill"></i></button>
-          <button id="next-question-button"><i class="bi bi-arrow-right-circle-fill"></i></button>
+          <div class="co-12 d-flex justify-content-center">
+            <button id="prev-question-button"><i class="bi bi-arrow-left-short"></i></button>
+            <button id="next-question-button"><i class="bi bi-arrow-right-short"></i></button>
+          </div>
           
           <div id="quiz-results">
             <p id="quiz-results-message"></p>
             <p id="quiz-results-score"></p>
+            <p id="quiz-retry-button"></p>
           </div>
         </div>
       </div>
@@ -324,50 +327,30 @@
           <div class="tab-content d-flex justify-content-center mt-4" id="pills-tabContent" style="display: block;">
             <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-home-tab">
               <div class="row d-flex justify-content-center">
-                <div>
-                  <h4>Hard Skills Assessment</h4>
-                </div>
-                <div>
-                  <p>
-                    We ask you your areas of expertise and you take an assessment tailored to your skillset.
-                  </p>
-                </div>
+                <p>
+                  We ask you your areas of expertise and you take an assessment tailored to your skillset.
+                </p>
               </div>
             </div>
             <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-profile-tab">
               <div class="row d-flex justify-content-center">
-                <div class="row">
-                  <h4>Mini Project Delivery</h4>
-                </div>
-                <div class="row">
-                  <p>
-                    You work on a couple of real-world mini projects.
-                  </p>
-                </div>
+                <p>
+                  You work on a couple of real-world mini projects.
+                </p>
               </div>
             </div>
             <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-contact-tab">
               <div class="row d-flex justify-content-center">
-                <div class="row">
-                  <h4>Soft Skills Assessment</h4>
-                </div>
-                <div class="row">
-                  <p>
-                    We interact with you.
-                  </p>
-                </div>
+                <p>
+                  We interact with you.
+                </p>
               </div>
             </div>
             <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-profile-tab">
               <div class="row d-flext justify-content-center">
-                <div class="row">
-                  <h4>Action Begins</h4>
-                </div>
-                <div class="row">
-                  <p>
-                    We do the contract signing and get going on live projects.
-                  </p>
-                </div>
+                <p>
+                  We do the contract signing and get going on live projects.
+                </p>
               </div>
             </div>
           </div>
@@ -482,6 +465,7 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script src="../../vendor/aos/aos.js"></script>
   <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../../vendor/glightbox/js/glightbox.min.js"></script>
