@@ -67,8 +67,8 @@
   max-height: 250px !important;
 }
 #map {
-  min-width: 79% !important;
-  max-width: 79% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
   height: 500px !important;
 }
 .portfolio-wrap {
