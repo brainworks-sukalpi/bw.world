@@ -358,36 +358,43 @@ hr {
 	right: 20px;
 }
 
-.selection-process .nav-pills .nav-item:hover span, h5 {
-  color: #931a2e;
+.selection-process .nav-pills > li > a.active > a,
+.selection-process .nav-pills > li > a.active > a:hover,
+.selection-process .nav-pills > li > a.active > a:focus {
+  border-bottom: 0px solid #000;
+  background-color: transparent;
 }
 
-.selection-process .nav-pills .nav-item .active a > span, h5 {
-  color: #931a2e;
-}
-
-.selection-process .active  i, h5 {
+.selection-process .nav-pills > li > a.active i,
+.selection-process .nav-pills > li > a.active h5 {
   color: #931a2e;
   transition: all 300ms ease-in-out;
-  -webkit-transition: all 300ms ease;
+  -webkit-transition: all 300ms ease-in-out;
 }
 
-.selection-process .nav-pills .nav-item:hover i {
-  color: #931a2e;
+.selection-process .nav-pills > li > a.active i:after {
+  background-color: #931a2e;
   transition: all 300ms ease-in-out;
-  -webkit-transition: all 300ms ease;
+  -webkit-transition: all 300ms ease-in-out;
 }
 
-.selection-process .nav-item a:hover i {
+.selection-process .nav-pills > li > a:hover,
+.selection-process .nav-pills > li > a:focus {
+  background-color: transparent;
   color: #931a2e;
-  transition: all 300ms ease-in-out;
-  -webkit-transition: all 300ms ease;
 }
 
-.selection-process .nav-item a:hover i::after {
+.selection-process .nav > li > a:hover i,
+.selection-process .nav > li > a:hover h5 {
   color: #931a2e;
   transition: all 300ms ease-in-out;
-  -webkit-transition: all 300ms ease;
+  -webkit-transition: all 300ms ease-in-out;
+}
+
+.selection-process .nav > li > a:hover i:after {
+  background: #931a2e;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
 }
 
 .selection-process .tab-content {
