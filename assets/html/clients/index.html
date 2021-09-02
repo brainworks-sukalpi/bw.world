@@ -62,6 +62,10 @@
     
 
     <!--  new map-->
+    <!--LEAFLET-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!---->
     <!-- <script type="text/javascript" src='../test-credentials.js'></script>     -->
     <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
     <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
@@ -685,13 +689,14 @@
     </section>
         <!-- End Services Section -->
         <!--map-->
-        
         <div class="container mb-5" data-aos="fade-up">
           <div class="row d-flex justify-content-center align-items-center">
             <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
               <div id="map"></div>
            </div>
         </div>
+        
+      
       </section>
       <!---->
       <!-- ======= Portfolio Section ======= -->
@@ -1274,10 +1279,7 @@
   </body>
 
 <script>
-
-
-
-
+  
   var info_cities = [
         [-33.818233,151.180015,1],
         [-37.868891,144.846291, 2],
@@ -1353,44 +1355,68 @@
 [39.395467, -74.901070],];
 
 
+var map = L.map('map',{
+    minZoom: 1,
+    
+}).setView([0, 0], 2);
+var myIcon = L.icon({
+    iconUrl: 'https://brainworks-sukalpi.github.io/bw.world/assets/img/map_pin.png',
+    iconSize: [24, 28],
+});
+
+// L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
+
+const mainLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png', {
+  // zoom:10,
+  // minZoom: 1,
+  attribution: '&copy; <a href="https://carto.com/">carto.com</a> contributors'
+});
+mainLayer.addTo(this.map);
+
+
 
 var iCnt;
- function addMarkersToMap(map) {
- // https://cdn4.iconfinder.com/data/icons/crime-and-security-24/64/10-128.png
-
-  var pngIcon = new H.map.Icon("https://brainworks-sukalpi.github.io/bw.world/assets/img/map_pin.png", { size: { w: 24, h: 28 } });
-
-
   for (iCnt = 0; iCnt < info_cities.length; iCnt++) {
+    L.marker([info_cities[iCnt][0],info_cities[iCnt][1]], {icon: myIcon}).addTo(map);
+  }
+  
+// var iCnt;
+//  function addMarkersToMap(map) {
+//  // https://cdn4.iconfinder.com/data/icons/crime-and-security-24/64/10-128.png
 
-    var bearsMarker = new H.map.Marker({lat:info_cities[iCnt][0],lng: info_cities[iCnt][1]},{ icon: pngIcon });
-    map.addObject(bearsMarker);
-        }
-      }
-
-
-var platform = new H.service.Platform({
-  //bw api//9B1hpVk-rH504g6yGovX7ufZ0wgbsXwZcGV2J6QsT-g
-  //my api// D14QCM9_yfaai85g0t1tUTCUA5OnCM6XmLqAUDqpzlQ
-  apikey: "D14QCM9_yfaai85g0t1tUTCUA5OnCM6XmLqAUDqpzlQ",
-});
-var defaultLayers = platform.createDefaultLayers();
-var map = new H.Map(document.getElementById('map'),
-  defaultLayers.vector.normal.map,{
-  // center: {lat:20.5937,lng: 78.9629},
-  zoom: 2,
-  pixelRatio: window.devicePixelRatio || 1
-});
-window.addEventListener('resize', () => map.getViewPort().resize());
+//   var pngIcon = new H.map.Icon("https://brainworks-sukalpi.github.io/bw.world/assets/img/map_pin.png", { size: { w: 24, h: 28 } });
 
 
-var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+//   for (iCnt = 0; iCnt < info_cities.length; iCnt++) {
 
-var ui = H.ui.UI.createDefault(map, defaultLayers);
+//     var bearsMarker = new H.map.Marker({lat:info_cities[iCnt][0],lng: info_cities[iCnt][1]},{ icon: pngIcon });
+//     map.addObject(bearsMarker);
+//         }
+//       }
 
-window.onload = function () {
-  addMarkersToMap(map);
-}
+
+// var platform = new H.service.Platform({
+//   //bw api//9B1hpVk-rH504g6yGovX7ufZ0wgbsXwZcGV2J6QsT-g
+//   //my api// D14QCM9_yfaai85g0t1tUTCUA5OnCM6XmLqAUDqpzlQ
+//   apikey: "D14QCM9_yfaai85g0t1tUTCUA5OnCM6XmLqAUDqpzlQ",
+// });
+// var defaultLayers = platform.createDefaultLayers();
+// var map = new H.Map(document.getElementById('map'),
+//   defaultLayers.vector.normal.map,{
+//   // center: {lat:20.5937,lng: 78.9629},
+//   zoom: 2,
+//   pixelRatio: window.devicePixelRatio || 1
+// });
+// window.addEventListener('resize', () => map.getViewPort().resize());
+
+
+// var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
+// var ui = H.ui.UI.createDefault(map, defaultLayers);
+
+// window.onload = function () {
+//   addMarkersToMap(map);
+// }
 
 </script>
 </html>
