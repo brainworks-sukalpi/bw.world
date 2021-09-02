@@ -496,12 +496,14 @@ hr {
 }
 
 #question label:hover {
-  background: #fff;
+  background: #931a2e;
+  color: #fff;
 }
 
 #question input[type=radio]:checked + label {
   background: #931a2e;
   color: #fff;
+  transition: all 200ms ease-in-out;
 }
 
 #submit-button {
