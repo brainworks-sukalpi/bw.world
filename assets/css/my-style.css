@@ -236,9 +236,15 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  min-height: 400px !important;
+  max-height: 400px !important;
 }
 .process__img {
   flex: 0.5;
+}
+.process__img > img {
+  height: 350px;
+  object-fit: contain;
 }
 
 .process__content {
@@ -272,6 +278,7 @@
   .process__body {
     flex-direction: column;
     min-width: 100%;
+    max-height: none !important;
     margin-top: 2rem;
   }
   .process__img {
