@@ -95,40 +95,6 @@ Quiz.prototype.render = function(container) {
     }
   });
 
-  $('#label0').click('click', function (event) {
-    console.log("hitesh");
-    console.log(current_question_index);
-    if (current_question_index < self.questions.length - 1) {
-      current_question_index++;
-      change_question();
-    }
-  });
-
-  $('#label1').click('click', function (event) {
-    console.log("hitesh");
-    console.log(current_question_index);
-    if (current_question_index < self.questions.length - 1) {
-      current_question_index++;
-      change_question();
-    }
-  });
-  $('#label2').click('click', function (event) {
-    console.log("hitesh");
-    console.log(current_question_index);
-    if (current_question_index < self.questions.length - 1) {
-      current_question_index++;
-      change_question();
-    }
-  });
-  $('#label3').click('click', function (event) {
-    console.log("hitesh");
-    console.log(current_question_index);
-    if (current_question_index < self.questions.length - 1) {
-      current_question_index++;
-      change_question();
-    }
-  });
-
  
   // Add listener for the submit answers button
   $('#submit-button').click(function() {
