@@ -1,4 +1,6 @@
 // Array of all the questions and choices to populate the questions. This might be saved in some JSON file or a database and we would have to read the data in.
+var question_index = 0;
+
 var all_questions = [{
   question_string: "12 is 60% of what number among the given?",
   choices: {
@@ -92,6 +94,41 @@ Quiz.prototype.render = function(container) {
       change_question();
     }
   });
+
+  $('#label0').click('click', function (event) {
+    console.log("hitesh");
+    console.log(current_question_index);
+    if (current_question_index < self.questions.length - 1) {
+      current_question_index++;
+      change_question();
+    }
+  });
+
+  $('#label1').click('click', function (event) {
+    console.log("hitesh");
+    console.log(current_question_index);
+    if (current_question_index < self.questions.length - 1) {
+      current_question_index++;
+      change_question();
+    }
+  });
+  $('#label2').click('click', function (event) {
+    console.log("hitesh");
+    console.log(current_question_index);
+    if (current_question_index < self.questions.length - 1) {
+      current_question_index++;
+      change_question();
+    }
+  });
+  $('#label3').click('click', function (event) {
+    console.log("hitesh");
+    console.log(current_question_index);
+    if (current_question_index < self.questions.length - 1) {
+      current_question_index++;
+      change_question();
+    }
+  });
+
  
   // Add listener for the submit answers button
   $('#submit-button').click(function() {
@@ -104,9 +141,9 @@ Quiz.prototype.render = function(container) {
       
    $('#quiz-retry-button').click(function() {
       quiz.render(quiz_container);
-   });
+    });
     
-    }
+  }
     
    
     
@@ -126,10 +163,10 @@ Quiz.prototype.render = function(container) {
     $('#quiz-results-message').text(message);
     $('#quiz-results-score').html('You got <b>' + score + '/' + self.questions.length + '</b> questions correct.');
     $('#quiz-results').slideDown();
-    $('#submit-button').slideUp();
-    $('#next-question-button').slideUp();
-    $('#prev-question-button').slideUp();
-    $('#quiz-retry-button').sideDown();
+    // $('#submit-button').slideUp();
+    // $('#next-question-button').slideUp();
+    // $('#prev-question-button').slideUp();
+    $('#quiz-retry-button').slideDown();
     
   });
   
@@ -208,6 +245,7 @@ Question.prototype.render = function(container) {
     var choice_label = $('<label>')
       .text(this.choices[i])
       .attr('for', 'choices-' + i)
+      .attr('id', 'label' + i)
       .appendTo(container);
   }
   
@@ -240,4 +278,12 @@ $(document).ready(function() {
   // Render the quiz
   var quiz_container = $('#quiz');
   quiz.render(quiz_container);
+});
+
+$('#close-button').click(function() {
+  $('#quiz-results').slideUp();
+  $('#submit-button').slideDown();
+  $('#next-question-button').slideDown();
+  $('#prev-question-button').slideDown();
+  $('#quiz-retry-button').slideUp();
 });
