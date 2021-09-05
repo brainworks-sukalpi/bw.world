@@ -27,6 +27,7 @@
   <!-- Template Main CSS File -->
   <link href="../../css/style.css" rel="stylesheet">
   <link href="../../css/innerpage.css" rel="stylesheet">
+  <!-- <link href="../../css/quiz.css" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -156,7 +157,7 @@
               <h4 class="work-with-us-question-text" data-aos="fade-up" data-aos-delay="100">Could you help them? Does this excite you?</h4>
             </div>
           </div>
-          <div class="col-12 mt-2">
+          <div class="col-12 mt-3">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <p class="work-with-us-text">
                 Working with us @ Brainworks, you’ll be expanding your comfort zone constantly. 
@@ -268,6 +269,7 @@
             <h2>Brainworks Fitment Quiz</h2>
           </div>
         </div>
+        
         <div id="quiz" class="mt-2">
           <div class="row">
             <div class="col-6 circular--landscape">
@@ -290,9 +292,22 @@
           </div>
           
           <div id="quiz-results">
-            <p id="quiz-results-message"></p>
-            <p id="quiz-results-score"></p>
-            <!-- <button id="quiz-retry-button">Retry</button> -->
+            <div class="d-flex close">
+              <button id="close-button" type="button"> 
+                <i class="bi bi-x"></i>
+              </button>
+            </div>
+            <div class="d-flex flex-column">
+              <div class="col-12">
+                <p id="quiz-results-message"></p>
+              </div>
+              <div class="col-12">
+                <p id="quiz-results-score"></p>
+              </div>
+            </div>
+            <div class="col-12">
+              <!-- <button id="quiz-retry-button">Retry</button> -->
+            </div>
           </div>
         </div>
       </div>
@@ -486,7 +501,6 @@
   <!-- Template Main JS File -->
   <script src="../../js/main.js"></script>
   <script src="../../js/script.js"></script>
-
 </body>
 
 </html>

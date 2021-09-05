@@ -275,7 +275,7 @@ hr {
 }
 
 .work-with-us-text {
-  font-size: 20px !important;
+  font-size: 17px !important;
   line-height: 25px !important;
 }
 
@@ -524,9 +524,8 @@ hr {
 }
 
 #quiz-results {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  border: 2px solid #931a2e;
+  box-shadow: 0 8px 32px 0 rgba( 147, 26, 46, 0.37 );
   position: absolute;
   top: 0px;
   left: 0px;
@@ -568,4 +567,32 @@ hr {
   font-size: 14px;
   cursor: pointer;
   outline: none;
+}
+
+.close {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: end;
+}
+
+#close-button {
+  color: #000 !important; 
+  font-size: 40px !important;
+  display: flex;
+  justify-content: center;
+  opacity: 1;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-bottom: 20px !important;
+}
+
+#close-button:hover {
+  background-color: #fff !important;
+  color: #931a2e !important;
+}
+
+#close-button .bi {
+  margin: 0 !important; 
+  padding: 0 !important;
 }
