@@ -254,16 +254,68 @@
   justify-content: center;
   align-items: flex-start;
 }
-.process__content > h6 {
+.process__content > h6,
+.publications__content > h6 {
   color: rgb(19, 19, 19);
   font-size: 3rem;
   font-weight: 1000;
   text-align: left;
 }
-.process__content > p {
+.process__content > p,
+.publications__content > p {
   text-align: left;
   color: #444444 !important;
   font-size: 1rem !important;
+}
+
+/* insight css*/
+.insight__btn {
+  background-color: white;
+  border: 1px solid #931a2e;
+  border-radius: 50px;
+  color: #931a2e;
+  height: 40px;
+  width: 200px;
+  transition: all 0.5s ease-in-out;
+  margin-right: 16px;
+}
+.insight__btn:hover {
+  background-color: #931a2e;
+  color: white;
+}
+.publications__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.publications__content > p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.takeways__navigate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  background: #931a2e;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+}
+.takeways__navigate i {
+  font-size: 28px;
+  color: white;
+  line-height: 0;
+  transition: all 0.4s ease-in-out;
+}
+.takeways__navigate:hover {
+  border: 1px solid #931a2e;
+  background-color: white;
+}
+
+.takeways__navigate:hover i {
+  color: #931a2e;
 }
 
 @media (max-width: 1199px) {
