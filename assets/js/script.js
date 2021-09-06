@@ -100,27 +100,8 @@ Quiz.prototype.render = function(container) {
       current_question_index++;
       change_question();
 
-      $('#quiz').animate({
-        width: "0px"
-      });
-
       question_index++;
       $('#quiz-image').attr('src', imgArray[question_index]);
-
-      $('#quiz').animate({
-        marginRight: "0",
-        right: "0"
-      }, {
-        duration: 200,
-        easing: "linear"
-      });
-
-      $('#quiz').animate({
-        width: "100%"
-      }, {
-        duration: 600,
-        easing: "linear"
-      });
     }
   });
 
