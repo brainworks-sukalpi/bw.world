@@ -524,29 +524,49 @@ hr {
 }
 
 #quiz-results {
-  border: 2px solid #931a2e;
-  box-shadow: 0 8px 32px 0 rgba( 147, 26, 46, 0.37 );
   position: absolute;
   top: 0px;
   left: 0px;
-  background: #fff;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba( 255, 255, 255, 0.45 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#quiz-results .result {
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  background-color: #931a2e;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
 }
 
 #quiz-results-message {
   display: flex;
   justify-content: center;
-  color: #931a2e;
+  color: #fff;
   font-size: 20px;
   font-weight: bold;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 #quiz-results-score {
   display: flex;
   justify-content: center;
-  color: #931a2e;
+  color: #fff;
   font-size: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 #quiz-results-score b {
@@ -556,43 +576,22 @@ hr {
   font-size: 20px;
 }
 
-#quiz-retry-button {
-  display: flex;
-  justify-content: center;
-  width: 30%;
-  margin: 8px 0px 0px 8px;
-  padding: 4px 8px;
-  background: #fff;
-  color: #000;
-  font-size: 14px;
-  cursor: pointer;
-  outline: none;
-}
-
 .close {
-  margin-bottom: 100px;
+  background-color: transparent !important;
+  width: 100%;
   display: flex;
   justify-content: end;
 }
 
 #close-button {
+  margin: 0 !important;
+  display: inline;
+  background-color: transparent !important;
   color: #000 !important; 
   font-size: 40px !important;
-  display: flex;
-  justify-content: center;
   opacity: 1;
-  border: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  margin-bottom: 20px !important;
 }
 
 #close-button:hover {
-  background-color: #fff !important;
-  color: #931a2e !important;
-}
-
-#close-button .bi {
-  margin: 0 !important; 
-  padding: 0 !important;
+  color: #fff !important;
 }

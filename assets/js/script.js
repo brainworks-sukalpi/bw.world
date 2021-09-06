@@ -1,5 +1,6 @@
 // Array of all the questions and choices to populate the questions. This might be saved in some JSON file or a database and we would have to read the data in.
 var question_index = 0;
+var imgArray = ["../../img/portfolio/portfolio-1.jpg", "../../img/portfolio/portfolio-2.jpg", "../../img/portfolio/portfolio-3.jpg", "../../img/portfolio/portfolio-4.jpg"];
 
 var all_questions = [{
   question_string: "12 is 60% of what number among the given?",
@@ -37,9 +38,12 @@ var Quiz = function(quiz_name) {
 }
 
 // A function that you can enact on an instance of a quiz object. This function is called add_question() and takes in a Question object which it will add to the questions field.
-Quiz.prototype.add_question = function(question) {
+Quiz.prototype.add_question = function(question, i) {
   // Randomly choose where to add question
-  var index_to_add_question = Math.floor(Math.random() * this.questions.length);
+  // var index_to_add_question = Math.floor(Math.random() * this.questions.length);
+  // this.questions.splice(index_to_add_question, 0, question);
+
+  var index_to_add_question = i;
   this.questions.splice(index_to_add_question, 0, question);
 }
 
@@ -80,10 +84,13 @@ Quiz.prototype.render = function(container) {
   change_question();
   
   // Add listener for the previous question button
-  $('#prev-question-button').click(function() {
+  $('#prev-question-button').click(function(e) {
     if (current_question_index > 0) {
       current_question_index--;
       change_question();
+
+      question_index--;
+      $('#quiz-image').attr('src', imgArray[question_index]);
     }
   });
   
@@ -92,6 +99,9 @@ Quiz.prototype.render = function(container) {
     if (current_question_index < self.questions.length - 1) {
       current_question_index++;
       change_question();
+      
+      question_index++;
+      $('#quiz-image').attr('src', imgArray[question_index]);
     }
   });
 
@@ -104,14 +114,7 @@ Quiz.prototype.render = function(container) {
       if (self.questions[i].user_choice_index === self.questions[i].correct_choice_index) {
         score++;
       }
-      
-   $('#quiz-retry-button').click(function() {
-      quiz.render(quiz_container);
-    });
-    
   }
-    
-   
     
     // Display the score with the appropriate message
     var percentage = score / self.questions.length;
@@ -129,11 +132,13 @@ Quiz.prototype.render = function(container) {
     $('#quiz-results-message').text(message);
     $('#quiz-results-score').html('You got <b>' + score + '/' + self.questions.length + '</b> questions correct.');
     $('#quiz-results').slideDown();
-    // $('#submit-button').slideUp();
-    // $('#next-question-button').slideUp();
-    // $('#prev-question-button').slideUp();
-    $('#quiz-retry-button').slideDown();
-    
+    $('#quiz-results-message').slideDown();
+    $('#quiz-results-score').slideDown();
+    $('#close-button').slideDown();
+  });
+
+  $('#quiz-retry-button').click(function() {
+    quiz.render(quiz_container);
   });
   
   // Add a listener on the questions container to listen for user select changes. This is for determining whether we can submit answers or not.
@@ -238,7 +243,7 @@ $(document).ready(function() {
     var question = new Question(all_questions[i].question_string, all_questions[i].choices.correct, all_questions[i].choices.wrong);
     
     // Add the question to the instance of the Quiz object that we created previously
-    quiz.add_question(question);
+    quiz.add_question(question, i);
   }
   
   // Render the quiz
@@ -248,6 +253,10 @@ $(document).ready(function() {
 
 $('#close-button').click(function() {
   $('#quiz-results').slideUp();
+  $('#quiz-results-message').slideUp();
+  $('#quiz-results-score').slideUp();
+  $('#close-button').slideUp();
+  
   $('#submit-button').slideDown();
   $('#next-question-button').slideDown();
   $('#prev-question-button').slideDown();
