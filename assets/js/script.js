@@ -28,6 +28,18 @@ var all_questions = [{
   }
 }];
 
+$('#close-button').click(function() {
+  $('#quiz-results').slideUp();
+  $('#quiz-results-message').slideUp();
+  $('#quiz-results-score').slideUp();
+  $('#close-button').slideUp();
+  
+  $('#submit-button').slideDown();
+  $('#next-question-button').slideDown();
+  $('#prev-question-button').slideDown();
+  $('#quiz-retry-button').slideUp();
+});
+
 // An object for a Quiz, which will contain Question objects.
 var Quiz = function(quiz_name) {
   // Private fields for an instance of a Quiz object.
@@ -82,7 +94,7 @@ Quiz.prototype.render = function(container) {
   // Render the first question
   var current_question_index = 0;
   change_question();
-  
+
   // Add listener for the previous question button
   $('#prev-question-button').click(function(e) {
     if (current_question_index > 0) {
@@ -100,8 +112,12 @@ Quiz.prototype.render = function(container) {
       current_question_index++;
       change_question();
 
+      
       question_index++;
       $('#quiz-image').attr('src', imgArray[question_index]);
+      setTimeout(function() {
+        $('#quiz').fadeIn();
+      }, 1000);
     }
   });
 
@@ -114,7 +130,7 @@ Quiz.prototype.render = function(container) {
       if (self.questions[i].user_choice_index === self.questions[i].correct_choice_index) {
         score++;
       }
-  }
+    }
     
     // Display the score with the appropriate message
     var percentage = score / self.questions.length;
@@ -229,6 +245,7 @@ Question.prototype.render = function(container) {
     
     // Trigger a user-select-change
     container.trigger('user-select-change');
+    $('#next-question-button').trigger('click');
   });
 }
 
@@ -251,14 +268,3 @@ $(document).ready(function() {
   quiz.render(quiz_container);
 });
 
-$('#close-button').click(function() {
-  $('#quiz-results').slideUp();
-  $('#quiz-results-message').slideUp();
-  $('#quiz-results-score').slideUp();
-  $('#close-button').slideUp();
-  
-  $('#submit-button').slideDown();
-  $('#next-question-button').slideDown();
-  $('#prev-question-button').slideDown();
-  $('#quiz-retry-button').slideUp();
-});
