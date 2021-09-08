@@ -2,50 +2,50 @@
 
   $('#quiz-results-section').hide();
 
-    var carouselTransition, carouselContent, carouselIndex, carouselLength, firstClone, firstItem, isAnimating, itemWidth, lastClone, lastItem;
-    carouselTransition = 400;
-    carouselContent = $('.carousel__content');
-    carouselIndex = 0;
-    carouselMax = 0;
-    carouselLength = carouselContent.children().length;
-    isAnimating = false;
-    itemWidth = 100 / carouselLength;
-    firstItem = $(carouselContent.children()[0]);
-    lastItem = $(carouselContent.children()[carouselLength - 1]);
-    firstClone = null;
-    lastClone = null;
-    carouselContent.css('width', carouselLength * 100 + '%');
-    carouselContent.transition({ x: carouselIndex * -itemWidth + '%' }, 0);
-    $.each(carouselContent.children(), function () {
-        return $(this).css('width', itemWidth + '%');
-    });
-    $('.nav--buttons--left').on('click', function (event) {
-        event.preventDefault();
-        if (isAnimating || carouselIndex === 0) {
-            return;
-        }
-        isAnimating = true;
-        carouselIndex--;
-        update_progress_bar(carouselIndex);
-        return carouselContent.transition({ x: carouselIndex * -itemWidth + '%' }, carouselTransition, 'ease', function () {
-            return isAnimating = false;
-        });
-    });
-    $('.nav--buttons--right').on('click', function (event) {
-        event.preventDefault();
-        if (isAnimating || carouselIndex === carouselLength - 1) {
-            return;
-        }
-        isAnimating = true;
-        carouselIndex++;
-        update_progress_bar(carouselIndex);
-        if ( carouselIndex > carouselMax ) {
-          carouselMax = carouselIndex;
-        }
-        return carouselContent.transition({ x: carouselIndex * -itemWidth + '%' }, carouselTransition, 'ease', function () {
-            return isAnimating = false;
-        });
-    });
+  var carouselTransition, carouselContent, carouselIndex, carouselLength, firstClone, firstItem, isAnimating, itemWidth, lastClone, lastItem;
+  carouselTransition = 400;
+  carouselContent = $('.carousel__content');
+  carouselIndex = 0;
+  carouselMax = 0;
+  carouselLength = carouselContent.children().length;
+  isAnimating = false;
+  itemWidth = 100 / carouselLength;
+  firstItem = $(carouselContent.children()[0]);
+  lastItem = $(carouselContent.children()[carouselLength - 1]);
+  firstClone = null;
+  lastClone = null;
+  carouselContent.css('width', carouselLength * 100 + '%');
+  carouselContent.transition({ x: carouselIndex * -itemWidth + '%' }, 0);
+  $.each(carouselContent.children(), function () {
+      return $(this).css('width', itemWidth + '%');
+  });
+  $('.nav--buttons--left').on('click', function (event) {
+      event.preventDefault();
+      if (isAnimating || carouselIndex === 0) {
+          return;
+      }
+      isAnimating = true;
+      carouselIndex--;
+      update_progress_bar(carouselIndex);
+      return carouselContent.transition({ x: carouselIndex * -itemWidth + '%' }, carouselTransition, 'ease', function () {
+          return isAnimating = false;
+      });
+  });
+  $('.nav--buttons--right').on('click', function (event) {
+      event.preventDefault();
+      if (isAnimating || carouselIndex === carouselLength - 1) {
+          return;
+      }
+      isAnimating = true;
+      carouselIndex++;
+      update_progress_bar(carouselIndex);
+      if ( carouselIndex > carouselMax ) {
+        carouselMax = carouselIndex;
+      }
+      return carouselContent.transition({ x: carouselIndex * -itemWidth + '%' }, carouselTransition, 'ease', function () {
+          return isAnimating = false;
+      });
+  });
 }.call(this));
 
 function calc_results() {
@@ -77,10 +77,6 @@ function calc_results(button_elem) {
   $(":checked").each(function() {
     checked++;
   });
-  // if ( checked != 10) {
-  //   alert("Please check all of the questions.");
-  //   return;
-  // }
 
   var radios = jQuery("input[type='radio']");
   radios = radios.filter(":checked");
@@ -96,7 +92,6 @@ function calc_results(button_elem) {
   if(array.length == 10) {
     for(var i=0; i<array.length; i++) {
       var temp = array[i].substring(1);
-      console.log(temp);
       if(temp.length == 3) {
         score += results[9][parseInt(temp[2])-1];
       } else {
@@ -118,6 +113,7 @@ function calc_results(button_elem) {
   }
 
   $('#quiz-results-message-section').text(message);
+  // $('#quiz-results-section').show();
   $('#quiz-results-section').slideDown();
   $('#quiz-results-message-section').slideDown();
   $('#close-button').slideDown();
