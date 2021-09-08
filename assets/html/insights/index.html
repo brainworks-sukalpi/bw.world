@@ -45,6 +45,14 @@
 
     <!-- navbar-templating-->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript">
+      console.log("running");
+      $(document).ready(function () {
+        $("#navbar").load(
+          "https://brainworks-sukalpi.github.io/bw.world/assets/html/nav.html"
+        );
+      });
+    </script>
   </head>
 
   <body>
@@ -60,15 +68,9 @@
           /></a>
         </div>
 
-        <nav id="navbar" class="navbar"></nav>
-
-        <script type="text/javascript">
-          $(document).ready(function () {
-            $("#navbar").load(
-              "https://brainworks-sukalpi.github.io/bw.world/assets/html/nav.html"
-            );
-          });
-        </script>
+        <nav id="navbar" class="navbar">
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
 
         <!-- .navbar -->
       </div>
