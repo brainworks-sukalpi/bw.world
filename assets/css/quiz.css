@@ -7,6 +7,28 @@
   position: relative;
 }
 
+.carousel .progress-bar {
+  position: relative;
+  background-color: #fff;
+  height: 2em;
+}
+.carousel .progress-bar .progress-bar-insider {
+  position: relative;
+  background-color: #00a5b5;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  width: 4%;
+  height: 2em;
+  transition: 0.2s width;
+}
+.carousel .progress-bar .progress-bar-insider:after {
+  content: attr(data-progress);
+  color: white;
+  position: absolute;
+  right: 0.5em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .carousel .carousel__content {
   width: auto;
   position: relative;
