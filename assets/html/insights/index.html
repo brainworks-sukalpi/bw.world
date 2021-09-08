@@ -42,6 +42,9 @@
     <!-- Template Main CSS File -->
     <link href="../../css/style.css" rel="stylesheet" />
     <link href="../../css/my-style.css" rel="stylesheet" />
+
+    <!-- navbar-templating-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
 
   <body>
@@ -56,6 +59,19 @@
               class="img-fluid"
           /></a>
         </div>
+
+        <div id="nav-placeholder"></div>
+        <!-- <script>
+          $.get("../nav.html", function (data) {
+            $("#nav-placeholder").replaceWith(data);
+          });
+        </script> -->
+
+        <script type="text/javascript">
+          $(document).ready(function () {
+            $("#nav-placeholder").load("");
+          });
+        </script>
 
         <nav id="navbar" class="navbar">
           <ul>
@@ -288,7 +304,18 @@
                   data-aos="fade-up"
                   data-aos-delay="100"
                 >
-                  <button class="insight__btn">Follow Takeways</button>
+                  <!-- <button
+                    onclick="window.open('https://www.linkedin.com/showcase/takeaways-official/','popUpWindow','height=400,width=600,left=10,top=10,,scrollbars=yes,menubar=no'); return false;"
+                    class="insight__btn"
+                  >
+                    Follow Takeways
+                  </button> -->
+                  <button
+                    onclick="window.open('https://www.linkedin.com/showcase/takeaways-official/','_blank')"
+                    class="insight__btn"
+                  >
+                    Follow Takeways
+                  </button>
                   <div class="d-flex">
                     <a href="#" class="takeways__navigate"
                       ><i class="bi bi-arrow-left-short"></i
@@ -303,6 +330,15 @@
           </div>
         </div>
       </section>
+
+      <!-- <iframe
+        src="https://www.linkedin.com/embed/feed/update/urn:li:share:6819137556240764928"
+        height="500"
+        width="90%"
+        frameborder="0"
+        allowfullscreen=""
+        title="Embedded post"
+      ></iframe> -->
 
       <!-- End Services Section -->
       <section class="about mt-1">
@@ -507,4 +543,32 @@
     <!-- Template Main JS File -->
     <script src="../../js/main.js"></script>
   </body>
+  <script>
+    // $(function () {
+    //   $("#nav-placeholder").load("nav.html");
+    // });
+
+    //     curl -X GET 'https://api.linkedin.com/v2/organizations/{73971744}' \
+    // -H 'Authorization: Bearer {86hhn5mj43ecws}'
+    fetch("https://api.linkedin.com/v2/organizations/73971744", {
+      mode: "no-cors",
+      headers: {
+        "X-Restli-Protocol-Version": "2.0.0",
+        Authorization: "86hhn5mj43ecws",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data));
+
+    //       'https://api.linkedin.com/v2/organizations/{79947376}' \
+    // -H 'Authorization: Bearer {78s8veui3ydnpq}'
+
+    //     curl -X GET 'https://api.linkedin.com/v2/organizations?ids=List(79947376)' \
+    // -H 'X-Restli-Protocol-Version: 2.0.0' \
+    // -H 'Authorization: Bearer 78s8veui3ydnpq'
+
+    //   window.onload = function () {
+    //   addMarkersToMap(map);
+    // }
+  </script>
 </html>

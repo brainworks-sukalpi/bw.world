@@ -325,6 +325,11 @@
   margin-right: auto !important;
 }
 
+.share-update-card {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
 @media (max-width: 1199px) {
   .my__swiper__slide {
     width: 100% !important;
