@@ -351,15 +351,33 @@
 
     //     curl -X GET 'https://api.linkedin.com/v2/organizations/{73971744}' \
     // -H 'Authorization: Bearer {86hhn5mj43ecws}'
-    fetch("https://api.linkedin.com/v2/organizations/73971744", {
-      mode: "no-cors",
-      headers: {
-        "X-Restli-Protocol-Version": "2.0.0",
-        Authorization: "86hhn5mj43ecws",
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => console.log(data));
+
+    // fetch("https://api.linkedin.com/v2/organizations/125526246", {
+    //   mode: "no-cors",
+    //   headers: {
+    //     "X-Restli-Protocol-Version": "2.0.0",
+    //     Authorization: "Bearer 86n3rdlpcdh3i8",
+    //   },
+    // })
+    //   .then((response) => response.json())
+    //   .then((data) => console.log(data));
+    // var data = {
+    //   grant_type: "client_credentials",
+    //   client_id: "86n3rdlpcdh3i8",
+    //   client_secret: "DQJgCemNetfh4FPd",
+    // };
+    // fetch("https://www.linkedin.com/oauth/v2/accessToken", {
+    //   method: "POST",
+    //   mode: "no-cors",
+    //   body: JSON.stringify(data),
+    // })
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    //     console.log("Success:", data);
+    //   })
+    //   .catch((error) => {
+    //     console.error("Error:", error);
+    //   });
 
     //       'https://api.linkedin.com/v2/organizations/{79947376}' \
     // -H 'Authorization: Bearer {78s8veui3ydnpq}'
