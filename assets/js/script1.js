@@ -1,11 +1,13 @@
+var carouselIndex = 0;
+var isAnimating = false;
+
 (function () {
 
   $('#quiz-results-section').hide();
 
-  var carouselTransition, carouselContent, carouselIndex, carouselLength, firstClone, firstItem, isAnimating, itemWidth, lastClone, lastItem;
+  var carouselTransition, carouselContent, carouselLength, firstClone, firstItem, isAnimating, itemWidth, lastClone, lastItem;
   carouselTransition = 400;
   carouselContent = $('.carousel__content');
-  carouselIndex = 0;
   carouselMax = 0;
   carouselLength = carouselContent.children().length;
   isAnimating = false;
@@ -70,7 +72,7 @@ var results = [
   [1,2,3,4]
 ]
 
-function calc_results(button_elem) {
+async function calc_results(button_elem) {
   var count = 0;
   var checked = 0;
   var size = $("input[name=size]:checked").val();
@@ -110,10 +112,44 @@ function calc_results(button_elem) {
     }
   } else {
     message = "Please answer all the questions."
+    
+    var a = [];
+    for(var i=0; i<array.length; i++) {
+      var temp = array[i].substring(1);
+      if(temp.length == 3) {
+        a.push(9);
+      } else {
+        a.push(parseInt(temp[0])-1);
+      }
+    }
+
+    var pos = 0;
+    for(var i=0; i<=9; i++) {
+      if(i!=a[i]) {
+        pos = i+1;
+        break;
+      }
+    }
+    var count = 11-pos;
+    count = parseInt(count);
+
+    var carouselContent = $('.carousel__content');
+    var carouselLength = carouselContent.children().length;
+    var isAnimating = false;
+    var itemWidth = 100 / carouselLength;
+
+    if (isAnimating || carouselIndex === 0) {
+        return;
+    }
+    isAnimating = true;
+    carouselIndex-=count;
+    update_progress_bar(carouselIndex);
+    return carouselContent.transition({ x: carouselIndex * -itemWidth + '%' }, 2000, 'ease', function () {
+        return isAnimating = false;
+    });
   }
 
   $('#quiz-results-message-section').text(message);
-  // $('#quiz-results-section').show();
   $('#quiz-results-section').slideDown();
   $('#quiz-results-message-section').slideDown();
   $('#close-button').slideDown();
