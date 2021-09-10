@@ -283,12 +283,12 @@ hr {
   font-size: 30px !important;
 }
 
-.recruitment-text .row .content-item {
+/* .recruitment-text .row .content-item {
   padding: 20px;
-}
+} */
 
 .recruitment-text .row .content-item h4 {
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
 
@@ -598,3 +598,22 @@ hr {
   color: #000 !important;
 }
 
+.recruitment-background {
+  margin: 20px !important;
+  border-radius: 20px;
+  border-left: none !important;
+  border-bottom: none !important;
+  background-color: #f7f5f5;
+}
+
+.recruitment-background h4 {
+  margin-top: 0 !important;
+}
+
+.vertical-line {
+  display: inline;
+  width: 0 !important;
+  padding: 0 !important;
+
+  border-left: 2px solid #931a2e;
+}
