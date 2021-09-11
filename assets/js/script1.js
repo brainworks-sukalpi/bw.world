@@ -143,8 +143,10 @@ async function calc_results(button_elem) {
     }
     isAnimating = true;
     carouselIndex-=count;
+    var time = (count)*300;
+    console.log(time);
     update_progress_bar(carouselIndex);
-    return carouselContent.transition({ x: carouselIndex * -itemWidth + '%' }, 2000, 'ease', function () {
+    return carouselContent.transition({ x: carouselIndex * -itemWidth + '%' }, time, 'ease', function () {
         return isAnimating = false;
     });
   }

@@ -303,6 +303,7 @@ hr {
 }
 
 .htgr {
+  display: inline-block;
   cursor: pointer;
   padding: 1px 10px !important;
   font-size: 13px;
