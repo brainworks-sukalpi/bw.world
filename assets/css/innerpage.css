@@ -291,10 +291,6 @@ hr {
   margin-bottom: 10px;
 }
 
-.recruitment-text .row .content-item p {
-  line-height: 25px;
-}
-
 
 .recruitment-text .row .content-item span {
   display: inline;
@@ -303,13 +299,20 @@ hr {
 }
 
 .htgr {
+  margin-top: 20px;
   display: inline-block;
   cursor: pointer;
   padding: 1px 10px !important;
-  font-size: 13px;
+  font-size: 15px;
+  color: #000;
   background-color: #fff;
   border: 1px solid #931a2e;
   border-radius: 20px;
+}
+
+.htgr:hover {
+  background-color: #931a2e;
+  color: #fff;
 }
 
 .selection-process .nav-pills {
