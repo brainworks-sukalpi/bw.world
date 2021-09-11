@@ -329,9 +329,6 @@
   display: flex !important;
   flex-direction: row !important;
 }
-#footer .copyright {
-  text-align: left !important;
-}
 
 @media (max-width: 1199px) {
   .my__swiper__slide {
