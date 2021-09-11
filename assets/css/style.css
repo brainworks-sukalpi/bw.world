@@ -1478,7 +1478,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #fdd1e5;
+  color: white;
   font-size: 18px;
   line-height: 1;
 }
@@ -1501,7 +1501,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #fdd1e5;
+  color: white;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -1537,6 +1537,7 @@ section {
 
 #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
   background: #931a2e;
+  /* border: 1px solid white; */
   color: white;
 }
 
@@ -1552,5 +1553,5 @@ section {
   color: #fff;
 }
 .footer__logo {
-  height: 50% !important;
+  width: 50% !important;
 }
