@@ -291,6 +291,10 @@ hr {
   margin-bottom: 10px;
 }
 
+.recruitment-text .row .content-item p {
+  line-height: 25px;
+}
+
 
 .recruitment-text .row .content-item span {
   display: inline;
@@ -299,8 +303,12 @@ hr {
 }
 
 .htgr {
-  border: 0;
+  cursor: pointer;
+  padding: 1px 10px !important;
+  font-size: 13px;
   background-color: #fff;
+  border: 1px solid #931a2e;
+  border-radius: 20px;
 }
 
 .selection-process .nav-pills {
