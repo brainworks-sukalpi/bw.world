@@ -1552,5 +1552,5 @@ section {
   color: #fff;
 }
 .footer__logo {
-  width: 70%;
+  height: 70px !important;
 }
