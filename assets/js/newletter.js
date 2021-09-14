@@ -25,7 +25,7 @@ const subscribe = async () => {
     const msg = response.data;
     console.log(msg);
     // alert(msg);
-    document.getElementsByName("button")[0].value = "Subcribed";
+    document.getElementsByName("button")[0].innerHTML = "Subcribed";
   } catch (errors) {
     console.error(errors);
   }
