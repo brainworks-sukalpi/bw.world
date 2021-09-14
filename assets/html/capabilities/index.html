@@ -1,881 +1,601 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Capabilities</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <!-- Favicons -->
-    <link href="../../../assets/img/favicon.png" rel="icon" />
-    <link
-      href="../../../assets/img/apple-touch-icon.png"
-      rel="apple-touch-icon"
-    />
+  <title>Capabilities</title>
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
-    />
+  <!-- Favicons -->
+  <link href="../../../assets/img/favicon.png" rel="icon" />
+  <link href="../../../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-    <!-- Vendor CSS Files -->
-    <link href="../../vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="../../vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="../../vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="../../vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link
-      href="../../vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="../../vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
 
-    <!-- Template Main CSS File -->
-    <link href="../../css/style.css" rel="stylesheet" />
-    <link href="../../css/my-style.css" rel="stylesheet" />
-    <link href="../../css/innerpage.css" rel="stylesheet" />
-    <!-- navbar-templating-->
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript">
-      console.log("running header");
-      $(document).ready(function () {
-        // $("#header").load(
-        //   "https://brainworks-sukalpi.github.io/bw.world/assets/html/nav.html"
-        // );
-        $("#footer").load(
-          "https://brainworks-sukalpi.github.io/bw.world/assets/html/footer.html"
-        );
-      });
-    </script>
-  </head>
+  <!-- Vendor CSS Files -->
+  <link href="../../vendor/aos/aos.css" rel="stylesheet" />
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../../vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="../../vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="../../vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="../../vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <body>
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top d-flex align-items-center">
-      <div class="container d-flex justify-content-between">
-        <div class="logo">
-          <!-- <a href="index.html"><img src="assets/img/favicon.png" alt="SBW" class="img-fluid"></a> -->
-          <a href="../../../index.html"
-            ><img
-              src="../../img/Logo/Logo-white.png"
-              alt="SBW"
-              class="img-fluid"
-          /></a>
-        </div>
+  <!-- Template Main CSS File -->
+  <link href="../../css/style.css" rel="stylesheet" />
+  <link href="../../css/my-style.css" rel="stylesheet" />
+  <link href="../../css/innerpage.css" rel="stylesheet" />
+  <!-- navbar-templating-->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript">
+    console.log("running header");
+    $(document).ready(function () {
+      // $("#header").load(
+      //   "https://brainworks-sukalpi.github.io/bw.world/assets/html/nav.html"
+      // );
+      $("#footer").load(
+        "https://brainworks-sukalpi.github.io/bw.world/assets/html/footer.html"
+      );
+    });
+  </script>
+</head>
 
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li class="dropdown twoColumn">
-              <a href="../industries/index.html"
-                ><span>Industries</span> <i class="bi bi-chevron-down"></i
-              ></a>
-              <ul>
-                <li>
-                  <a href="../industries/consulting-and-research.html"
-                    >Consulting & Research</a
-                  >
-                </li>
-                <li>
-                  <a href="../industries/consumer-product.html"
-                    >Consumer Products</a
-                  >
-                </li>
-                <li>
-                  <a href="../industries/education-and-training.html"
-                    >Education & Training</a
-                  >
-                </li>
-                <li>
-                  <a href="../industries/energy-and-natural-resources.html"
-                    >Energy & Natural Resources</a
-                  >
-                </li>
-                <li>
-                  <a href="../industries/financial-services.html"
-                    >Financial Services</a
-                  >
-                </li>
-                <li><a href="../industries/healthcare.html">Healthcare</a></li>
-                <li>
-                  <a href="../industries/human-resources.html"
-                    >Human Resources</a
-                  >
-                </li>
-                <li>
-                  <a href="../industries/manufacturing.html">Manufacturing</a>
-                </li>
-                <li>
-                  <a href="../industries/media-and-entertainment.html"
-                    >Media, Entertainment & Lifestyle</a
-                  >
-                </li>
-                <li>
-                  <a href="../industries/public-and-social-sector.html"
-                    >Public & Social Sector</a
-                  >
-                </li>
-                <li>
-                  <a href="../industries/real-estate.html">Real Estate</a>
-                </li>
-                <li><a href="../industries/retail.html">Retail</a></li>
-                <li><a href="../industries/technology.html">Technology</a></li>
-                <li>
-                  <a href="../industries/travel-and-tourism.html"
-                    >Travel & Tourism</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown twoColumn">
-              <a class="active" href="./index.html"
-                ><span>Capabilities</span> <i class="bi bi-chevron-down"></i
-              ></a>
-
-              <!-- <li class="dropdown">
-              <a href="#"
-                ><span>Capabilities</span> <i class="bi bi-chevron-down"></i
-              ></a> -->
-              <ul>
-                <li>
-                  <a href="./branding.html">Branding</a>
-                </li>
-
-                <li>
-                  <a href="./bussiness-strategy.html">Bussiness Strategy</a>
-                </li>
-                <li>
-                  <a href="./data-science-and-analytics.html"
-                    >Data Science & Analytics</a
-                  >
-                </li>
-                <li>
-                  <a href="./diversity-and-inclusion.html"
-                    >Diversity & Inclusion</a
-                  >
-                </li>
-             
-                <li><a href="./design-thinking.html">Design Thinking</a></li>
-                <li>
-                  <a href="./digital-marketing.html">Digital Marketing</a>
-                </li>
-                <li>
-                  <a href="./experience-design.html">Experience Design</a>
-                </li>
-                <li>
-                  <a href="./financial-modelling.html">Financial Modelling</a>
-                </li>
-                <li>
-                  <a href="./investor-pitches.html">Investor Pitches</a>
-                </li>
-                <li>
-                  <a href="./knowledge-and-asset-creation.html"
-                    >Knowledge & Asset Creation</a
-                  >
-                </li>
-                <li>
-                  <a href="./market-intelligence.html"
-                    >Market Intelligence</a
-                  >
-                </li>
-                <li>
-                  <a href="./marketing-and-pricing.html">Marketing & Pricing</a>
-                </li>
-               
-                <li>
-                  <a href="./operations-planning.html">Operations Planning</a>
-                </li>
-                <li>
-                  <a href="./statistical-modelling.html"
-                    >Statistical Modelling</a
-                  >
-                </li>
-                <li>
-                  <a href="./sustainability-consulting.html"
-                    >Sustainability Consulting</a
-                  >
-                </li>
-                <li>
-                  <a href="./training-and-development.html"
-                    >Training & Development</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li><a class="nav-link scrollto" href="../insights/index.html">Insights</a></li>
-            <li class="dropdown">
-              <a href="../clients/index.html"
-                ><span>Clients</span> <i class="bi bi-chevron-down"></i
-              ></a>
-              <ul>
-                <li><a href="../clients/index.html">Engagements</a></li>
-                <li><a href="../clients/index.html">Impact Stories</a></li>
-                <li><a href="../clients/index.html">Testimonials</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="../about/index.html"
-                ><span>About</span> <i class="bi bi-chevron-down"></i
-              ></a>
-              <ul>
-                <li><a href="../about/index.html">Overview</a></li>
-                <li><a href="../about/index.html">Process</a></li>
-                <li><a href="../about/index.html">People</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#"
-                ><span>Careers</span> <i class="bi bi-chevron-down"></i
-              ></a>
-              <ul>
-                <li><a href="#">WorkWithUs @ Brainworks</a></li>
-                <li><a href="#">People @ Brainworks</a></li>
-                <li><a href="#">Selection Process</a></li>
-                <li><a href="#">For Campus</a></li>
-                <li><a href="#">For Professionals</a></li>
-              </ul>
-            </li>
-            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-            <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li>
-            <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-            <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-        <!-- .navbar -->
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+      <div class="logo">
+        <!-- <a href="index.html"><img src="assets/img/favicon.png" alt="SBW" class="img-fluid"></a> -->
+        <a href="../../../index.html"><img src="../../img/Logo/Logo-white.png" alt="SBW" class="img-fluid" /></a>
       </div>
-    </header>
-    <!-- End Header -->
-    <main id="main">
-      <!-- ======= Services Section ======= -->
-      <section id="services" class="services section-bg mt-5">
-        <div class="container mb-5 mt-2">
-          <div class="section-title mb-4" data-aos="fade-up"  data-aos-delay="100">
-            <h2>Capabilities</h2>
-            <p>
-              Being a digital-native startup for startups, we bring in the capabilities and expertise to assist with the most pressing needs of a business. Our combination of strategy creation and on-ground implementation at every step ensures that our startup partners reap the benefits that we’ve envisaged for them.
-            </p>
-          </div>
-<!-- row 1 -->
-          <div class="row mt-4 mb-4">
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0"
-              data-aos="fade-up"
-              data-aos-delay="50"
-              onclick="location.href='./branding.html'"
-              style="cursor: pointer"
-            >
-              <div class="icon-box retail">
-                <div class="row d-flex">
-                  <div class="col-5 d-flex flex-column">
-                    <div class="col-12">
-                      <h4 class="title">
-                        <a href="./branding.html">Branding</a>
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <span
-                        ><a href="./branding.html"
-                          ><i class="bi bi-arrow-right"></i></a
-                      ></span>
-                    </div>
-                  </div>
-                  <div class="col-7 d-flex align-items-center">
-                    <img
-                      src="../../img/Banners/Branding.png"
-                      alt="retail"
-                      class="img-fluid"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li class="dropdown twoColumn">
+            <a href="../industries/index.html"><span>Industries</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li>
+                <a href="../industries/consulting-and-research.html">Consulting & Research</a>
+              </li>
+              <li>
+                <a href="../industries/consumer-product.html">Consumer Products</a>
+              </li>
+              <li>
+                <a href="../industries/education-and-technology.html">Education & Training</a>
+              </li>
+              <li>
+                <a href="../industries/energy-and-natural-resources.html">Energy & Natural Resources</a>
+              </li>
+              <li>
+                <a href="../industries/financial-services.html">Financial Services</a>
+              </li>
+              <li><a href="../industries/healthcare.html">Healthcare</a></li>
+              <li>
+                <a href="../industries/human-resources.html">Human Resources</a>
+              </li>
+              <li>
+                <a href="../industries/manufacturing.html">Manufacturing</a>
+              </li>
+              <li>
+                <a href="../industries/media-and-entertainment.html">Media, Entertainment & Lifestyle</a>
+              </li>
+              <li>
+                <a href="../industries/public-and-social-sector.html">Public & Social Sector</a>
+              </li>
+              <li>
+                <a href="../industries/real-estate.html">Real Estate</a>
+              </li>
+              <li><a href="../industries/retail.html">Retail</a></li>
+              <li><a href="../industries/technology.html">Technology</a></li>
+              <li>
+                <a href="../industries/travel-and-tourism.html">Travel & Tourism</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown twoColumn">
+            <a class="active" href="./index.html"><span>Capabilities</span> <i class="bi bi-chevron-down"></i></a>
 
+            <ul>
+              <li>
+                <a href="./branding.html">Branding</a>
+              </li>
 
+              <li>
+                <a href="./bussiness-strategy.html">Bussiness Strategy</a>
+              </li>
+              <li>
+                <a href="./data-science-and-analytics.html">Data Science & Analytics</a>
+              </li>
+              <li>
+                <a href="./diversity-and-inclusion.html">Diversity & Inclusion</a>
+              </li>
 
+              <li><a href="./design-thinking.html">Design Thinking</a></li>
+              <li>
+                <a href="./digital-marketing.html">Digital Marketing</a>
+              </li>
+              <li>
+                <a href="./experience-design.html">Experience Design</a>
+              </li>
+              <li>
+                <a href="./financial-modelling.html">Financial Modelling</a>
+              </li>
+              <li>
+                <a href="./investor-pitches.html">Investor Pitches</a>
+              </li>
+              <li>
+                <a href="./knowledge-and-asset-creation.html">Knowledge & Asset Creation</a>
+              </li>
+              <li>
+                <a href="./market-intelligence.html">Market Intelligence</a>
+              </li>
+              <li>
+                <a href="./marketing-and-pricing.html">Marketing & Pricing</a>
+              </li>
 
-
-
-
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0"
-              data-aos="fade-up"
-              data-aos-delay="50"
-              onclick="location.href='./bussiness-strategy.html'"
-              style="cursor: pointer"
-            >
-              <div class="icon-box retail">
-                <div class="row d-flex">
-                  <div class="col-5 d-flex flex-column">
-                    <div class="col-12">
-                      <h4 class="title">
-                        <a href="./bussiness-strategy.html"
-                          >Bussiness Strategy</a
-                        >
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <span
-                        ><a href="./bussiness-strategy.html"
-                          ><i class="bi bi-arrow-right"></i></a
-                      ></span>
-                    </div>
-                  </div>
-                  <div class="col-7 d-flex align-items-center">
-                    <img
-                      src="../../img/Banners/Business Strategy.png"
-                      alt="retail"
-                      class="img-fluid"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div
-            class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0"
-            data-aos="fade-up"
-            data-aos-delay="100"
-            onclick="location.href='./data-science-and-analytics.html'"
-            style="cursor: pointer"
-          >
+              <li>
+                <a href="./operations-planning.html">Operations Planning</a>
+              </li>
+              <li>
+                <a href="./statistical-modelling.html">Statistical Modelling</a>
+              </li>
+              <li>
+                <a href="./sustainability-consulting.html">Sustainability Consulting</a>
+              </li>
+              <li>
+                <a href="./training-and-development.html">Training & Development</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link" href="../insights/index.html">Insights</a>
+          </li>
+          <li class="dropdown">
+            <a href="../clients/index.html"><span>Clients</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../clients/index.html">Engagements</a></li>
+              <li><a href="../clients/index.html">Impact Stories</a></li>
+              <li><a href="../clients/index.html">Testimonials</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="../about/index.html"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../about/index.html">Overview</a></li>
+              <li><a href="../about/index.html">Process</a></li>
+              <li><a href="../about/index.html">People</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="../career/index.html"><span>Careers</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../career/index.html">WorkWithUs @ Brainworks</a></li>
+              <li><a href="../career/index.html">People @ Brainworks</a></li>
+              <li><a href="../career/index.html">Selection Process</a></li>
+              <li><a href="../career/index.html">For Campus</a></li>
+              <li><a href="../career/index.html">For Professionals</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="../contact/contact.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+    </div>
+  </header>
+  <!-- End Header -->
+  <main id="main">
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg mt-5">
+      <div class="container mb-5 mt-2">
+        <div class="section-title mb-4" data-aos="fade-up" data-aos-delay="100">
+          <h2>Capabilities</h2>
+          <p>
+            Being a digital-native startup for startups, we bring in the capabilities and expertise to assist with the
+            most pressing needs of a business. Our combination of strategy creation and on-ground implementation at
+            every step ensures that our startup partners reap the benefits that we’ve envisaged for them.
+          </p>
+        </div>
+        <!-- row 1 -->
+        <div class="row mt-4 mb-4">
+          <div class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0" data-aos="fade-up" data-aos-delay="50"
+            onclick="location.href='./branding.html'" style="cursor: pointer">
             <div class="icon-box retail">
               <div class="row d-flex">
                 <div class="col-5 d-flex flex-column">
                   <div class="col-12">
                     <h4 class="title">
-                      <a href="./data-science-and-analytics.html"
-                        >Data Science & Analytics</a
-                      >
+                      <a href="./branding.html">Branding</a>
                     </h4>
                   </div>
                   <div class="col-12">
-                    <span
-                      ><a href="./data-science-and-analytics.html"
-                        ><i class="bi bi-arrow-right"></i></a
-                    ></span>
+                    <span><a href="./branding.html"><i class="bi bi-arrow-right"></i></a></span>
                   </div>
                 </div>
                 <div class="col-7 d-flex align-items-center">
-                  <img
-                    src="../../img/Banners/Data Science.png"
-                    alt="retail"
-                    class="img-fluid"
-                  />
+                  <img src="../../img/Banners/Branding.png" alt="retail" class="img-fluid" />
                 </div>
               </div>
             </div>
           </div>
 
 
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0"
-              data-aos="fade-up"
-              data-aos-delay="50"
-              onclick="location.href='./diversity-and-inclusion.html'"
-              style="cursor: pointer"
-            >
-              <div class="icon-box retail">
-                <div class="row d-flex">
-                  <div class="col-5 d-flex flex-column">
-                    <div class="col-12">
-                      <h4 class="title">
-                        <a href="./diversity-and-inclusion.html"
-                          >Diversity & Inclusion</a
-                        >
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <span
-                        ><a href="./diversity-and-inclusion.html"
-                          ><i class="bi bi-arrow-right"></i></a
-                      ></span>
-                    </div>
-                  </div>
-                  <div class="col-7 d-flex align-items-center">
-                    <img
-                      src="../../img/Banners/Diversity and Inclusion.png"
-                      alt="retail"
-                      class="img-fluid"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-      <!-- row 2     -->
-          <div class="row mt-4 mb-4">
-           
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0"
-              data-aos="fade-up"
-              data-aos-delay="100"
-              onclick="location.href='./design-thinking.html'"
-              style="cursor: pointer"
-            >
-              <div class="icon-box retail">
-                <div class="row d-flex">
-                  <div class="col-5 d-flex flex-column">
-                    <div class="col-12">
-                      <h4 class="title">
-                        <a href="./design-thinking.html">Design Thinking</a>
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <span
-                        ><a href="./design-thinking.html"
-                          ><i class="bi bi-arrow-right"></i></a
-                      ></span>
-                    </div>
-                  </div>
-                  <div class="col-7 d-flex align-items-center">
-                    <img
-                      src="../../img/Banners/Design Thinking.png"
-                      alt="retail"
-                      class="img-fluid"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0"
-              data-aos="fade-up"
-              data-aos-delay="100"
-              onclick="location.href='./digital-marketing.html'"
-              style="cursor: pointer"
-            >
-              <div class="icon-box retail">
-                <div class="row d-flex">
-                  <div class="col-5 d-flex flex-column">
-                    <div class="col-12">
-                      <h4 class="title">
-                        <a href="./digital-marketing.html">Digital Marketing</a>
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <span
-                        ><a href="./digital-marketing.html"
-                          ><i class="bi bi-arrow-right"></i></a
-                      ></span>
-                    </div>
-                  </div>
-                  <div class="col-7 d-flex align-items-center">
-                    <img
-                      src="../../img/Banners/Digital Marketing.png"
-                      alt="retail"
-                      class="img-fluid"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0"
-              data-aos="fade-up"
-              data-aos-delay="100"
-              onclick="location.href='./experience-design.html'"
-              style="cursor: pointer"
-            >
-              <div class="icon-box retail">
-                <div class="row d-flex">
-                  <div class="col-5 d-flex flex-column">
-                    <div class="col-12">
-                      <h4 class="title">
-                        <a href="./experience-design.html">Experience Design</a>
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <span
-                        ><a href="./experience-design.html"
-                          ><i class="bi bi-arrow-right"></i></a
-                      ></span>
-                    </div>
-                  </div>
-                  <div class="col-7 d-flex align-items-center">
-                    <img
-                      src="../../img/Banners/Experience Design.png"
-                      alt="retail"
-                      class="img-fluid"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0"
-              data-aos="fade-up"
-              data-aos-delay="150"
-              onclick="location.href='./financial-modelling.html'"
-              style="cursor: pointer"
-            >
-              <div class="icon-box retail">
-                <div class="row d-flex">
-                  <div class="col-5 d-flex flex-column">
-                    <div class="col-12">
-                      <h4 class="title">
-                        <a href="./financial-modelling.html"
-                          >Financial Modelling</a
-                        >
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <span
-                        ><a href="./financial-modelling.html"
-                          ><i class="bi bi-arrow-right"></i></a
-                      ></span>
-                    </div>
-                  </div>
-                  <div class="col-7 d-flex align-items-center">
-                    <img
-                      src="../../img/Banners/Financial Modelling.png"
-                      alt="retail"
-                      class="img-fluid"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-<!-- row 3 -->
-          <div class="row mt-4 mb-4">
-            
 
-            <div
-            class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0"
-            data-aos="fade-up"
-            data-aos-delay="50"
-            onclick="location.href='./investor-pitches.html'"
-            style="cursor: pointer"
-          >
+
+
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0" data-aos="fade-up" data-aos-delay="50"
+            onclick="location.href='./bussiness-strategy.html'" style="cursor: pointer">
             <div class="icon-box retail">
               <div class="row d-flex">
                 <div class="col-5 d-flex flex-column">
                   <div class="col-12">
                     <h4 class="title">
-                      <a href="./investor-pitches.html"
-                        >Investor Pitches</a
-                      >
+                      <a href="./bussiness-strategy.html">Bussiness Strategy</a>
                     </h4>
                   </div>
                   <div class="col-12">
-                    <span
-                      ><a href="./investor-pitches.html"
-                        ><i class="bi bi-arrow-right"></i></a
-                    ></span>
+                    <span><a href="./bussiness-strategy.html"><i class="bi bi-arrow-right"></i></a></span>
                   </div>
                 </div>
                 <div class="col-7 d-flex align-items-center">
-                  <img
-                    src="../../img/Banners/Business PLan.png"
-                    alt="retail"
-                    class="img-fluid"
-                  />
+                  <img src="../../img/Banners/Business Strategy.png" alt="retail" class="img-fluid" />
                 </div>
               </div>
             </div>
           </div>
 
 
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0"
-              data-aos="fade-up"
-              data-aos-delay="150"
-              onclick="location.href='./knowledge-and-asset-creation.html'"
-              style="cursor: pointer"
-            >
-              <div class="icon-box retail">
-                <div class="row d-flex">
-                  <div class="col-5 d-flex flex-column">
-                    <div class="col-12">
-                      <h4 class="title">
-                        <a href="./knowledge-and-asset-creation.html"
-                          >Knowledge & Asset Creation</a
-                        >
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <span
-                        ><a href="./knowledge-and-asset-creation.html"
-                          ><i class="bi bi-arrow-right"></i></a
-                      ></span>
-                    </div>
+          <div class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0" data-aos="fade-up" data-aos-delay="100"
+            onclick="location.href='./data-science-and-analytics.html'" style="cursor: pointer">
+            <div class="icon-box retail">
+              <div class="row d-flex">
+                <div class="col-5 d-flex flex-column">
+                  <div class="col-12">
+                    <h4 class="title">
+                      <a href="./data-science-and-analytics.html">Data Science & Analytics</a>
+                    </h4>
                   </div>
-                  <div class="col-7 d-flex align-items-center">
-                    <img
-                      src="../../img/Banners/Knowledge Assets.png"
-                      alt="retail"
-                      class="img-fluid"
-                    />
+                  <div class="col-12">
+                    <span><a href="./data-science-and-analytics.html"><i class="bi bi-arrow-right"></i></a></span>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0"
-              data-aos="fade-up"
-              data-aos-delay="150"
-              onclick="location.href='./market-intelligence.html'"
-              style="cursor: pointer"
-            >
-              <div class="icon-box retail">
-                <div class="row d-flex">
-                  <div class="col-5 d-flex flex-column">
-                    <div class="col-12">
-                      <h4 class="title">
-                        <a href="./market-intelligence.html"
-                          >Market Intelligence</a
-                        >
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <span
-                        ><a href="./market-intelligence.html"
-                          ><i class="bi bi-arrow-right"></i></a
-                      ></span>
-                    </div>
-                  </div>
-                  <div class="col-7 d-flex align-items-center">
-                    <img
-                      src="../../img/Banners/Market Intelligence.png"
-                      alt="retail"
-                      class="img-fluid"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0"
-              data-aos="fade-up"
-              data-aos-delay="150"
-              onclick="location.href='./marketing-and-pricing.html'"
-              style="cursor: pointer"
-            >
-              <div class="icon-box retail">
-                <div class="row d-flex">
-                  <div class="col-5 d-flex flex-column">
-                    <div class="col-12">
-                      <h4 class="title">
-                        <a href="./marketing-and-pricing.html"
-                          >Marketing & Price</a
-                        >
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <span
-                        ><a href="./marketing-and-pricing.html"
-                          ><i class="bi bi-arrow-right"></i></a
-                      ></span>
-                    </div>
-                  </div>
-                  <div class="col-7 d-flex align-items-center">
-                    <img
-                      src="../../img/Banners/Marketing and Pricing.png"
-                      alt="retail"
-                      class="img-fluid"
-                    />
-                  </div>
+                <div class="col-7 d-flex align-items-center">
+                  <img src="../../img/Banners/Data Science.png" alt="retail" class="img-fluid" />
                 </div>
               </div>
             </div>
           </div>
 
-         
-         <!-- row 4    -->
 
-            <div class="row mt-4 mb-4">
-              <div
-              class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0"
-              data-aos="fade-up"
-              data-aos-delay="200"
-              onclick="location.href='./operations-planning.html'"
-              style="cursor: pointer"
-            >
-              <div class="icon-box retail">
-                <div class="row d-flex">
-                  <div class="col-5 d-flex flex-column">
-                    <div class="col-12">
-                      <h4 class="title">
-                        <a href="./operations-planning.html"
-                          >Operations Planning</a
-                        >
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <span
-                        ><a href="./operations-planning.html"
-                          ><i class="bi bi-arrow-right"></i></a
-                      ></span>
-                    </div>
+          <div class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0" data-aos="fade-up" data-aos-delay="50"
+            onclick="location.href='./diversity-and-inclusion.html'" style="cursor: pointer">
+            <div class="icon-box retail">
+              <div class="row d-flex">
+                <div class="col-5 d-flex flex-column">
+                  <div class="col-12">
+                    <h4 class="title">
+                      <a href="./diversity-and-inclusion.html">Diversity & Inclusion</a>
+                    </h4>
                   </div>
-                  <div class="col-7 d-flex align-items-center">
-                    <img
-                      src="../../img/Banners/Operations Planning.png"
-                      alt="retail"
-                      class="img-fluid"
-                    />
+                  <div class="col-12">
+                    <span><a href="./diversity-and-inclusion.html"><i class="bi bi-arrow-right"></i></a></span>
                   </div>
                 </div>
-              </div>
-            </div>
-              <div
-                class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0"
-                data-aos="fade-up"
-                data-aos-delay="200"
-                onclick="location.href='./statistical-modelling.html'"
-                style="cursor: pointer"
-              >
-                <div class="icon-box retail">
-                  <div class="row d-flex">
-                    <div class="col-5 d-flex flex-column">
-                      <div class="col-12">
-                        <h4 class="title">
-                          <a href="./statistical-modelling.html"
-                            >Statistical Modelling</a
-                          >
-                        </h4>
-                      </div>
-                      <div class="col-12">
-                        <span
-                          ><a href="./statistical-modelling.html"
-                            ><i class="bi bi-arrow-right"></i></a
-                        ></span>
-                      </div>
-                    </div>
-                    <div class="col-7 d-flex align-items-center">
-                      <img
-                        src="../../img/Banners/Mathematical Modelling.png"
-                        alt="retail"
-                        class="img-fluid"
-                      />
-                    </div>
-                  </div>
+                <div class="col-7 d-flex align-items-center">
+                  <img src="../../img/Banners/Diversity and Inclusion.png" alt="retail" class="img-fluid" />
                 </div>
               </div>
-  
-
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0"
-              data-aos="fade-up"
-              data-aos-delay="200"
-              onclick="location.href='./sustainability-consulting.html'"
-              style="cursor: pointer"
-            >
-              <div class="icon-box retail">
-                <div class="row d-flex">
-                  <div class="col-5 d-flex flex-column">
-                    <div class="col-12">
-                      <h4 class="title">
-                        <a href="./sustainability-consulting.html"
-                          >Sustainability Consulting</a
-                        >
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <span
-                        ><a href="./sustainability-consulting.html"
-                          ><i class="bi bi-arrow-right"></i></a
-                      ></span>
-                    </div>
-                  </div>
-                  <div class="col-7 d-flex align-items-center">
-                    <img
-                      src="../../img/Banners/Sustainability.png"
-                      alt="retail"
-                      class="img-fluid"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0"
-              data-aos="fade-up"
-              data-aos-delay="200"
-              onclick="location.href='./training-and-development.html'"
-              style="cursor: pointer"
-            >
-              <div class="icon-box retail">
-                <div class="row d-flex">
-                  <div class="col-5 d-flex flex-column">
-                    <div class="col-12">
-                      <h4 class="title">
-                        <a href="./training-and-development.html"
-                          >Training & Development</a
-                        >
-                      </h4>
-                    </div>
-                    <div class="col-12">
-                      <span
-                        ><a href="./training-and-development.html"
-                          ><i class="bi bi-arrow-right"></i></a
-                      ></span>
-                    </div>
-                  </div>
-                  <div class="col-7 d-flex align-items-center">
-                    <img
-                      src="../../img/Banners/Training.png"
-                      alt="retail"
-                      class="img-fluid"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- End Services Section -->
-      <!-- 
+
+        <!-- row 2     -->
+        <div class="row mt-4 mb-4">
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0" data-aos="fade-up" data-aos-delay="100"
+            onclick="location.href='./design-thinking.html'" style="cursor: pointer">
+            <div class="icon-box retail">
+              <div class="row d-flex">
+                <div class="col-5 d-flex flex-column">
+                  <div class="col-12">
+                    <h4 class="title">
+                      <a href="./design-thinking.html">Design Thinking</a>
+                    </h4>
+                  </div>
+                  <div class="col-12">
+                    <span><a href="./design-thinking.html"><i class="bi bi-arrow-right"></i></a></span>
+                  </div>
+                </div>
+                <div class="col-7 d-flex align-items-center">
+                  <img src="../../img/Banners/Design Thinking.png" alt="retail" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0" data-aos="fade-up" data-aos-delay="100"
+            onclick="location.href='./digital-marketing.html'" style="cursor: pointer">
+            <div class="icon-box retail">
+              <div class="row d-flex">
+                <div class="col-5 d-flex flex-column">
+                  <div class="col-12">
+                    <h4 class="title">
+                      <a href="./digital-marketing.html">Digital Marketing</a>
+                    </h4>
+                  </div>
+                  <div class="col-12">
+                    <span><a href="./digital-marketing.html"><i class="bi bi-arrow-right"></i></a></span>
+                  </div>
+                </div>
+                <div class="col-7 d-flex align-items-center">
+                  <img src="../../img/Banners/Digital Marketing.png" alt="retail" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0" data-aos="fade-up" data-aos-delay="100"
+            onclick="location.href='./experience-design.html'" style="cursor: pointer">
+            <div class="icon-box retail">
+              <div class="row d-flex">
+                <div class="col-5 d-flex flex-column">
+                  <div class="col-12">
+                    <h4 class="title">
+                      <a href="./experience-design.html">Experience Design</a>
+                    </h4>
+                  </div>
+                  <div class="col-12">
+                    <span><a href="./experience-design.html"><i class="bi bi-arrow-right"></i></a></span>
+                  </div>
+                </div>
+                <div class="col-7 d-flex align-items-center">
+                  <img src="../../img/Banners/Experience Design.png" alt="retail" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0" data-aos="fade-up" data-aos-delay="150"
+            onclick="location.href='./financial-modelling.html'" style="cursor: pointer">
+            <div class="icon-box retail">
+              <div class="row d-flex">
+                <div class="col-5 d-flex flex-column">
+                  <div class="col-12">
+                    <h4 class="title">
+                      <a href="./financial-modelling.html">Financial Modelling</a>
+                    </h4>
+                  </div>
+                  <div class="col-12">
+                    <span><a href="./financial-modelling.html"><i class="bi bi-arrow-right"></i></a></span>
+                  </div>
+                </div>
+                <div class="col-7 d-flex align-items-center">
+                  <img src="../../img/Banners/Financial Modelling.png" alt="retail" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- row 3 -->
+        <div class="row mt-4 mb-4">
+
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0" data-aos="fade-up" data-aos-delay="50"
+            onclick="location.href='./investor-pitches.html'" style="cursor: pointer">
+            <div class="icon-box retail">
+              <div class="row d-flex">
+                <div class="col-5 d-flex flex-column">
+                  <div class="col-12">
+                    <h4 class="title">
+                      <a href="./investor-pitches.html">Investor Pitches</a>
+                    </h4>
+                  </div>
+                  <div class="col-12">
+                    <span><a href="./investor-pitches.html"><i class="bi bi-arrow-right"></i></a></span>
+                  </div>
+                </div>
+                <div class="col-7 d-flex align-items-center">
+                  <img src="../../img/Banners/Business PLan.png" alt="retail" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0" data-aos="fade-up" data-aos-delay="150"
+            onclick="location.href='./knowledge-and-asset-creation.html'" style="cursor: pointer">
+            <div class="icon-box retail">
+              <div class="row d-flex">
+                <div class="col-5 d-flex flex-column">
+                  <div class="col-12">
+                    <h4 class="title">
+                      <a href="./knowledge-and-asset-creation.html">Knowledge & Asset Creation</a>
+                    </h4>
+                  </div>
+                  <div class="col-12">
+                    <span><a href="./knowledge-and-asset-creation.html"><i class="bi bi-arrow-right"></i></a></span>
+                  </div>
+                </div>
+                <div class="col-7 d-flex align-items-center">
+                  <img src="../../img/Banners/Knowledge Assets.png" alt="retail" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0" data-aos="fade-up" data-aos-delay="150"
+            onclick="location.href='./market-intelligence.html'" style="cursor: pointer">
+            <div class="icon-box retail">
+              <div class="row d-flex">
+                <div class="col-5 d-flex flex-column">
+                  <div class="col-12">
+                    <h4 class="title">
+                      <a href="./market-intelligence.html">Market Intelligence</a>
+                    </h4>
+                  </div>
+                  <div class="col-12">
+                    <span><a href="./market-intelligence.html"><i class="bi bi-arrow-right"></i></a></span>
+                  </div>
+                </div>
+                <div class="col-7 d-flex align-items-center">
+                  <img src="../../img/Banners/Market Intelligence.png" alt="retail" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0" data-aos="fade-up" data-aos-delay="150"
+            onclick="location.href='./marketing-and-pricing.html'" style="cursor: pointer">
+            <div class="icon-box retail">
+              <div class="row d-flex">
+                <div class="col-5 d-flex flex-column">
+                  <div class="col-12">
+                    <h4 class="title">
+                      <a href="./marketing-and-pricing.html">Marketing & Price</a>
+                    </h4>
+                  </div>
+                  <div class="col-12">
+                    <span><a href="./marketing-and-pricing.html"><i class="bi bi-arrow-right"></i></a></span>
+                  </div>
+                </div>
+                <div class="col-7 d-flex align-items-center">
+                  <img src="../../img/Banners/Marketing and Pricing.png" alt="retail" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- row 4    -->
+
+        <div class="row mt-4 mb-4">
+          <div class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0" data-aos="fade-up" data-aos-delay="200"
+            onclick="location.href='./operations-planning.html'" style="cursor: pointer">
+            <div class="icon-box retail">
+              <div class="row d-flex">
+                <div class="col-5 d-flex flex-column">
+                  <div class="col-12">
+                    <h4 class="title">
+                      <a href="./operations-planning.html">Operations Planning</a>
+                    </h4>
+                  </div>
+                  <div class="col-12">
+                    <span><a href="./operations-planning.html"><i class="bi bi-arrow-right"></i></a></span>
+                  </div>
+                </div>
+                <div class="col-7 d-flex align-items-center">
+                  <img src="../../img/Banners/Operations Planning.png" alt="retail" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0" data-aos="fade-up" data-aos-delay="200"
+            onclick="location.href='./statistical-modelling.html'" style="cursor: pointer">
+            <div class="icon-box retail">
+              <div class="row d-flex">
+                <div class="col-5 d-flex flex-column">
+                  <div class="col-12">
+                    <h4 class="title">
+                      <a href="./statistical-modelling.html">Statistical Modelling</a>
+                    </h4>
+                  </div>
+                  <div class="col-12">
+                    <span><a href="./statistical-modelling.html"><i class="bi bi-arrow-right"></i></a></span>
+                  </div>
+                </div>
+                <div class="col-7 d-flex align-items-center">
+                  <img src="../../img/Banners/Mathematical Modelling.png" alt="retail" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0" data-aos="fade-up" data-aos-delay="200"
+            onclick="location.href='./sustainability-consulting.html'" style="cursor: pointer">
+            <div class="icon-box retail">
+              <div class="row d-flex">
+                <div class="col-5 d-flex flex-column">
+                  <div class="col-12">
+                    <h4 class="title">
+                      <a href="./sustainability-consulting.html">Sustainability Consulting</a>
+                    </h4>
+                  </div>
+                  <div class="col-12">
+                    <span><a href="./sustainability-consulting.html"><i class="bi bi-arrow-right"></i></a></span>
+                  </div>
+                </div>
+                <div class="col-7 d-flex align-items-center">
+                  <img src="../../img/Banners/Sustainability.png" alt="retail" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-center mb-lg-0" data-aos="fade-up" data-aos-delay="200"
+            onclick="location.href='./training-and-development.html'" style="cursor: pointer">
+            <div class="icon-box retail">
+              <div class="row d-flex">
+                <div class="col-5 d-flex flex-column">
+                  <div class="col-12">
+                    <h4 class="title">
+                      <a href="./training-and-development.html">Training & Development</a>
+                    </h4>
+                  </div>
+                  <div class="col-12">
+                    <span><a href="./training-and-development.html"><i class="bi bi-arrow-right"></i></a></span>
+                  </div>
+                </div>
+                <div class="col-7 d-flex align-items-center">
+                  <img src="../../img/Banners/Training.png" alt="retail" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- End Services Section -->
+    <!-- 
       <section class="inner-page">
         <div class="container">
           <p>Example inner page template</p>
         </div>
       </section> -->
-    </main>
-    <!-- End #main -->
+  </main>
+  <!-- End #main -->
 
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-      
-    </footer>
-    <!-- End Footer -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
 
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+  </footer>
+  <!-- End Footer -->
 
-    <!-- Vendor JS Files -->
-    <script src="../../vendor/aos/aos.js"></script>
-    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../../vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="../../vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="../../vendor/php-email-form/validate.js"></script>
-    <script src="../../vendor/swiper/swiper-bundle.min.js"></script>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
-    <!-- Template Main JS File -->
-    <script src="../../js/main.js"></script>
-    <script src="../../js/script.js"></script>
-  </body>
+  <!-- Vendor JS Files -->
+  <script src="../../vendor/aos/aos.js"></script>
+  <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../../vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../../vendor/php-email-form/validate.js"></script>
+  <script src="../../vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../../js/main.js"></script>
+  <script src="../../js/script.js"></script>
+</body>
+
 </html>

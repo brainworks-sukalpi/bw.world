@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Clients</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <!-- my links -->
-    <!-- <link
+  <title>Clients</title>
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
+
+  <!-- my links -->
+  <!-- <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
       rel="stylesheet"
     />
@@ -24,39 +25,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 
-    <!-- Favicons -->
-    <link href="../../../assets/img/favicon.png" rel="icon" />
-    <link
-      href="../../../assets/img/apple-touch-icon.png"
-      rel="apple-touch-icon"
-    />
+  <!-- Favicons -->
+  <link href="../../../assets/img/favicon.png" rel="icon" />
+  <link href="../../../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
-    />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
 
-    <!-- Vendor CSS Files -->
-    <link href="../../vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="../../vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="../../vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="../../vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link
-      href="../../vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="../../vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <!-- Vendor CSS Files -->
+  <link href="../../vendor/aos/aos.css" rel="stylesheet" />
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../../vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="../../vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="../../vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="../../vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-    <!-- Template Main CSS File -->
-    <link href="../../css/my-style.css" rel="stylesheet" />
-    <link href="../../css/style.css" rel="stylesheet" />
+  <!-- Template Main CSS File -->
+  <link href="../../css/my-style.css" rel="stylesheet" />
+  <link href="../../css/style.css" rel="stylesheet" />
 
   <!-- navbar-templating-->
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -71,180 +59,144 @@
       );
     });
   </script>
-    
 
-    <!--  new map-->
-    <!--LEAFLET-->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <!---->
-    <!-- <script type="text/javascript" src='../test-credentials.js'></script>     -->
-    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
-    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
-    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
-    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+
+  <!--  new map-->
+  <!--LEAFLET-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <!---->
+  <!-- <script type="text/javascript" src='../test-credentials.js'></script>     -->
+  <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+  <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+  <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+  <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
   <!-- <script>window.ENV_VARIABLE = 'developer.here.com'</script><script src='../iframeheight.js'></script> -->
-  </head>
+</head>
 
-  <body>
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top d-flex align-items-center">
-      <div class="container d-flex justify-content-between">
-        <div class="logo">
-          <a href="../../../index.html"
-            ><img
-              src="../../img/Logo/Logo-white.png"
-              alt="SBW"
-              class="img-fluid"
-          /></a>
-        </div>
-        <nav id="navbar" class="navbar">
-          <ul>
-            
-            <li class="dropdown twoColumn">
-              <a href="../industries/index.html"
-                ><span>Industries</span> <i class="bi bi-chevron-down"></i
-              ></a>
-              <ul>
-                <li><a href="../industries/consulting-and-research.html">Consulting & Research</a></li>
-                <li><a href="../industries/consumer-product.html">Consumer Products</a></li>
-                <li><a href="../industries/education-and-technology.html">Education & Training</a></li>
-                <li><a href="../industries/energy-and-natural-resources.html">Energy & Natural Resources</a></li>
-                <li><a href="../industries/financial-services.html">Financial Services</a></li>
-                <li><a href="../industries/healthcare.html">Healthcare</a></li>
-                <li><a href="../industries/human-resources.html">Human Resources</a></li>
-                <li><a href="../industries/manufacturing.html">Manufacturing</a></li>
-                <li><a href="../industries/media-and-entertainment.html">Media, Entertainment & Lifestyle</a></li>
-                <li><a href="../industries/public-and-social-sector.html">Public & Social Sector</a></li>
-                <li><a href="../industries/real-estate.html">Real Estate</a></li>
-                <li><a href="../industries/retail.html">Retail</a></li>
-                <li><a href="../industries/technology.html">Technology</a></li>
-                <li><a href="../industries/travel-and-tourism.html">Travel & Tourism</a></li>
-         </ul>
-            </li>
-            <li class="dropdown twoColumn">
-              <a  href="../capabilities/index.html"
-                ><span>Capabilities</span> <i class="bi bi-chevron-down"></i
-              ></a>
-
-              <!-- <li class="dropdown">
-              <a href="#"
-                ><span>Capabilities</span> <i class="bi bi-chevron-down"></i
-              ></a> -->
-              <ul>
-                <li>
-                  <a href="../capabilities/branding.html">Branding</a>
-                </li>
-
-                <li>
-                  <a href="../capabilities/bussiness-strategy.html">Bussiness Strategy</a>
-                </li>
-                <li>
-                  <a href="../capabilities/diversity-and-inclusion.html"
-                    >Diversity & Inclusion</a
-                  >
-                </li>
-                <li>
-                  <a href="../capabilities/data-science-and-analytics.html"
-                    >Data Science & Analytics</a
-                  >
-                </li>
-                <li><a href="../capabilities/design-thinking.html">Design Thinking</a></li>
-                <li>
-                  <a href="../capabilities/digital-marketing.html">Digital Marketing</a>
-                </li>
-                <li>
-                  <a href="../capabilities/experience-design.html">Experience Design</a>
-                </li>
-                <li>
-                  <a href="../capabilities/financial-modelling.html">Financial Modelling</a>
-                </li>
-                <li>
-                  <a href="../capabilities/investor-pitches.html">Investor Pitches</a>
-                </li>
-                <li>
-                  <a href="../capabilities/knowledge-and-asset-creation.html"
-                    >Knowledge & Asset Creation</a
-                  >
-                </li>
-                <li>
-                  <a href="../capabilities/market-research-and-intelligence.html"
-                    >Market Research & Intelligence</a
-                  >
-                </li>
-                <li>
-                  <a href="../capabilities/marketing-and-pricing.html">Marketing & Pricing</a>
-                </li>
-                <li>
-                  <a href="../capabilities/mathematical-and-statistical-modelling.html"
-                    >Mathematical & Statistical Modelling</a
-                  >
-                </li>
-                <li>
-                  <a href="../capabilities/operations-planning.html">Operations Planning</a>
-                </li>
-
-                <li>
-                  <a href="../capabilities/sustainability-consulting.html"
-                    >Sustainability Consulting</a
-                  >
-                </li>
-                <li>
-                  <a href="../capabilities/training-and-development.html"
-                    >Training & Development</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li><a class="nav-link scrollto" href="../insights/index.html">Insights</a></li>
-            <li class="dropdown">
-              <a class="active" href="../clients/index.html"
-                ><span>Clients</span> <i class="bi bi-chevron-down"></i
-              ></a>
-              <ul>
-                <li><a href="#engagements">Engagements</a></li>
-                <li><a href="#impact__stories">Impact Stories</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="../about/index.html"
-                ><span>About</span> <i class="bi bi-chevron-down"></i
-              ></a>
-              <ul>
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#process">Process</a></li>
-                <li><a href="#people">People</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#"
-                ><span>Careers</span> <i class="bi bi-chevron-down"></i
-              ></a>
-              <ul>
-                <li><a href="#">WorkWithUs @ Brainworks</a></li>
-                <li><a href="#">People @ Brainworks</a></li>
-                <li><a href="#">Selection Process</a></li>
-                <li><a href="#">For Campus</a></li>
-                <li><a href="#">For Professionals</a></li>
-              </ul>
-            </li>
-            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-            <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li>
-            <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-            <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-       
-        <!-- .navbar -->
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+      <div class="logo">
+        <a href="../../../index.html"><img src="../../img/Logo/Logo-white.png" alt="SBW" class="img-fluid" /></a>
       </div>
-    </header>
-    <!-- End Header -->
+      <nav id="navbar" class="navbar">
+        <ul>
 
-    <main id="main">
-      <!-- ======= Breadcrumbs Section ======= -->
-      <!-- <section class="breadcrumbs">
+          <li class="dropdown twoColumn">
+            <a href="../industries/index.html"><span>Industries</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../industries/consulting-and-research.html">Consulting & Research</a></li>
+              <li><a href="../industries/consumer-product.html">Consumer Products</a></li>
+              <li><a href="../industries/education-and-technology.html">Education & Training</a></li>
+              <li><a href="../industries/energy-and-natural-resources.html">Energy & Natural Resources</a></li>
+              <li><a href="../industries/financial-services.html">Financial Services</a></li>
+              <li><a href="../industries/healthcare.html">Healthcare</a></li>
+              <li><a href="../industries/human-resources.html">Human Resources</a></li>
+              <li><a href="../industries/manufacturing.html">Manufacturing</a></li>
+              <li><a href="../industries/media-and-entertainment.html">Media, Entertainment & Lifestyle</a></li>
+              <li><a href="../industries/public-and-social-sector.html">Public & Social Sector</a></li>
+              <li><a href="../industries/real-estate.html">Real Estate</a></li>
+              <li><a href="../industries/retail.html">Retail</a></li>
+              <li><a href="../industries/technology.html">Technology</a></li>
+              <li><a href="../industries/travel-and-tourism.html">Travel & Tourism</a></li>
+            </ul>
+          </li>
+          <li class="dropdown twoColumn">
+            <a href="../capabilities/index.html"><span>Capabilities</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li>
+                <a href="../capabilities/branding.html">Branding</a>
+              </li>
+
+              <li>
+                <a href="../capabilities/bussiness-strategy.html">Bussiness Strategy</a>
+              </li>
+              <li>
+                <a href="../capabilities/diversity-and-inclusion.html">Diversity & Inclusion</a>
+              </li>
+              <li>
+                <a href="../capabilities/data-science-and-analytics.html">Data Science & Analytics</a>
+              </li>
+              <li><a href="../capabilities/design-thinking.html">Design Thinking</a></li>
+              <li>
+                <a href="../capabilities/digital-marketing.html">Digital Marketing</a>
+              </li>
+              <li>
+                <a href="../capabilities/experience-design.html">Experience Design</a>
+              </li>
+              <li>
+                <a href="../capabilities/financial-modelling.html">Financial Modelling</a>
+              </li>
+              <li>
+                <a href="../capabilities/investor-pitches.html">Investor Pitches</a>
+              </li>
+              <li>
+                <a href="../capabilities/knowledge-and-asset-creation.html">Knowledge & Asset Creation</a>
+              </li>
+              <li>
+                <a href="../capabilities/market-research-and-intelligence.html">Market Research & Intelligence</a>
+              </li>
+              <li>
+                <a href="../capabilities/marketing-and-pricing.html">Marketing & Pricing</a>
+              </li>
+              <li>
+                <a href="../capabilities/mathematical-and-statistical-modelling.html">Mathematical & Statistical
+                  Modelling</a>
+              </li>
+              <li>
+                <a href="../capabilities/operations-planning.html">Operations Planning</a>
+              </li>
+
+              <li>
+                <a href="../capabilities/sustainability-consulting.html">Sustainability Consulting</a>
+              </li>
+              <li>
+                <a href="../capabilities/training-and-development.html">Training & Development</a>
+              </li>
+            </ul>
+          </li>
+          <li><a class="nav-link" href="../insights/index.html">Insights</a></li>
+          <li class="dropdown">
+            <a class="active" href="../clients/index.html"><span>Clients</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#engagements">Engagements</a></li>
+              <li><a href="#impact__stories">Impact Stories</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="../about/index.html"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../about/index.html">Overview</a></li>
+              <li><a href="../about/index.html">Process</a></li>
+              <li><a href="../about/index.html">People</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="../career/index.html"><span>Careers</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../career/index.html">WorkWithUs @ Brainworks</a></li>
+              <li><a href="../career/index.html">People @ Brainworks</a></li>
+              <li><a href="../career/index.html">Selection Process</a></li>
+              <li><a href="../career/index.html">For Campus</a></li>
+              <li><a href="../career/index.html">For Professionals</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="../contact/contact.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+      <!-- .navbar -->
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <main id="main">
+    <!-- ======= Breadcrumbs Section ======= -->
+    <!-- <section class="breadcrumbs">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
             <h2>Clients</h2>
@@ -255,472 +207,466 @@
           </div>
         </div>
       </section> -->
-      <!-- End Breadcrumbs Section -->
+    <!-- End Breadcrumbs Section -->
 
-      <!-- ======= Services Section ======= -->
-      <section id="engagements" class="testimonials section-bg mt-5">
-        <div class="container mt-3 mb-5">
-          <div class="section-title mb-4" data-aos="fade-up">
-            <h2>Engagements</h2>
-            <!-- <p>
+    <!-- ======= Services Section ======= -->
+    <section id="engagements" class="testimonials section-bg mt-5">
+      <div class="container mt-3 mb-5">
+        <div class="section-title mb-4" data-aos="fade-up">
+          <h2>Engagements</h2>
+          <!-- <p>
               Magnam dolores commodi suscipit. Necessitatibus eius consequatur
               ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
               quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
               Quia fugiat sit in iste officiis commodi quidem hic quas.
             </p> -->
-          </div>
-          <!--mob test-->
-          <div
-          class="engagements-mob-slider swiper-container emgagement__mob__container"
-          data-aos="fade-up"
-          data-aos-delay="100"
-          >
+        </div>
+        <!--mob test-->
+        <div class="engagements-mob-slider swiper-container emgagement__mob__container" data-aos="fade-up"
+          data-aos-delay="100">
           <div id="engagement__wrapper" class="swiper-wrapper">
-           
-            <div class="swiper-slide engagements__slide" role="group"   data-swiper-slide-index="1">
+
+            <div class="swiper-slide engagements__slide" role="group" data-swiper-slide-index="1">
               <div class="engagements__slide__img">
                 <img src="../../../assets/img/clientLogos/Client_Logo_1.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="10 / 20"  data-swiper-slide-index="2">
+              <div class="engagements__slide__img" role="group" aria-label="10 / 20" data-swiper-slide-index="2">
                 <img src="../../../assets/img/clientLogos/Client_Logo_2.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="11 / 20"  data-swiper-slide-index="3">
+              <div class="engagements__slide__img" role="group" aria-label="11 / 20" data-swiper-slide-index="3">
                 <img src="../../../assets/img/clientLogos/Client_Logo_3.jpeg" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="12 / 20"  data-swiper-slide-index="4">
+              <div class="engagements__slide__img" role="group" aria-label="12 / 20" data-swiper-slide-index="4">
                 <img src="../../../assets/img/clientLogos/Client_Logo_4.png" class="img-fluid" alt="">
               </div>
-              
+
             </div>
 
-            <div class="swiper-slide engagements__slide" role="group"   data-swiper-slide-index="1">
-              <div class="engagements__slide__img" role="group" aria-label="13 / 20"  data-swiper-slide-index="5">
+            <div class="swiper-slide engagements__slide" role="group" data-swiper-slide-index="1">
+              <div class="engagements__slide__img" role="group" aria-label="13 / 20" data-swiper-slide-index="5">
                 <img src="../../../assets/img/clientLogos/Client_Logo_5.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="14 / 20"  data-swiper-slide-index="6">
+              <div class="engagements__slide__img" role="group" aria-label="14 / 20" data-swiper-slide-index="6">
                 <img src="../../../assets/img/clientLogos/Client_Logo_6.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group"   data-swiper-slide-index="1">
+              <div class="engagements__slide__img" role="group" data-swiper-slide-index="1">
                 <img src="../../../assets/img/clientLogos/Client_Logo_7.jpg" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="10 / 20"  data-swiper-slide-index="2">
+              <div class="engagements__slide__img" role="group" aria-label="10 / 20" data-swiper-slide-index="2">
                 <img src="../../../assets/img/clientLogos/Client_Logo_8.jpeg" class="img-fluid" alt="">
               </div>
-              
+
             </div>
-            <div class="swiper-slide engagements__slide" role="group"   data-swiper-slide-index="1">
-              <div class="engagements__slide__img" role="group" aria-label="11 / 20"  data-swiper-slide-index="3">
+            <div class="swiper-slide engagements__slide" role="group" data-swiper-slide-index="1">
+              <div class="engagements__slide__img" role="group" aria-label="11 / 20" data-swiper-slide-index="3">
                 <img src="../../../assets/img/clientLogos/Client_Logo_9.jpeg" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="12 / 20"  data-swiper-slide-index="4">
+              <div class="engagements__slide__img" role="group" aria-label="12 / 20" data-swiper-slide-index="4">
                 <img src="../../../assets/img/clientLogos/Client_Logo_10.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="13 / 20"  data-swiper-slide-index="5">
+              <div class="engagements__slide__img" role="group" aria-label="13 / 20" data-swiper-slide-index="5">
                 <img src="../../../assets/img/clientLogos/Client_Logo_11.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group"   data-swiper-slide-index="1">
+              <div class="engagements__slide__img" role="group" data-swiper-slide-index="1">
                 <img src="../../../assets/img/clientLogos/Client_Logo_12.png" class="img-fluid" alt="">
               </div>
-              
+
             </div>
-            <div class="swiper-slide engagements__slide" role="group"   data-swiper-slide-index="1">
-              <div class="engagements__slide__img" role="group" aria-label="10 / 20"  data-swiper-slide-index="2">
+            <div class="swiper-slide engagements__slide" role="group" data-swiper-slide-index="1">
+              <div class="engagements__slide__img" role="group" aria-label="10 / 20" data-swiper-slide-index="2">
                 <img src="../../../assets/img/clientLogos/Client_Logo_13.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="11 / 20"  data-swiper-slide-index="3">
+              <div class="engagements__slide__img" role="group" aria-label="11 / 20" data-swiper-slide-index="3">
                 <img src="../../../assets/img/clientLogos/Client_Logo_14.jpeg" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="12 / 20"  data-swiper-slide-index="4">
+              <div class="engagements__slide__img" role="group" aria-label="12 / 20" data-swiper-slide-index="4">
                 <img src="../../../assets/img/clientLogos/Client_Logo_15.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="13 / 20"  data-swiper-slide-index="5">
+              <div class="engagements__slide__img" role="group" aria-label="13 / 20" data-swiper-slide-index="5">
                 <img src="../../../assets/img/clientLogos/Client_Logo_16.png" class="img-fluid" alt="">
               </div>
             </div>
-            <div class="swiper-slide engagements__slide" role="group"   data-swiper-slide-index="1">
-              <div class="engagements__slide__img" role="group"   data-swiper-slide-index="1">
+            <div class="swiper-slide engagements__slide" role="group" data-swiper-slide-index="1">
+              <div class="engagements__slide__img" role="group" data-swiper-slide-index="1">
                 <img src="../../../assets/img/clientLogos/Client_Logo_17.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="10 / 20"  data-swiper-slide-index="2">
+              <div class="engagements__slide__img" role="group" aria-label="10 / 20" data-swiper-slide-index="2">
                 <img src="../../../assets/img/clientLogos/Client_Logo_18.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="11 / 20"  data-swiper-slide-index="3">
+              <div class="engagements__slide__img" role="group" aria-label="11 / 20" data-swiper-slide-index="3">
                 <img src="../../../assets/img/clientLogos/Client_Logo_19.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="12 / 20"  data-swiper-slide-index="4">
+              <div class="engagements__slide__img" role="group" aria-label="12 / 20" data-swiper-slide-index="4">
                 <img src="../../../assets/img/clientLogos/Client_Logo_20.png" class="img-fluid" alt="">
               </div>
-              
+
             </div>
-            <div class="swiper-slide engagements__slide" role="group"   data-swiper-slide-index="1">
-              <div class="engagements__slide__img" role="group" aria-label="13 / 20"  data-swiper-slide-index="5">
+            <div class="swiper-slide engagements__slide" role="group" data-swiper-slide-index="1">
+              <div class="engagements__slide__img" role="group" aria-label="13 / 20" data-swiper-slide-index="5">
                 <img src="../../../assets/img/clientLogos/Client_Logo_21.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group"   data-swiper-slide-index="1">
+              <div class="engagements__slide__img" role="group" data-swiper-slide-index="1">
                 <img src="../../../assets/img/clientLogos/Client_Logo_22.jpeg" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="10 / 20"  data-swiper-slide-index="2">
+              <div class="engagements__slide__img" role="group" aria-label="10 / 20" data-swiper-slide-index="2">
                 <img src="../../../assets/img/clientLogos/Client_Logo_23.jpeg" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="11 / 20"  data-swiper-slide-index="3">
+              <div class="engagements__slide__img" role="group" aria-label="11 / 20" data-swiper-slide-index="3">
                 <img src="../../../assets/img/clientLogos/Client_Logo_24.png" class="img-fluid" alt="">
               </div>
-              
+
             </div>
-            <div class="swiper-slide engagements__slide" role="group"   data-swiper-slide-index="1">
-            
-              <div class="engagements__slide__img" role="group" aria-label="12 / 20"  data-swiper-slide-index="4">
+            <div class="swiper-slide engagements__slide" role="group" data-swiper-slide-index="1">
+
+              <div class="engagements__slide__img" role="group" aria-label="12 / 20" data-swiper-slide-index="4">
                 <img src="../../../assets/img/clientLogos/Client_Logo_25.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="13 / 20"  data-swiper-slide-index="5">
+              <div class="engagements__slide__img" role="group" aria-label="13 / 20" data-swiper-slide-index="5">
                 <img src="../../../assets/img/clientLogos/Client_Logo_26.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group"   data-swiper-slide-index="1">
+              <div class="engagements__slide__img" role="group" data-swiper-slide-index="1">
                 <img src="../../../assets/img/clientLogos/Client_Logo_27.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="10 / 20"  data-swiper-slide-index="2">
+              <div class="engagements__slide__img" role="group" aria-label="10 / 20" data-swiper-slide-index="2">
                 <img src="../../../assets/img/clientLogos/Client_Logo_28.jpeg" class="img-fluid" alt="">
               </div>
             </div>
-            <div class="swiper-slide engagements__slide" role="group"   data-swiper-slide-index="1">
-              <div class="engagements__slide__img" role="group" aria-label="11 / 20"  data-swiper-slide-index="3">
+            <div class="swiper-slide engagements__slide" role="group" data-swiper-slide-index="1">
+              <div class="engagements__slide__img" role="group" aria-label="11 / 20" data-swiper-slide-index="3">
                 <img src="../../../assets/img/clientLogos/Client_Logo_29.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="12 / 20"  data-swiper-slide-index="4">
+              <div class="engagements__slide__img" role="group" aria-label="12 / 20" data-swiper-slide-index="4">
                 <img src="../../../assets/img/clientLogos/Client_Logo_30.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="13 / 20"  data-swiper-slide-index="5">
+              <div class="engagements__slide__img" role="group" aria-label="13 / 20" data-swiper-slide-index="5">
                 <img src="../../../assets/img/clientLogos/Client_Logo_31.jpeg" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group"   data-swiper-slide-index="1">
+              <div class="engagements__slide__img" role="group" data-swiper-slide-index="1">
                 <img src="../../../assets/img/clientLogos/Client_Logo_32.png" class="img-fluid" alt="">
               </div>
-              
+
             </div>
-            <div class="swiper-slide engagements__slide" role="group"   data-swiper-slide-index="1">
-              <div class="engagements__slide__img" role="group" aria-label="10 / 20"  data-swiper-slide-index="2">
+            <div class="swiper-slide engagements__slide" role="group" data-swiper-slide-index="1">
+              <div class="engagements__slide__img" role="group" aria-label="10 / 20" data-swiper-slide-index="2">
                 <img src="../../../assets/img/clientLogos/Client_Logo_33.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="11 / 20"  data-swiper-slide-index="3">
+              <div class="engagements__slide__img" role="group" aria-label="11 / 20" data-swiper-slide-index="3">
                 <img src="../../../assets/img/clientLogos/Client_Logo_34.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="12 / 20"  data-swiper-slide-index="4">
+              <div class="engagements__slide__img" role="group" aria-label="12 / 20" data-swiper-slide-index="4">
                 <img src="../../../assets/img/clientLogos/Client_Logo_35.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="13 / 20"  data-swiper-slide-index="5">
+              <div class="engagements__slide__img" role="group" aria-label="13 / 20" data-swiper-slide-index="5">
                 <img src="../../../assets/img/clientLogos/Client_Logo_36.png" class="img-fluid" alt="">
               </div>
             </div>
-            <div class="swiper-slide engagements__slide" role="group"   data-swiper-slide-index="1">
-            
-              <div class="engagements__slide__img" role="group"   data-swiper-slide-index="1">
+            <div class="swiper-slide engagements__slide" role="group" data-swiper-slide-index="1">
+
+              <div class="engagements__slide__img" role="group" data-swiper-slide-index="1">
                 <img src="../../../assets/img/clientLogos/Client_Logo_37.jpeg" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="10 / 20"  data-swiper-slide-index="2">
+              <div class="engagements__slide__img" role="group" aria-label="10 / 20" data-swiper-slide-index="2">
                 <img src="../../../assets/img/clientLogos/Client_Logo_38.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="11 / 20"  data-swiper-slide-index="3">
+              <div class="engagements__slide__img" role="group" aria-label="11 / 20" data-swiper-slide-index="3">
                 <img src="../../../assets/img/clientLogos/Client_Logo_39.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="12 / 20"  data-swiper-slide-index="4">
+              <div class="engagements__slide__img" role="group" aria-label="12 / 20" data-swiper-slide-index="4">
                 <img src="../../../assets/img/clientLogos/Client_Logo_40.png" class="img-fluid" alt="">
               </div>
             </div>
-            <div class="swiper-slide engagements__slide" role="group"   data-swiper-slide-index="1">
-              <div class="engagements__slide__img" role="group" aria-label="13 / 20"  data-swiper-slide-index="5">
+            <div class="swiper-slide engagements__slide" role="group" data-swiper-slide-index="1">
+              <div class="engagements__slide__img" role="group" aria-label="13 / 20" data-swiper-slide-index="5">
                 <img src="../../../assets/img/clientLogos/Client_Logo_41.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group"   data-swiper-slide-index="1">
+              <div class="engagements__slide__img" role="group" data-swiper-slide-index="1">
                 <img src="../../../assets/img/clientLogos/Client_Logo_42.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="10 / 20"  data-swiper-slide-index="2">
+              <div class="engagements__slide__img" role="group" aria-label="10 / 20" data-swiper-slide-index="2">
                 <img src="../../../assets/img/clientLogos/Client_Logo_43.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="11 / 20"  data-swiper-slide-index="3">
+              <div class="engagements__slide__img" role="group" aria-label="11 / 20" data-swiper-slide-index="3">
                 <img src="../../../assets/img/clientLogos/Client_Logo_44.jpeg" class="img-fluid" alt="">
               </div>
-              
+
             </div>
-            <div class="swiper-slide engagements__slide" role="group"   data-swiper-slide-index="1">
-              <div class="engagements__slide__img" role="group" aria-label="12 / 20"  data-swiper-slide-index="4">
+            <div class="swiper-slide engagements__slide" role="group" data-swiper-slide-index="1">
+              <div class="engagements__slide__img" role="group" aria-label="12 / 20" data-swiper-slide-index="4">
                 <img src="../../../assets/img/clientLogos/Client_Logo_45.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="13 / 20"  data-swiper-slide-index="5">
+              <div class="engagements__slide__img" role="group" aria-label="13 / 20" data-swiper-slide-index="5">
                 <img src="../../../assets/img/clientLogos/Client_Logo_46.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group"   data-swiper-slide-index="1">
+              <div class="engagements__slide__img" role="group" data-swiper-slide-index="1">
                 <img src="../../../assets/img/clientLogos/Client_Logo_47.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="10 / 20"  data-swiper-slide-index="2">
+              <div class="engagements__slide__img" role="group" aria-label="10 / 20" data-swiper-slide-index="2">
                 <img src="../../../assets/img/clientLogos/Client_Logo_48.png" class="img-fluid" alt="">
               </div>
-              
+
             </div>
-            <div class="swiper-slide engagements__slide" role="group"   data-swiper-slide-index="1">
-              <div class="engagements__slide__img" role="group" aria-label="11 / 20"  data-swiper-slide-index="3">
+            <div class="swiper-slide engagements__slide" role="group" data-swiper-slide-index="1">
+              <div class="engagements__slide__img" role="group" aria-label="11 / 20" data-swiper-slide-index="3">
                 <img src="../../../assets/img/clientLogos/Client_Logo_49.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="12 / 20"  data-swiper-slide-index="4">
+              <div class="engagements__slide__img" role="group" aria-label="12 / 20" data-swiper-slide-index="4">
                 <img src="../../../assets/img/clientLogos/Client_Logo_50.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="13 / 20"  data-swiper-slide-index="5">
+              <div class="engagements__slide__img" role="group" aria-label="13 / 20" data-swiper-slide-index="5">
                 <img src="../../../assets/img/clientLogos/Client_Logo_51.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group"   data-swiper-slide-index="1">
+              <div class="engagements__slide__img" role="group" data-swiper-slide-index="1">
                 <img src="../../../assets/img/clientLogos/Client_Logo_52.png" class="img-fluid" alt="">
               </div>
-            
+
             </div>
-            
-            <div class="swiper-slide engagements__slide" role="group"   data-swiper-slide-index="1">
-              <div class="engagements__slide__img" role="group" aria-label="10 / 20"  data-swiper-slide-index="2">
+
+            <div class="swiper-slide engagements__slide" role="group" data-swiper-slide-index="1">
+              <div class="engagements__slide__img" role="group" aria-label="10 / 20" data-swiper-slide-index="2">
                 <img src="../../../assets/img/clientLogos/Client_Logo_53.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="11 / 20"  data-swiper-slide-index="3">
+              <div class="engagements__slide__img" role="group" aria-label="11 / 20" data-swiper-slide-index="3">
                 <img src="../../../assets/img/clientLogos/Client_Logo_54.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="12 / 20"  data-swiper-slide-index="4">
+              <div class="engagements__slide__img" role="group" aria-label="12 / 20" data-swiper-slide-index="4">
                 <img src="../../../assets/img/clientLogos/Client_Logo_55.png" class="img-fluid" alt="">
-              </div> 
+              </div>
             </div>
-            
-         </div>
-            <div class="swiper-mob-pagination"></div>
-         </div>
-         
-          <!---->
-          <div
-            class="engagements-web-slider swiper-container emgagement__web__container"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div id="engagement__wrapper" class="swiper-wrapper">
-             
-              <div class="swiper-slide engagements__slide" role="group"   data-swiper-slide-index="1">
-                <div class="engagements__slide__img">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_1.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="10 / 20"  data-swiper-slide-index="2">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_2.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="11 / 20"  data-swiper-slide-index="3">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_3.jpeg" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="12 / 20"  data-swiper-slide-index="4">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_4.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="13 / 20"  data-swiper-slide-index="5">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_5.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="14 / 20"  data-swiper-slide-index="6">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_6.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group"   data-swiper-slide-index="1">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_7.jpg" class="img-fluid" alt="">
-                </div>
-                
+
+          </div>
+          <div class="swiper-mob-pagination"></div>
+        </div>
+
+        <!---->
+        <div class="engagements-web-slider swiper-container emgagement__web__container" data-aos="fade-up"
+          data-aos-delay="100">
+          <div id="engagement__wrapper" class="swiper-wrapper">
+
+            <div class="swiper-slide engagements__slide" role="group" data-swiper-slide-index="1">
+              <div class="engagements__slide__img">
+                <img src="../../../assets/img/clientLogos/Client_Logo_1.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="10 / 20" data-swiper-slide-index="2">
+                <img src="../../../assets/img/clientLogos/Client_Logo_2.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="11 / 20" data-swiper-slide-index="3">
+                <img src="../../../assets/img/clientLogos/Client_Logo_3.jpeg" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="12 / 20" data-swiper-slide-index="4">
+                <img src="../../../assets/img/clientLogos/Client_Logo_4.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="13 / 20" data-swiper-slide-index="5">
+                <img src="../../../assets/img/clientLogos/Client_Logo_5.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="14 / 20" data-swiper-slide-index="6">
+                <img src="../../../assets/img/clientLogos/Client_Logo_6.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" data-swiper-slide-index="1">
+                <img src="../../../assets/img/clientLogos/Client_Logo_7.jpg" class="img-fluid" alt="">
               </div>
 
+            </div>
 
-              
 
-              <div class="swiper-slide engagements__slide" role="group"   data-swiper-slide-index="1">
-               
-                <div class="engagements__slide__img" role="group" aria-label="10 / 20"  data-swiper-slide-index="2">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_8.jpeg" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="11 / 20"  data-swiper-slide-index="3">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_9.jpeg" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="12 / 20"  data-swiper-slide-index="4">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_10.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="13 / 20"  data-swiper-slide-index="5">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_11.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group"   data-swiper-slide-index="1">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_12.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="10 / 20"  data-swiper-slide-index="2">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_13.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="11 / 20"  data-swiper-slide-index="3">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_14.jpeg" class="img-fluid" alt="">
-                </div>
+
+
+            <div class="swiper-slide engagements__slide" role="group" data-swiper-slide-index="1">
+
+              <div class="engagements__slide__img" role="group" aria-label="10 / 20" data-swiper-slide-index="2">
+                <img src="../../../assets/img/clientLogos/Client_Logo_8.jpeg" class="img-fluid" alt="">
               </div>
-
-
-              <div class="swiper-slide engagements__slide" role="group"   data-swiper-slide-index="1">
-                
-                <div class="engagements__slide__img" role="group" aria-label="12 / 20"  data-swiper-slide-index="4">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_15.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="13 / 20"  data-swiper-slide-index="5">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_16.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group"   data-swiper-slide-index="1">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_17.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="10 / 20"  data-swiper-slide-index="2">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_18.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="11 / 20"  data-swiper-slide-index="3">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_19.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="12 / 20"  data-swiper-slide-index="4">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_20.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="13 / 20"  data-swiper-slide-index="5">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_21.png" class="img-fluid" alt="">
-                </div>
+              <div class="engagements__slide__img" role="group" aria-label="11 / 20" data-swiper-slide-index="3">
+                <img src="../../../assets/img/clientLogos/Client_Logo_9.jpeg" class="img-fluid" alt="">
               </div>
-
-
-
-
-              <div class="swiper-slide engagements__slide" role="group"   data-swiper-slide-index="1">
-                <div class="engagements__slide__img" role="group"   data-swiper-slide-index="1">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_22.jpeg" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="10 / 20"  data-swiper-slide-index="2">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_23.jpeg" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="11 / 20"  data-swiper-slide-index="3">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_24.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="12 / 20"  data-swiper-slide-index="4">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_25.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="13 / 20"  data-swiper-slide-index="5">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_26.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group"   data-swiper-slide-index="1">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_27.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="10 / 20"  data-swiper-slide-index="2">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_28.jpeg" class="img-fluid" alt="">
-                </div>
+              <div class="engagements__slide__img" role="group" aria-label="12 / 20" data-swiper-slide-index="4">
+                <img src="../../../assets/img/clientLogos/Client_Logo_10.png" class="img-fluid" alt="">
               </div>
-
-              <div class="swiper-slide engagements__slide" role="group"   data-swiper-slide-index="1">
-               
-                <div class="engagements__slide__img" role="group" aria-label="11 / 20"  data-swiper-slide-index="3">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_29.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="12 / 20"  data-swiper-slide-index="4">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_30.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="13 / 20"  data-swiper-slide-index="5">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_31.jpeg" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group"   data-swiper-slide-index="1">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_32.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="10 / 20"  data-swiper-slide-index="2">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_33.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="11 / 20"  data-swiper-slide-index="3">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_34.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="12 / 20"  data-swiper-slide-index="4">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_35.png" class="img-fluid" alt="">
-                </div>
+              <div class="engagements__slide__img" role="group" aria-label="13 / 20" data-swiper-slide-index="5">
+                <img src="../../../assets/img/clientLogos/Client_Logo_11.png" class="img-fluid" alt="">
               </div>
-            
-
-              <div class="swiper-slide engagements__slide" role="group"   data-swiper-slide-index="1">
-               
-                <div class="engagements__slide__img" role="group" aria-label="13 / 20"  data-swiper-slide-index="5">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_36.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group"   data-swiper-slide-index="1">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_37.jpeg" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="10 / 20"  data-swiper-slide-index="2">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_38.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="11 / 20"  data-swiper-slide-index="3">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_39.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="12 / 20"  data-swiper-slide-index="4">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_40.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="13 / 20"  data-swiper-slide-index="5">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_41.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group"   data-swiper-slide-index="1">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_42.png" class="img-fluid" alt="">
-                </div>
+              <div class="engagements__slide__img" role="group" data-swiper-slide-index="1">
+                <img src="../../../assets/img/clientLogos/Client_Logo_12.png" class="img-fluid" alt="">
               </div>
+              <div class="engagements__slide__img" role="group" aria-label="10 / 20" data-swiper-slide-index="2">
+                <img src="../../../assets/img/clientLogos/Client_Logo_13.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="11 / 20" data-swiper-slide-index="3">
+                <img src="../../../assets/img/clientLogos/Client_Logo_14.jpeg" class="img-fluid" alt="">
+              </div>
+            </div>
+
+
+            <div class="swiper-slide engagements__slide" role="group" data-swiper-slide-index="1">
+
+              <div class="engagements__slide__img" role="group" aria-label="12 / 20" data-swiper-slide-index="4">
+                <img src="../../../assets/img/clientLogos/Client_Logo_15.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="13 / 20" data-swiper-slide-index="5">
+                <img src="../../../assets/img/clientLogos/Client_Logo_16.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" data-swiper-slide-index="1">
+                <img src="../../../assets/img/clientLogos/Client_Logo_17.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="10 / 20" data-swiper-slide-index="2">
+                <img src="../../../assets/img/clientLogos/Client_Logo_18.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="11 / 20" data-swiper-slide-index="3">
+                <img src="../../../assets/img/clientLogos/Client_Logo_19.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="12 / 20" data-swiper-slide-index="4">
+                <img src="../../../assets/img/clientLogos/Client_Logo_20.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="13 / 20" data-swiper-slide-index="5">
+                <img src="../../../assets/img/clientLogos/Client_Logo_21.png" class="img-fluid" alt="">
+              </div>
+            </div>
 
 
 
-              <div class="swiper-slide engagements__slide" role="group"   data-swiper-slide-index="1">
-                
-              
-              <div class="engagements__slide__img" role="group" aria-label="10 / 20"  data-swiper-slide-index="2">
+
+            <div class="swiper-slide engagements__slide" role="group" data-swiper-slide-index="1">
+              <div class="engagements__slide__img" role="group" data-swiper-slide-index="1">
+                <img src="../../../assets/img/clientLogos/Client_Logo_22.jpeg" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="10 / 20" data-swiper-slide-index="2">
+                <img src="../../../assets/img/clientLogos/Client_Logo_23.jpeg" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="11 / 20" data-swiper-slide-index="3">
+                <img src="../../../assets/img/clientLogos/Client_Logo_24.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="12 / 20" data-swiper-slide-index="4">
+                <img src="../../../assets/img/clientLogos/Client_Logo_25.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="13 / 20" data-swiper-slide-index="5">
+                <img src="../../../assets/img/clientLogos/Client_Logo_26.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" data-swiper-slide-index="1">
+                <img src="../../../assets/img/clientLogos/Client_Logo_27.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="10 / 20" data-swiper-slide-index="2">
+                <img src="../../../assets/img/clientLogos/Client_Logo_28.jpeg" class="img-fluid" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide engagements__slide" role="group" data-swiper-slide-index="1">
+
+              <div class="engagements__slide__img" role="group" aria-label="11 / 20" data-swiper-slide-index="3">
+                <img src="../../../assets/img/clientLogos/Client_Logo_29.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="12 / 20" data-swiper-slide-index="4">
+                <img src="../../../assets/img/clientLogos/Client_Logo_30.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="13 / 20" data-swiper-slide-index="5">
+                <img src="../../../assets/img/clientLogos/Client_Logo_31.jpeg" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" data-swiper-slide-index="1">
+                <img src="../../../assets/img/clientLogos/Client_Logo_32.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="10 / 20" data-swiper-slide-index="2">
+                <img src="../../../assets/img/clientLogos/Client_Logo_33.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="11 / 20" data-swiper-slide-index="3">
+                <img src="../../../assets/img/clientLogos/Client_Logo_34.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="12 / 20" data-swiper-slide-index="4">
+                <img src="../../../assets/img/clientLogos/Client_Logo_35.png" class="img-fluid" alt="">
+              </div>
+            </div>
+
+
+            <div class="swiper-slide engagements__slide" role="group" data-swiper-slide-index="1">
+
+              <div class="engagements__slide__img" role="group" aria-label="13 / 20" data-swiper-slide-index="5">
+                <img src="../../../assets/img/clientLogos/Client_Logo_36.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" data-swiper-slide-index="1">
+                <img src="../../../assets/img/clientLogos/Client_Logo_37.jpeg" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="10 / 20" data-swiper-slide-index="2">
+                <img src="../../../assets/img/clientLogos/Client_Logo_38.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="11 / 20" data-swiper-slide-index="3">
+                <img src="../../../assets/img/clientLogos/Client_Logo_39.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="12 / 20" data-swiper-slide-index="4">
+                <img src="../../../assets/img/clientLogos/Client_Logo_40.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="13 / 20" data-swiper-slide-index="5">
+                <img src="../../../assets/img/clientLogos/Client_Logo_41.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" data-swiper-slide-index="1">
+                <img src="../../../assets/img/clientLogos/Client_Logo_42.png" class="img-fluid" alt="">
+              </div>
+            </div>
+
+
+
+            <div class="swiper-slide engagements__slide" role="group" data-swiper-slide-index="1">
+
+
+              <div class="engagements__slide__img" role="group" aria-label="10 / 20" data-swiper-slide-index="2">
                 <img src="../../../assets/img/clientLogos/Client_Logo_43.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="11 / 20"  data-swiper-slide-index="3">
+              <div class="engagements__slide__img" role="group" aria-label="11 / 20" data-swiper-slide-index="3">
                 <img src="../../../assets/img/clientLogos/Client_Logo_44.jpeg" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="12 / 20"  data-swiper-slide-index="4">
+              <div class="engagements__slide__img" role="group" aria-label="12 / 20" data-swiper-slide-index="4">
                 <img src="../../../assets/img/clientLogos/Client_Logo_45.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="13 / 20"  data-swiper-slide-index="5">
+              <div class="engagements__slide__img" role="group" aria-label="13 / 20" data-swiper-slide-index="5">
                 <img src="../../../assets/img/clientLogos/Client_Logo_46.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group"   data-swiper-slide-index="1">
+              <div class="engagements__slide__img" role="group" data-swiper-slide-index="1">
                 <img src="../../../assets/img/clientLogos/Client_Logo_47.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="10 / 20"  data-swiper-slide-index="2">
+              <div class="engagements__slide__img" role="group" aria-label="10 / 20" data-swiper-slide-index="2">
                 <img src="../../../assets/img/clientLogos/Client_Logo_48.png" class="img-fluid" alt="">
               </div>
-              <div class="engagements__slide__img" role="group" aria-label="11 / 20"  data-swiper-slide-index="3">
+              <div class="engagements__slide__img" role="group" aria-label="11 / 20" data-swiper-slide-index="3">
                 <img src="../../../assets/img/clientLogos/Client_Logo_49.png" class="img-fluid" alt="">
               </div>
+            </div>
+
+
+            <div class="swiper-slide engagements__slide" role="group" data-swiper-slide-index="1">
+
+              <div class="engagements__slide__img" role="group" aria-label="12 / 20" data-swiper-slide-index="4">
+                <img src="../../../assets/img/clientLogos/Client_Logo_50.png" class="img-fluid" alt="">
               </div>
-
-
-              <div class="swiper-slide engagements__slide" role="group"   data-swiper-slide-index="1">
-               
-                <div class="engagements__slide__img" role="group" aria-label="12 / 20"  data-swiper-slide-index="4">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_50.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="13 / 20"  data-swiper-slide-index="5">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_51.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group"   data-swiper-slide-index="1">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_52.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="10 / 20"  data-swiper-slide-index="2">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_53.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="11 / 20"  data-swiper-slide-index="3">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_54.png" class="img-fluid" alt="">
-                </div>
-                <div class="engagements__slide__img" role="group" aria-label="12 / 20"  data-swiper-slide-index="4">
-                  <img src="../../../assets/img/clientLogos/Client_Logo_55.png" class="img-fluid" alt="">
-                </div> 
+              <div class="engagements__slide__img" role="group" aria-label="13 / 20" data-swiper-slide-index="5">
+                <img src="../../../assets/img/clientLogos/Client_Logo_51.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" data-swiper-slide-index="1">
+                <img src="../../../assets/img/clientLogos/Client_Logo_52.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="10 / 20" data-swiper-slide-index="2">
+                <img src="../../../assets/img/clientLogos/Client_Logo_53.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="11 / 20" data-swiper-slide-index="3">
+                <img src="../../../assets/img/clientLogos/Client_Logo_54.png" class="img-fluid" alt="">
+              </div>
+              <div class="engagements__slide__img" role="group" aria-label="12 / 20" data-swiper-slide-index="4">
+                <img src="../../../assets/img/clientLogos/Client_Logo_55.png" class="img-fluid" alt="">
               </div>
             </div>
-            <div class="swiper-web-pagination"></div>
           </div>
+          <div class="swiper-web-pagination"></div>
         </div>
+      </div>
 
-    
+
 
     </section>
-        <!-- End Services Section -->
-        <!--map-->
-        <div class="container mb-5" data-aos="fade-up">
-          <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
-              <div id="map"></div>
-           </div>
+    <!-- End Services Section -->
+    <!--map-->
+    <div class="container mb-5" data-aos="fade-up">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
+          <div id="map"></div>
         </div>
-        
-      
+      </div>
+
+
       </section>
       <!---->
       <!-- ======= Portfolio Section ======= -->
@@ -745,14 +691,15 @@
                 <li data-filter=".filter-bussiness-strategy">Bussiness Strategy</li>
                 <li data-filter=".filter-diversity-and-inclusion">Diversity & Inclusion</li>
                 <li data-filter=".filter-data-science-and-analytics">Data Science & Analytics</li>
-                 <li data-filter=".filter-design-thinking">Design Thinking</li>
-                  <li data-filter=".filter-digital-marketing">Digital Marketing</li>
-                  <li data-filter=".filter-experience-design">Experience Design</li>
-                  <li data-filter=".filter-financial-modelling">Financial Modelling</li>
-                  <li data-filter=".filter-knowledge-and-asset-creation">Knowledge & Asset Creation</li>
-                  <li data-filter=".filter-market-research-and-intelligence">Market Research & Intelligence</li>
-                 <li data-filter=".filter-marketing-and-pricing">Marketing & Pricing</li>
-                <li data-filter=".filter-mathematical-and-statistical-modelling">Mathematical & Statistical Modelling</li>
+                <li data-filter=".filter-design-thinking">Design Thinking</li>
+                <li data-filter=".filter-digital-marketing">Digital Marketing</li>
+                <li data-filter=".filter-experience-design">Experience Design</li>
+                <li data-filter=".filter-financial-modelling">Financial Modelling</li>
+                <li data-filter=".filter-knowledge-and-asset-creation">Knowledge & Asset Creation</li>
+                <li data-filter=".filter-market-research-and-intelligence">Market Research & Intelligence</li>
+                <li data-filter=".filter-marketing-and-pricing">Marketing & Pricing</li>
+                <li data-filter=".filter-mathematical-and-statistical-modelling">Mathematical & Statistical Modelling
+                </li>
                 <li data-filter=".filter-operations-planning">Operations Planning</li>
                 <li data-filter=".filter-sustainability-consulting">Sustainability Consulting</li>
                 <li data-filter=".filter-training-and-development">Training & Development</li>
@@ -762,53 +709,37 @@
 
           <div class="row portfolio-container" data-aos="fade-up">
             <div class="col-lg-4 col-md-6 portfolio-item filter-bussiness-strategy">
-              <a  href="#"
-              data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <div class="portfolio-wrap">
-                <div class="portfolio__modify">
-                  <div class="portfolio__modify__right">
-                    <p> Bussiness Strategy</p>
-                    <p>x</p>
-                    <p>Strategy 1</p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="portfolio-wrap">
+                  <div class="portfolio__modify">
+                    <div class="portfolio__modify__right">
+                      <p> Bussiness Strategy</p>
+                      <p>x</p>
+                      <p>Strategy 1</p>
+                    </div>
+                    <img src="../../../assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="" />
                   </div>
-                  <img
-                  src="../../../assets/img/portfolio/portfolio-1.jpg"
-                  class="img-fluid"
-                  alt=""
-                  />
-                </div>
-                
-                <div class="portfolio-info">
+
+                  <div class="portfolio-info">
                     <h5> Bussiness Strategy</h5>
                     <h5>x</h5>
                     <h5>Strategy 1</h5>
-                  
+
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-bussiness-strategy">
               <div class="portfolio-wrap">
-                <img
-                  src="../../../assets/img/portfolio/portfolio-2.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
+                <img src="../../../assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="" />
                 <div class="portfolio-info">
                   <h4>Bussiness Strategy 2</h4>
                   <p>Bussiness Strategy</p>
                   <div class="portfolio-links">
-                    <a
-                      href="../../../assets/img/portfolio/portfolio-2.jpg"
-                      data-gallery="portfolioGallery"
-                      class="portfolio-lightbox"
-                      title="Bussiness Strategy 2"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a href="../../../portfolio-details.html" title="More Details"
-                      ><i class="bx bx-link"></i
-                    ></a>
+                    <a href="../../../assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
+                      class="portfolio-lightbox" title="Bussiness Strategy 2"><i class="bx bx-plus"></i></a>
+                    <a href="../../../portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
               </div>
@@ -816,25 +747,14 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-bussiness-strategy">
               <div class="portfolio-wrap">
-                <img
-                  src="../../../assets/img/portfolio/portfolio-3.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
+                <img src="../../../assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="" />
                 <div class="portfolio-info">
                   <h4>Bussiness Strategy 3</h4>
                   <p>Bussiness Strategy</p>
                   <div class="portfolio-links">
-                    <a
-                      href="../../../assets/img/portfolio/portfolio-3.jpg"
-                      data-gallery="portfolioGallery"
-                      class="portfolio-lightbox"
-                      title="Bussiness Strategy 3"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bx bx-link"></i
-                    ></a>
+                    <a href="../../../assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
+                      class="portfolio-lightbox" title="Bussiness Strategy 3"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
               </div>
@@ -842,25 +762,14 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-content-creation">
               <div class="portfolio-wrap">
-                <img
-                  src="../../../assets/img/portfolio/portfolio-4.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
+                <img src="../../../assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="" />
                 <div class="portfolio-info">
                   <h4>Content Creation 1</h4>
                   <p>Content Creation</p>
                   <div class="portfolio-links">
-                    <a
-                      href="../../../assets/img/portfolio/portfolio-4.jpg"
-                      data-gallery="portfolioGallery"
-                      class="portfolio-lightbox"
-                      title="Content Creation 1"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bx bx-link"></i
-                    ></a>
+                    <a href="../../../assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
+                      class="portfolio-lightbox" title="Content Creation 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
               </div>
@@ -868,25 +777,14 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-content-creation">
               <div class="portfolio-wrap">
-                <img
-                  src="../../../assets/img/portfolio/portfolio-5.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
+                <img src="../../../assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="" />
                 <div class="portfolio-info">
                   <h4>Content Creation 2</h4>
                   <p>Content Creation</p>
                   <div class="portfolio-links">
-                    <a
-                      href="../../../assets/img/portfolio/portfolio-5.jpg"
-                      data-gallery="portfolioGallery"
-                      class="portfolio-lightbox"
-                      title="Content Creation 2"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bx bx-link"></i
-                    ></a>
+                    <a href="../../../assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
+                      class="portfolio-lightbox" title="Content Creation 2"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
               </div>
@@ -894,25 +792,14 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-content-creation">
               <div class="portfolio-wrap">
-                <img
-                  src="../../../assets/img/portfolio/portfolio-6.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
+                <img src="../../../assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="" />
                 <div class="portfolio-info">
                   <h4>Content Creation 3</h4>
                   <p>Content Creation</p>
                   <div class="portfolio-links">
-                    <a
-                      href="../../../assets/img/portfolio/portfolio-6.jpg"
-                      data-gallery="portfolioGallery"
-                      class="portfolio-lightbox"
-                      title="Content Creation 3"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bx bx-link"></i
-                    ></a>
+                    <a href="../../../assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
+                      class="portfolio-lightbox" title="Content Creation 3"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
               </div>
@@ -920,26 +807,15 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-data-science-and-analytics">
               <div class="portfolio-wrap">
-                <img
-                  src="../../../assets/img/portfolio/portfolio-7.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                
+                <img src="../../../assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="" />
+
                 <div class="portfolio-info">
                   <h4>Data Science & Analytics 1</h4>
                   <p>Data Science & Analytics</p>
                   <div class="portfolio-links">
-                    <a
-                      href="../../../assets/img/portfolio/portfolio-7.jpg"
-                      data-gallery="portfolioGallery"
-                      class="portfolio-lightbox"
-                      title="Data Science & Analytics 1"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bx bx-link"></i
-                    ></a>
+                    <a href="../../../assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
+                      class="portfolio-lightbox" title="Data Science & Analytics 1"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
               </div>
@@ -947,25 +823,14 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-data-science-and-analytics">
               <div class="portfolio-wrap">
-                <img
-                  src="../../../assets/img/portfolio/portfolio-8.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
+                <img src="../../../assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="" />
                 <div class="portfolio-info">
                   <h4>Data Science & Analytics 2</h4>
                   <p>Data Science & Analytics</p>
                   <div class="portfolio-links">
-                    <a
-                      href="../../../assets/img/portfolio/portfolio-8.jpg"
-                      data-gallery="portfolioGallery"
-                      class="portfolio-lightbox"
-                      title="Data Science & Analytics 2"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bx bx-link"></i
-                    ></a>
+                    <a href="../../../assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
+                      class="portfolio-lightbox" title="Data Science & Analytics 2"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
               </div>
@@ -973,25 +838,14 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-data-science-and-analytics">
               <div class="portfolio-wrap">
-                <img
-                  src="../../../assets/img/portfolio/portfolio-9.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
+                <img src="../../../assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="" />
                 <div class="portfolio-info">
                   <h4>Data Science & Analytics 3</h4>
                   <p>Data Science & Analytics</p>
                   <div class="portfolio-links">
-                    <a
-                      href="../../../assets/img/portfolio/portfolio-9.jpg"
-                      data-gallery="portfolioGallery"
-                      class="portfolio-lightbox"
-                      title="Data Science & Analytics 3"
-                      ><i class="bx bx-plus"></i
-                    ></a>
-                    <a href="portfolio-details.html" title="More Details"
-                      ><i class="bx bx-link"></i
-                    ></a>
+                    <a href="../../../assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
+                      class="portfolio-lightbox" title="Data Science & Analytics 3"><i class="bx bx-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
               </div>
@@ -1014,11 +868,7 @@
             </p>
           </div>
 
-          <div
-            class="testimonials-slider swiper-container"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
+          <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="testimonial-item">
@@ -1030,11 +880,7 @@
                     risus at semper.
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
-                  <img
-                    src="../../../assets/img/testimonials/testimonials-1.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
+                  <img src="../../../assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="" />
                   <h3>Saul Goodman</h3>
                   <h4>Ceo &amp; Founder</h4>
                 </div>
@@ -1051,11 +897,7 @@
                     culpa.
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
-                  <img
-                    src="../../../assets/img/testimonials/testimonials-2.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
+                  <img src="../../../assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="" />
                   <h3>Sara Wilsson</h3>
                   <h4>Designer</h4>
                 </div>
@@ -1071,11 +913,7 @@
                     eram duis noster aute amet eram fore quis sint minim.
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
-                  <img
-                    src="../../../assets/img/testimonials/testimonials-3.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
+                  <img src="../../../assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="" />
                   <h3>Jena Karlis</h3>
                   <h4>Store Owner</h4>
                 </div>
@@ -1092,11 +930,7 @@
                     illum veniam.
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
-                  <img
-                    src="../../../assets/img/testimonials/testimonials-4.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
+                  <img src="../../../assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="" />
                   <h3>Matt Brandon</h3>
                   <h4>Freelancer</h4>
                 </div>
@@ -1113,11 +947,7 @@
                     fore nisi cillum quid.
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
-                  <img
-                    src="../../../assets/img/testimonials/testimonials-5.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
+                  <img src="../../../assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
                   <h3>John Larson</h3>
                   <h4>Entrepreneur</h4>
                 </div>
@@ -1129,182 +959,175 @@
         </div>
       </section>
       <!-- End Testimonials Section -->
-    </main>
-    <!-- End #main -->
+  </main>
+  <!-- End #main -->
 
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-      
-    </footer>
-    <!-- End Footer -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
 
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+  </footer>
+  <!-- End Footer -->
 
-    <!-- Vendor JS Files -->
-    <script src="../../../assets/vendor/aos/aos.js"></script>
-    <script src="../../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../../../assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="../../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="../../../assets/vendor/php-email-form/validate.js"></script>
-    <script src="../../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
-    <!-- Template Main JS File -->
-    <script src="../../../assets/js/main.js"></script>
-    <!----map -->
-      
-        
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Bussiness Strategy</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> 
-              <i class="bi bi-x-lg modal-close"></i>
-            </button>
-            
+  <!-- Vendor JS Files -->
+  <script src="../../../assets/vendor/aos/aos.js"></script>
+  <script src="../../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../../../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../../../assets/js/main.js"></script>
+  <!----map -->
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Bussiness Strategy</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="bi bi-x-lg modal-close"></i>
+          </button>
+
+        </div>
+        <div class="modal-body">
+          <div class="portfolio__show__container__body__b1">
+            <div class="portfolio__b1__left">
+              <img src="../../../assets/img/portfolio/portfolio-1.jpg" class="img-fluid pimg" alt="" />
             </div>
-          <div class="modal-body">
-            <div class="portfolio__show__container__body__b1">
-              <div class="portfolio__b1__left">
-                <img
-                src="../../../assets/img/portfolio/portfolio-1.jpg"
-                class="img-fluid pimg"
-                alt=""
-                />
-              </div>
-              <div class="portfolio__b1__right">
-                <h3>Problem</h3>
-               <p>gjgjhgjjhjgjhg hsfhds sdjhfdshjf dhfsdj</p>
-              </div>
+            <div class="portfolio__b1__right">
+              <h3>Problem</h3>
+              <p>gjgjhgjjhjgjhg hsfhds sdjhfdshjf dhfsdj</p>
             </div>
-            <div class="portfolio__show__container__body__b2">
-              <div class="portfolio__b2__left">
-                <h3>Solution</h3>
-                <p>gjgjhgjjhjgjh gajkdhja sdjhgjhsd</p>
-              </div>
-              <div class="portfolio__b2__right">
-                <h3>Impact</h3>
-                <p>gjgjhgjjhjgjhg jhsdgfhsgfd sdffshdfghs</p>
-              </div>
-            </div>
-          
           </div>
-          <!-- <div class="modal-footer">
+          <div class="portfolio__show__container__body__b2">
+            <div class="portfolio__b2__left">
+              <h3>Solution</h3>
+              <p>gjgjhgjjhjgjh gajkdhja sdjhgjhsd</p>
+            </div>
+            <div class="portfolio__b2__right">
+              <h3>Impact</h3>
+              <p>gjgjhgjjhjgjhg jhsdgfhsgfd sdffshdfghs</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             
           </div> -->
-        </div>
       </div>
     </div>
-      
-  </body>
+  </div>
+
+</body>
 
 <script>
-  
+
   var info_cities = [
-        [-33.818233,151.180015,1],
-        [-37.868891,144.846291, 2],
-        [-27.228379,153.025576, 3],
-        [-31.952162,115.578871,4],
-        [-33.818233, 151.180015],
-[-37.868891, 144.846291],
-[-27.228379, 153.025576],
-[-31.952162, 115.578871],
-[-40.736332, 175.800870],
-[14.292664, 120.920875],
-[1.590753, 103.478879],
-[37.783740, 126.993419],
-[20.004322, 95.017975],
-[18.656817, 72.990452],
-[17.376934, 78.464393],
-[4.376707, 73.411233],
-[28.690588, 77.217460],
-[24.376652, 54.705291],
-[24.056026, 53.825798],
-[24.654740, 46.747481],
-[31.774805, 35.150858],
-[-33.842190, 18.308016],
-[51.584323, -0.075449],
-[53.455758, -2.098284],
-[52.478912, -1.908861],
-[48.118491, 11.546264],
-[41.902085, 12.421978],
-[47.372198, 8.551693],
-[40.464123, -3.697653],
-[48.912290, 2.368358],
-[50.857760, 4.312869],
-[53.602845, 10.006723],
-[52.209973, 20.991368],
-[60.192743, 24.938714],
-[59.172410, 18.166617],
-[59.436962, 24.753574],
-[59.956901, 10.921233],
-[-22.731224, -43.219854],
-[17.890050, -77.248777],
-[21.080015, -86.982979],
-[21.368367, -157.872037],
-[25.832651, -80.243529],
-[38.884820, -77.085170],
-[40.747062, -74.072906],
-[42.406601, -71.088640],
-[42.053818, -71.799020],
-[45.515429, -73.671464],
-[40.332740, -80.066255],
-[40.058892, -82.974325],
-[39.873648, -84.227603],
-[42.360510, -83.107709],
-[41.881767, -87.668362],
-[36.183056, -86.826333],
-[33.648993, -84.400770],
-[29.812200, -95.384213],
-[29.465831, -98.465691],
-[32.839573, -96.867744],
-[33.457081, -112.087655],
-[36.191577, -115.196543],
-[34.061050, -118.239726],
-[37.358083, -121.940125],
-[37.547350, -122.440587],
-[37.867299, -122.279496],
-[37.766289, -122.474782],
-[37.694604, -122.433555],
-[36.989030, -122.013712],
-[45.493281, -122.715646],
-[49.307098, -123.180003],
-[47.646764, -122.344484],
-[51.066356, -114.118057],
-[45.484797, -75.780563],
-[39.395467, -74.901070],];
+    [-33.818233, 151.180015, 1],
+    [-37.868891, 144.846291, 2],
+    [-27.228379, 153.025576, 3],
+    [-31.952162, 115.578871, 4],
+    [-33.818233, 151.180015],
+    [-37.868891, 144.846291],
+    [-27.228379, 153.025576],
+    [-31.952162, 115.578871],
+    [-40.736332, 175.800870],
+    [14.292664, 120.920875],
+    [1.590753, 103.478879],
+    [37.783740, 126.993419],
+    [20.004322, 95.017975],
+    [18.656817, 72.990452],
+    [17.376934, 78.464393],
+    [4.376707, 73.411233],
+    [28.690588, 77.217460],
+    [24.376652, 54.705291],
+    [24.056026, 53.825798],
+    [24.654740, 46.747481],
+    [31.774805, 35.150858],
+    [-33.842190, 18.308016],
+    [51.584323, -0.075449],
+    [53.455758, -2.098284],
+    [52.478912, -1.908861],
+    [48.118491, 11.546264],
+    [41.902085, 12.421978],
+    [47.372198, 8.551693],
+    [40.464123, -3.697653],
+    [48.912290, 2.368358],
+    [50.857760, 4.312869],
+    [53.602845, 10.006723],
+    [52.209973, 20.991368],
+    [60.192743, 24.938714],
+    [59.172410, 18.166617],
+    [59.436962, 24.753574],
+    [59.956901, 10.921233],
+    [-22.731224, -43.219854],
+    [17.890050, -77.248777],
+    [21.080015, -86.982979],
+    [21.368367, -157.872037],
+    [25.832651, -80.243529],
+    [38.884820, -77.085170],
+    [40.747062, -74.072906],
+    [42.406601, -71.088640],
+    [42.053818, -71.799020],
+    [45.515429, -73.671464],
+    [40.332740, -80.066255],
+    [40.058892, -82.974325],
+    [39.873648, -84.227603],
+    [42.360510, -83.107709],
+    [41.881767, -87.668362],
+    [36.183056, -86.826333],
+    [33.648993, -84.400770],
+    [29.812200, -95.384213],
+    [29.465831, -98.465691],
+    [32.839573, -96.867744],
+    [33.457081, -112.087655],
+    [36.191577, -115.196543],
+    [34.061050, -118.239726],
+    [37.358083, -121.940125],
+    [37.547350, -122.440587],
+    [37.867299, -122.279496],
+    [37.766289, -122.474782],
+    [37.694604, -122.433555],
+    [36.989030, -122.013712],
+    [45.493281, -122.715646],
+    [49.307098, -123.180003],
+    [47.646764, -122.344484],
+    [51.066356, -114.118057],
+    [45.484797, -75.780563],
+    [39.395467, -74.901070],];
 
 
-var map = L.map('map',{
+  var map = L.map('map', {
     minZoom: 1,
-    
-}).setView([0, 0], 2);
-var myIcon = L.icon({
+
+  }).setView([0, 0], 2);
+  var myIcon = L.icon({
     iconUrl: 'https://brainworks-sukalpi.github.io/bw.world/assets/img/map_pin.png',
     iconSize: [24, 28],
-});
+  });
 
-// L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
+  // L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
 
-const mainLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png', {
-  // zoom:10,
-  // minZoom: 1,
-  attribution: '&copy; <a href="https://carto.com/">carto.com</a> contributors'
-});
-mainLayer.addTo(this.map);
+  const mainLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png', {
+    // zoom:10,
+    // minZoom: 1,
+    attribution: '&copy; <a href="https://carto.com/">carto.com</a> contributors'
+  });
+  mainLayer.addTo(this.map);
 
 
 
-var iCnt;
+  var iCnt;
   for (iCnt = 0; iCnt < info_cities.length; iCnt++) {
-    L.marker([info_cities[iCnt][0],info_cities[iCnt][1]], {icon: myIcon}).addTo(map);
+    L.marker([info_cities[iCnt][0], info_cities[iCnt][1]], { icon: myIcon }).addTo(map);
   }
-  
+
 // var iCnt;
 //  function addMarkersToMap(map) {
 //  // https://cdn4.iconfinder.com/data/icons/crime-and-security-24/64/10-128.png
@@ -1344,4 +1167,5 @@ var iCnt;
 // }
 
 </script>
+
 </html>
