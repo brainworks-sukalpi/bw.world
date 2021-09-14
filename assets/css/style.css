@@ -1519,7 +1519,7 @@ section {
   width: calc(100% - 110px);
 }
 
-#footer .footer-top .footer-newsletter form input[type="submit"] {
+#footer .footer-top .footer-newsletter form input[type="button"] {
   position: absolute;
   top: 0;
   right: -4px;
@@ -1536,7 +1536,7 @@ section {
   border-radius: 0 4px 4px 0;
 }
 
-#footer .footer-top .footer-newsletter form input[type="submit"]:hover {
+#footer .footer-top .footer-newsletter form input[type="button"]:hover {
   background: #931a2e;
   /* border: 1px solid white; */
   color: white;
