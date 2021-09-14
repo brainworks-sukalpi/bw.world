@@ -47,15 +47,16 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript">
       console.log("running header");
-      $(document).ready(function () {
-        // $("#header").load(
-        //   "https://brainworks-sukalpi.github.io/bw.world/assets/html/nav.html"
-        // );
-        $("#footer").load(
-          "https://brainworks-sukalpi.github.io/bw.world/assets/html/footer.html"
-        );
-      });
+      // $(document).ready(function () {
+      //   // $("#header").load(
+      //   //   "https://brainworks-sukalpi.github.io/bw.world/assets/html/nav.html"
+      //   // );
+      //   $("#footer").load(
+      //     "https://brainworks-sukalpi.github.io/bw.world/assets/html/footer.html"
+      //   );
+      // });
     </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
 
   <body>
@@ -422,7 +423,113 @@
     <!-- End #main -->
 
     <!-- ======= Footer ======= -->
-    <footer id="footer"></footer>
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="footer__logo">
+                <a href="../../../index.html"
+                  ><img
+                    src="https://brainworks-sukalpi.github.io/bw.world/assets/img/Logo/Logo-white.png"
+                    alt="SBW"
+                    class="img-fluid footer__logo__img"
+                /></a>
+              </div>
+              <div class="footer-info">
+                <!-- <h3>Maxim</h3>
+                <p>
+                  A108 Adam Street <br />
+                  NY 535022, USA<br /><br />
+                  <strong>Phone:</strong> +1 5589 55488 55<br />
+                  <strong>Email:</strong> info@example.com<br />
+                </p> -->
+                <div class="social-links mt-4">
+                  <a href="#" class="linkedin"
+                    ><i class="bx bxl-linkedin"></i
+                  ></a>
+                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                  <a href="#" class="facebook"
+                    ><i class="bx bxl-facebook"></i
+                  ></a>
+                  <!-- <a href="#" class="instagram"
+                    ><i class="bx bxl-instagram"></i
+                  ></a>
+                  <a href="#" class="google-plus"
+                    ><i class="bx bxl-skype"></i
+                  ></a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-links">
+              <!-- <h4>Useful Links</h4> -->
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Cookie Policy</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Terms of use</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Web Design</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Cookie Policy</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Contact Us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Marketing</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Graphic Design</a>
+                </li>
+              </ul>
+            </div> -->
+
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <!-- <h4>Our Newsletter</h4> -->
+              <p>
+                Get the latest business insights and career opportunity straight
+                into your inbox
+              </p>
+              <form>
+                <input type="email" required name="email" />
+                <input type="button" onclick="subscribe()" value="Subscribe" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          &copy; <span>2021 Sukalpi Brainworks Pvt Ltd</span>. All Rights
+          Reserved
+        </div>
+      </div>
+    </footer>
     <!-- End Footer -->
 
     <a
@@ -443,6 +550,55 @@
     <script src="../../js/main.js"></script>
   </body>
   <script>
+    const subscribe = async () => {
+      // event.preventDefault();
+      let curTime = new Date();
+      let day = curTime.getDay();
+      let month = curTime.getMonth();
+      let year = curTime.getFullYear();
+      let minute = curTime.getMinutes();
+      let hour = curTime.getHours();
+      let time =
+        "" + day + "-" + month + "-" + year + "  " + hour + ":" + minute;
+      console.log(time);
+      let email = document.getElementsByName("email")[0].value;
+      console.log(email);
+      let body = {
+        date: time,
+        email: email,
+      };
+      console.log(body);
+
+      // export const subscribe = async () => {
+      try {
+        const response = await axios.post(
+          "http://localhost:3000/newsletter",
+          body
+        );
+        const msg = response.data;
+        console.log(msg);
+      } catch (errors) {
+        console.error(errors);
+      }
+    };
+
+    // fetch("http://localhost:3000/newsletter", {
+    //   method: "GET",
+    //   mode: "no-cors",
+    //   body: _body,
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   credentials: "same-origin",
+    // })
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     console.log(data);
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   });
+    // };
     // $(function () {
     //   $("#nav-placeholder").load("nav.html");
     // });
