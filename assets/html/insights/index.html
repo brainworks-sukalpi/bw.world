@@ -47,16 +47,15 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript">
       console.log("running header");
-      // $(document).ready(function () {
-      //   // $("#header").load(
-      //   //   "https://brainworks-sukalpi.github.io/bw.world/assets/html/nav.html"
-      //   // );
-      //   $("#footer").load(
-      //     "https://brainworks-sukalpi.github.io/bw.world/assets/html/footer.html"
-      //   );
-      // });
+      $(document).ready(function () {
+        // $("#header").load(
+        //   "https://brainworks-sukalpi.github.io/bw.world/assets/html/nav.html"
+        // );
+        $("#footer").load(
+          "https://brainworks-sukalpi.github.io/bw.world/assets/html/footer.html"
+        );
+      });
     </script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
 
   <body>
@@ -79,42 +78,58 @@
               ></a>
               <ul>
                 <li>
-                  <a href="./consulting-and-research.html"
+                  <a href="../industries/consulting-and-research.html"
                     >Consulting & Research</a
                   >
                 </li>
-                <li><a href="./consumer-product.html">Consumer Products</a></li>
                 <li>
-                  <a href="./education-and-training.html"
+                  <a href="../industries/consumer-product.html"
+                    >Consumer Products</a
+                  >
+                </li>
+                <li>
+                  <a href="../industries/education-and-training.html"
                     >Education & Training</a
                   >
                 </li>
                 <li>
-                  <a href="./energy-and-natural-resources.html"
+                  <a href="../industries/energy-and-natural-resources.html"
                     >Energy & Natural Resources</a
                   >
                 </li>
                 <li>
-                  <a href="./financial-services.html">Financial Services</a>
+                  <a href="../industries/financial-services.html"
+                    >Financial Services</a
+                  >
                 </li>
-                <li><a href="./healthcare.html">Healthcare</a></li>
-                <li><a href="./human-resources.html">Human Resources</a></li>
-                <li><a href="./manufacturing.html">Manufacturing</a></li>
+                <li><a href="../industries/healthcare.html">Healthcare</a></li>
                 <li>
-                  <a href="./media-and-entertainment.html"
+                  <a href="../industries/human-resources.html"
+                    >Human Resources</a
+                  >
+                </li>
+                <li>
+                  <a href="../industries/manufacturing.html">Manufacturing</a>
+                </li>
+                <li>
+                  <a href="../industries/media-and-entertainment.html"
                     >Media & Entertainment</a
                   >
                 </li>
                 <li>
-                  <a href="./public-and-social-sector.html"
+                  <a href="../industries/public-and-social-sector.html"
                     >Public & Social Sector</a
                   >
                 </li>
-                <li><a href="./real-estate.html">Real Estate</a></li>
-                <li><a href="./retail.html">Retail</a></li>
-                <li><a href="./technology.html">Technology</a></li>
                 <li>
-                  <a href="./travel-and-tourism.html">Travel & Tourism</a>
+                  <a href="../industries/real-estate.html">Real Estate</a>
+                </li>
+                <li><a href="../industries/retail.html">Retail</a></li>
+                <li><a href="../industries/technology.html">Technology</a></li>
+                <li>
+                  <a href="../industries/travel-and-tourism.html"
+                    >Travel & Tourism</a
+                  >
                 </li>
               </ul>
             </li>
@@ -210,7 +225,7 @@
               </ul>
             </li>
             <li>
-              <a class="nav-link scrollto active" href="../insights/index.html"
+              <a class="nav-link active" href="../insights/index.html"
                 >Insights</a
               >
             </li>
@@ -225,13 +240,13 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#"
+              <a href="../about/index.html"
                 ><span>About</span> <i class="bi bi-chevron-down"></i
               ></a>
               <ul>
-                <li><a href="#">Overview</a></li>
-                <li><a href="#">Process</a></li>
-                <li><a href="#">People</a></li>
+                <li><a href="../about/index.html">Overview</a></li>
+                <li><a href="../about/index.html">Process</a></li>
+                <li><a href="../about/index.html">People</a></li>
               </ul>
             </li>
             <li class="dropdown">
@@ -248,7 +263,11 @@
                 </li>
               </ul>
             </li>
-            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            <li>
+              <a class="nav-link scrollto" href="../contact/contact.html"
+                >Contact</a
+              >
+            </li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
@@ -423,113 +442,7 @@
     <!-- End #main -->
 
     <!-- ======= Footer ======= -->
-    <footer id="footer">
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="footer__logo">
-                <a href="../../../index.html"
-                  ><img
-                    src="https://brainworks-sukalpi.github.io/bw.world/assets/img/Logo/Logo-white.png"
-                    alt="SBW"
-                    class="img-fluid footer__logo__img"
-                /></a>
-              </div>
-              <div class="footer-info">
-                <!-- <h3>Maxim</h3>
-                <p>
-                  A108 Adam Street <br />
-                  NY 535022, USA<br /><br />
-                  <strong>Phone:</strong> +1 5589 55488 55<br />
-                  <strong>Email:</strong> info@example.com<br />
-                </p> -->
-                <div class="social-links mt-4">
-                  <a href="#" class="linkedin"
-                    ><i class="bx bxl-linkedin"></i
-                  ></a>
-                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                  <a href="#" class="facebook"
-                    ><i class="bx bxl-facebook"></i
-                  ></a>
-                  <!-- <a href="#" class="instagram"
-                    ><i class="bx bxl-instagram"></i
-                  ></a>
-                  <a href="#" class="google-plus"
-                    ><i class="bx bxl-skype"></i
-                  ></a> -->
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 footer-links">
-              <!-- <h4>Useful Links</h4> -->
-              <ul>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#">Privacy Policy</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#">Cookie Policy</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#">Terms of use</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-
-            <!-- <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Our Services</h4>
-              <ul>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Web Design</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#">Cookie Policy</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#">Contact Us</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Marketing</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#">Graphic Design</a>
-                </li>
-              </ul>
-            </div> -->
-
-            <div class="col-lg-4 col-md-6 footer-newsletter">
-              <!-- <h4>Our Newsletter</h4> -->
-              <p>
-                Get the latest business insights and career opportunity straight
-                into your inbox
-              </p>
-              <form>
-                <input type="email" required name="email" />
-                <input type="button" onclick="subscribe()" value="Subscribe" />
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="copyright">
-          &copy; <span>2021 Sukalpi Brainworks Pvt Ltd</span>. All Rights
-          Reserved
-        </div>
-      </div>
-    </footer>
+    <footer id="footer"></footer>
     <!-- End Footer -->
 
     <a

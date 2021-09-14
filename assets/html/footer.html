@@ -11,23 +11,23 @@
     let time = "" + day + "-" + month + "-" + year + "  " + hour + ":" + minute;
     console.log(time);
     let email = document.getElementsByName("email")[0].value;
+    console.log(email);
+    let body = {
+      date: time,
+      email: email,
+    };
+    console.log(body);
+
+    // export const subscribe = async () => {
     try {
-      const response = await fetch("http://localhost:3000/newsletter", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          date: time,
-          email: email,
-        }),
-      });
-      const data = await response.json();
-      alert(data);
-      console.log(data);
-    } catch (error) {
-      alert(e.message);
-      console.log(error);
+      const response = await axios.post(
+        "http://localhost:3000/newsletter",
+        body
+      );
+      const msg = response.data;
+      console.log(msg);
+    } catch (errors) {
+      console.error(errors);
     }
   };
 </script>
@@ -71,19 +71,19 @@
         <ul>
           <li>
             <i class="bx bx-chevron-right"></i>
-            <a href="#">Privacy Policy</a>
+            <a href="./privacy-policy.html">Privacy Policy</a>
           </li>
           <li>
             <i class="bx bx-chevron-right"></i>
-            <a href="#">Cookie Policy</a>
+            <a href="./cookies-policy.html">Cookie Policy</a>
           </li>
           <li>
             <i class="bx bx-chevron-right"></i>
-            <a href="#">Terms of use</a>
+            <a href="./terms-of-use.html">Terms of use</a>
           </li>
           <li>
             <i class="bx bx-chevron-right"></i>
-            <a href="#">Contact Us</a>
+            <a href="./contact/contact.html">Contact Us</a>
           </li>
         </ul>
       </div>
