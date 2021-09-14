@@ -1,8 +1,8 @@
 const subscribe = async () => {
   // event.preventDefault();
   let curTime = new Date();
-  let day = curTime.getDay();
-  let month = curTime.getMonth();
+  let day = curTime.getDate();
+  let month = curTime.getMonth() + 1;
   let year = curTime.getFullYear();
   let minute = curTime.getMinutes();
   let hour = curTime.getHours();
@@ -24,6 +24,7 @@ const subscribe = async () => {
     );
     const msg = response.data;
     console.log(msg);
+    alert(msg);
   } catch (errors) {
     console.error(errors);
   }
