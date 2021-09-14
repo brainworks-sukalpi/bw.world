@@ -981,6 +981,7 @@
 
   <!-- Template Main JS File -->
   <script src="../../../assets/js/main.js"></script>
+  <script src="../../js/newletter.js"></script>
   <!----map -->
 
 
@@ -1128,43 +1129,6 @@
     L.marker([info_cities[iCnt][0], info_cities[iCnt][1]], { icon: myIcon }).addTo(map);
   }
 
-// var iCnt;
-//  function addMarkersToMap(map) {
-//  // https://cdn4.iconfinder.com/data/icons/crime-and-security-24/64/10-128.png
-
-//   var pngIcon = new H.map.Icon("https://brainworks-sukalpi.github.io/bw.world/assets/img/map_pin.png", { size: { w: 24, h: 28 } });
-
-
-//   for (iCnt = 0; iCnt < info_cities.length; iCnt++) {
-
-//     var bearsMarker = new H.map.Marker({lat:info_cities[iCnt][0],lng: info_cities[iCnt][1]},{ icon: pngIcon });
-//     map.addObject(bearsMarker);
-//         }
-//       }
-
-
-// var platform = new H.service.Platform({
-//   //bw api//9B1hpVk-rH504g6yGovX7ufZ0wgbsXwZcGV2J6QsT-g
-//   //my api// D14QCM9_yfaai85g0t1tUTCUA5OnCM6XmLqAUDqpzlQ
-//   apikey: "D14QCM9_yfaai85g0t1tUTCUA5OnCM6XmLqAUDqpzlQ",
-// });
-// var defaultLayers = platform.createDefaultLayers();
-// var map = new H.Map(document.getElementById('map'),
-//   defaultLayers.vector.normal.map,{
-//   // center: {lat:20.5937,lng: 78.9629},
-//   zoom: 2,
-//   pixelRatio: window.devicePixelRatio || 1
-// });
-// window.addEventListener('resize', () => map.getViewPort().resize());
-
-
-// var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
-
-// var ui = H.ui.UI.createDefault(map, defaultLayers);
-
-// window.onload = function () {
-//   addMarkersToMap(map);
-// }
 
 </script>
 
