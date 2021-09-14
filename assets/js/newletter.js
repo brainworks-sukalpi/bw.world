@@ -18,7 +18,10 @@ const subscribe = async () => {
 
   // export const subscribe = async () => {
   try {
-    const response = await axios.post("http://localhost:3000/newsletter", body);
+    const response = await axios.post(
+      "https://brainworks-email-subscibers.herokuapp.com/newsletter",
+      body
+    );
     const msg = response.data;
     console.log(msg);
   } catch (errors) {
