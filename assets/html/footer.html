@@ -84,8 +84,8 @@
           Get the latest business insights and career opportunity straight into
           your inbox
         </p>
-        <form action="" method="post">
-          <input type="email" name="email" />
+        <form action="" method="" onsubmit="subscribe(event)">
+          <input type="email" required name="email" />
           <input type="submit" value="Subscribe" />
         </form>
       </div>
@@ -98,3 +98,36 @@
     &copy; <span>2021 Sukalpi Brainworks Pvt Ltd</span>. All Rights Reserved
   </div>
 </div>
+
+<script type="text/javascript">
+  const subscribe = async (event) => {
+    event.preventDefault();
+    let curTime = new Date();
+    let day = curTime.getDay();
+    let month = curTime.getMonth();
+    let year = curTime.getFullYear();
+    let minute = curTime.getMinutes();
+    let hour = curTime.getHours();
+    let time = "" + day + "-" + month + "-" + year + "  " + hour + ":" + minute;
+    console.log(time);
+    let email = document.getElementsByName("email")[0].value;
+    try {
+      const response = await fetch("http://localhost:3000/newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          date: time,
+          email: email,
+        }),
+      });
+      const data = await response.json();
+      alert(data);
+      console.log(data);
+    } catch (error) {
+      alert(e.message);
+      console.log(error);
+    }
+  };
+</script>
