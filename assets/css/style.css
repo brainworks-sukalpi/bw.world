@@ -1451,9 +1451,11 @@ section {
   width: 36px;
   height: 36px;
   transition: 0.3s;
+  border: 2px solid #fff;
 }
 
 #footer .footer-top .social-links a:hover {
+  border: 2px solid #fff;
   background: #931a2e;
   color: #fff;
   text-decoration: none;
