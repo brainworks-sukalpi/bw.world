@@ -84,9 +84,9 @@
           Get the latest business insights and career opportunity straight into
           your inbox
         </p>
-        <form onsubmit="subscribe(event)">
+        <form>
           <input type="email" required name="email" />
-          <input type="submit" value="Subscribe" />
+          <input type="button" onclick="subscribe()" value="Subscribe" />
         </form>
       </div>
     </div>
@@ -100,8 +100,8 @@
 </div>
 
 <script type="text/javascript">
-  const subscribe = async (event) => {
-    event.preventDefault();
+  const subscribe = async () => {
+    // event.preventDefault();
     let curTime = new Date();
     let day = curTime.getDay();
     let month = curTime.getMonth();
