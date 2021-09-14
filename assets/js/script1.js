@@ -165,18 +165,12 @@ $('#quiz-close-button').click(function() {
 
 function update_progress_bar(index) {
   var checked = index;
-  if ( checked === 0 ) {
-    $(".progress-bar-insider").css("width", "4%");
+  if ( checked === 0) {
+    $(".progress-bar-insider").css("width", "10%");
   }
   else {
-    checked = checked - 1;
-    $(".progress-bar-insider").css("width", ((checked/10)*100 + 4) + "%");
-  }
-  if (checked < 16) {
-    $(".progress-bar-insider").attr("data-progress", (checked + 1) + "/11");
-  }
-  else {
-    $(".progress-bar-insider").attr("data-progress", "");
+    checked = checked;
+    $(".progress-bar-insider").css("width", ((checked/10)*100 + 10) + "%");
   }
 }
 

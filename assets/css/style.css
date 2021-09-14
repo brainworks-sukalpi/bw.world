@@ -426,19 +426,20 @@ h6 {
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 8px 28px;
   border-radius: 4px;
   transition: 0.5s;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #931a2e;
+  background: #fff;
+  color: #931a2e;
 }
 
 #hero .btn-get-started:hover {
-  border-color: #931a2e;
+  border-color: #fff;
   background: #931a2e;
   color: #fff;
 }
@@ -490,7 +491,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 30px 0;
+  padding: 40px 0;
   overflow: hidden;
 }
 
@@ -602,7 +603,7 @@ section {
 # Steps
 --------------------------------------------------------------*/
 .steps {
-  padding: 50px 0 40px 0;
+  padding: 20px 0 20px 0;
 }
 
 .steps .row {
