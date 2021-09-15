@@ -1,4 +1,5 @@
 const subscribe = async () => {
+  document.getElementsByName("button")[0].value = "in progress...";
   // event.preventDefault();
   let curTime = new Date();
   let day = curTime.getDate();
@@ -25,8 +26,10 @@ const subscribe = async () => {
     const msg = response.data;
     console.log(msg);
     // alert(msg);
-    document.getElementsByName("button")[0].value = "Subcribed";
+    document.getElementsByName("button")[0].value = "Subcribed ✅";
   } catch (errors) {
     console.error(errors);
+    alert("something went wrong!");
+    document.getElementsByName("button")[0].value = "Subcribe";
   }
 };
