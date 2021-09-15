@@ -8,14 +8,14 @@ const subscribe = async () => {
   let minute = curTime.getMinutes();
   let hour = curTime.getHours();
   let time = "" + day + "-" + month + "-" + year + "  " + hour + ":" + minute;
-  console.log(time);
+  // console.log(time);
   let email = document.getElementsByName("email")[0].value;
-  console.log(email);
+  // console.log(email);
   let body = {
     date: time,
     email: email,
   };
-  console.log(body);
+  // console.log(body);
 
   // export const subscribe = async () => {
   try {
@@ -24,7 +24,7 @@ const subscribe = async () => {
       body
     );
     const msg = response.data;
-    console.log(msg);
+    // console.log(msg);
     // alert(msg);
     document.getElementsByName("button")[0].value = "Subcribed ✅";
   } catch (errors) {
