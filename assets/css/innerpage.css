@@ -266,12 +266,23 @@ hr {
 }
 
 .about .container .row .section-title p {
-  font-size: 30px;
+  font-size: 23px;
   font-weight: 450;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  padding: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.about .name {
+  color: #931a2e;
+  margin-top: 20px;
+  font-size: 22px !important;
+}
+
+.about .location {
+  font-size: 18px !important;
 }
 
 .work-with-us-text {
@@ -282,10 +293,6 @@ hr {
 .work-with-us-question-text {
   font-size: 30px !important;
 }
-
-/* .recruitment-text .row .content-item {
-  padding: 20px;
-} */
 
 .recruitment-text .row .content-item h4 {
   margin-bottom: 10px;
