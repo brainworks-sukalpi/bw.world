@@ -755,7 +755,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials .testimonial-item {
   box-sizing: content-box;
-  min-height: 320px;
+  min-height: 360px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -764,6 +764,7 @@ section {
   margin: -40px 0 0 40px;
   position: relative;
   z-index: 2;
+  background-color: white;
   border: 6px solid #fff;
 }
 
@@ -827,7 +828,10 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #931a2e;
 }
-
+.testimonial-name,
+.testimonial-pos {
+  color: #931a2e !important;
+}
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
