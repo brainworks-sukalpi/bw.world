@@ -2,6 +2,19 @@
   padding-top: 10px !important;
 }
 
+.quiz-section-div {
+  overflow-x: hidden;
+}
+
+.carousel--wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.carousel--wrapper--sec {
+  overflow: visible;
+}
+
 .carousel {
   width: 100%;
   position: relative;
@@ -32,11 +45,8 @@
 }
 
 .carousel .carousel__content .carousel--item {
-  display: flex;
   justify-content: center;
   float: left;
-  background-color: #fff;
-  height: 100%;
 }
 
 .carousel .carousel-nav {
@@ -45,7 +55,7 @@
 }
 
 .carousel a {
-  margin: 5px;
+  margin: 0 5px;
   background: #fff;
   color: #931a2e;
   border: 2px solid #931a2e;
@@ -81,6 +91,7 @@
 
 .result-question {
   position: relative;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,22 +130,24 @@
 }
 
 .carousel--title {
+  text-align: center;
   font-size: 50px;
   font-weight: 600;
   color: #fff;
-  text-align: center;
 }
 
 .carousel img {
+  max-width: 100%;
+  height: auto;
   border-top-right-radius: 50% 50%;
   border-bottom-right-radius: 50% 50%;
 }
 
 .carousel h4 {
   text-align: right;
-  margin-bottom: 16px;
+  margin-bottom: 25px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
   min-height: 50px;
 }
 
@@ -148,13 +161,13 @@
   text-align: center;
   margin-bottom: 10px;
   padding: 5px 20px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
   background: #fff;
   color: #000;
   border: 2px solid #931a2e;
   border-radius: 30px;
-  width: calc(60% - 8px);
+  width: calc(80% - 8px);
   cursor: pointer;
 }
 
@@ -182,9 +195,8 @@
   align-items: center;
 
   background: rgba( 255, 255, 255, 0.45 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  backdrop-filter: blur( 0px );
+  -webkit-backdrop-filter: blur( 0px );
 }
 
 #quiz-results-section .result {

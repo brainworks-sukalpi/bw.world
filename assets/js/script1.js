@@ -60,16 +60,16 @@ function calc_results() {
 }
 
 var results = [
-  [1,2,3,4],
-  [1,2,3,4],
-  [1,2,3,4],
-  [1,2,3,4],
-  [1,2,3,4],
-  [1,2,3,4],
-  [1,2,3,4],
-  [1,2,3,4],
-  [1,2,3,4],
-  [1,2,3,4]
+  [3,4,4,2],
+  [2,4,3,2],
+  [4,4,4,1],
+  [4,4,3,1],
+  [4,4,4,4],
+  [3,3,0],
+  [2,3,3,0],
+  [3,4,4,3],
+  [2,4,4,1],
+  [4,4,2,4]
 ]
 
 async function calc_results(button_elem) {
@@ -102,13 +102,11 @@ async function calc_results(button_elem) {
     }
 
     if(score >= 30) {
-      message = "Great Job!";
-    } else if(score >= 20) {
-      message = "You did alright!";
-    } else if(score >= 10) {
-      message = "Better luck next time";
+      message = "You are an excellent fit for Brainworks! Drop us an email and we’ll let you know the next steps.";
+    } else if(score >= 21) {
+      message = "You can be a good fit for Brainworks. Drop us an email and we’ll let you know the next steps.";
     } else {
-      message = "Maybe you should try a little harder";
+      message = "We think Brainworks might not be the best choice for you. We wish you all the best! ";
     }
   } else {
     message = "Please answer all the questions."
