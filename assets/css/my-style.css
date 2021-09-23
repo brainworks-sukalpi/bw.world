@@ -297,26 +297,26 @@
   align-items: center;
   justify-content: center;
   /* margin-right: 8px; */
-  margin-top: 9rem;
-  background: #931a2e;
+
+  background: white;
   width: 40px !important;
   height: 40px !important;
+  border: 1px solid #931a2e;
   border-radius: 50%;
   transition: all 0.4s ease-in-out;
 }
 .takeways__navigate i {
   font-size: 28px;
-  color: white;
+  color: #931a2e;
   line-height: 0;
   transition: all 0.4s ease-in-out;
 }
 .takeways__navigate:hover {
-  border: 1px solid #931a2e;
-  background-color: white;
+  background-color: #931a2e;
 }
 
 .takeways__navigate:hover i {
-  color: #931a2e;
+  color: white;
 }
 
 .member-info-content {
