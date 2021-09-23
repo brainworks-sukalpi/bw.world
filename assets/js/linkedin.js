@@ -18,7 +18,7 @@ const getAllPost = async () => {
       }
       var innerDiv = document.createElement("div");
       innerDiv.className =
-        "w-100 col-xl-6 col-lg-6 d-flex justify-content-center align-items-center";
+        "d-block w-100 col-xl-6 col-lg-6 d-flex justify-content-center align-items-center";
       var iframe = document.createElement("iframe");
       iframe.height = "450";
       iframe.width = "75%";
