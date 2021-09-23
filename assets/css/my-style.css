@@ -318,7 +318,10 @@
 .takeways__navigate:hover i {
   color: white;
 }
-
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1 !important;
+}
 .member-info-content {
   left: 0 !important;
   right: 0 !important;
