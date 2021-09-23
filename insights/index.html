@@ -48,6 +48,8 @@
 
     <!-- navbar-templating-->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    ;
     <script type="text/javascript">
       console.log("running header");
       $(document).ready(function () {
@@ -274,97 +276,101 @@
       </div>
 
       <!-- Template Main JS File -->
-      <script src="../../js/main.js"></script>
+      <script src="../assets/js/main.js"></script>
     </header>
 
     <!-- End Header -->
 
     <main id="main">
       <!-- ======= Services Section ======= -->
-      <section class="about mt-5">
-        <div class="container">
+      <section class="section-bg mt-4">
+        <div class="container mt-2">
           <div class="section-title" data-aos="fade-in" data-aos-delay="100">
             <h2>Takeways</h2>
           </div>
-          <div class="sk-ww-linkedin-page-post" data-embed-id="66606"></div>
-          <script
-            src="https://www.sociablekit.com/app/embed/linkedin-page-post/widget.js"
-            async
-            defer
-          ></script>
-          <div class="row mt-4">
-            <div class="col-xl-6 col-lg-6" data-aos="fade-right">
-              <img src="../assets/img/about-img.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="col-xl-6 col-lg-6 pt-5 pt-lg-0 d-flex">
-              <div
-                class="section-title d-flex publications__content"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <p>
-                  The Hawaiian islands in the US are a pristine tourist
-                  destination with about a million of them arriving there every
-                  year. Two young entrepreneurs from the city of Hilo in Hawaii
-                  observe that there are no Hawaiian-themed bars or restaurants
-                  in their city.
-                </p>
-                <p>
-                  The Hawaiian islands in the US are a pristine tourist
-                  destination with about a million of them arriving there every
-                  year. Two young entrepreneurs from the city of Hilo in Hawaii
-                  observe that there are no Hawaiian-themed bars or restaurants
-                  in their city.
-                </p>
-                <p>
-                  The Hawaiian islands in the US are a pristine tourist
-                  destination with about a million of them arriving there every
-                  year. Two young entrepreneurs from the city of Hilo in Hawaii
-                  observe that there are no Hawaiian-themed bars or restaurants
-                  in their city.
-                </p>
-
+          <!-- ================= Carousel ======================-->
+          <div
+            id="carouselExampleIndicators"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <!-- <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div> -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
                 <div
-                  class="section-title d-flex justify-content-center mt-2"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <!-- <button
-                    onclick="window.open('https://www.linkedin.com/showcase/takeaways-official/','popUpWindow','height=400,width=600,left=10,top=10,,scrollbars=yes,menubar=no'); return false;"
-                    class="insight__btn"
-                  >
-                    Follow Takeways
-                  </button> -->
-                  <button
-                    onclick="window.open('https://www.linkedin.com/showcase/takeaways-official/','_blank')"
-                    class="insight__btn"
-                  >
-                    Follow Takeways
-                  </button>
-                  <div class="d-flex">
-                    <a href="#" class="takeways__navigate"
-                      ><i class="bi bi-arrow-left-short"></i
-                    ></a>
-                    <a href="#" class="takeways__navigate"
-                      ><i class="bi bi-arrow-right-short"></i
-                    ></a>
-                  </div>
-                </div>
+                  class="
+                    d-block
+                    w-100
+                    col-xl-6 col-lg-6
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                  "
+                  data-aos="fade-right"
+                  id="linkedin-post"
+                ></div>
               </div>
             </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+              onclick="prev()"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+              onclick="next()"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-        </div>
-      </section>
 
-      <!-- <iframe
-        src="https://www.linkedin.com/embed/feed/update/urn:li:share:6819137556240764928"
-        height="500"
-        width="90%"
-        frameborder="0"
-        allowfullscreen=""
-        title="Embedded post"
-      ></iframe> -->
+          <!-- ================= Carousel ======================-->
+          <div class="row mt-4 d-flex justify-content-center">
+            <button
+              onclick="window.open('https://www.linkedin.com/showcase/takeaways-official/','_blank')"
+              class="insight__btn"
+            >
+              Follow Takeways
+            </button>
+          </div>
 
+          
       <!-- End Services Section -->
       <section class="about mt-1">
         <div class="container">
@@ -468,4 +474,5 @@
     <script src="../assets/js/main.js"></script>
   </body>
   <script src="../assets/js/newletter.js"></script>
+  <script src="../assets/js/linkedin.js"></script>
 </html>
