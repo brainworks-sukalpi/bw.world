@@ -19,8 +19,7 @@ const getAllPost = async () => {
     );
     ids = response.data;
     console.log(ids);
-    var rem = document.getElementsByClassName("carousel-inner")[0];
-    rem.removeChild(rem.childNodes[0]);
+
     ids.forEach((id) => {
       var div = document.createElement("div");
       if (idx == 0) {
@@ -40,12 +39,15 @@ const getAllPost = async () => {
       div.appendChild(innerDiv);
       document.getElementsByClassName("carousel-inner")[0].appendChild(div);
     });
+    var rem = document.getElementsByClassName("carousel-inner")[0];
+    rem.removeChild(rem.childNodes[0]);
     // alert(msg);
   } catch (errors) {
     console.error(errors);
     alert("something went wrong!");
   }
 };
+getAllPost();
 // const next = () => {
 //   if (idx + 1 < ids.length) {
 //     ++idx;
@@ -60,7 +62,6 @@ const getAllPost = async () => {
 //     document.getElementById("linkedin-post").firstElementChild.src = src;
 //   }
 // };
-getAllPost();
 // next();
 // var myCarousel = document.querySelector("#carouselExampleIndicators");
 // var carousel = new bootstrap.Carousel(myCarousel, {
