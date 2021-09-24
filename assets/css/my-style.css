@@ -333,6 +333,9 @@
   display: flex !important;
   flex-direction: row !important;
 }
+.loader {
+  color: #931a2e;
+}
 
 @media (max-width: 1199px) {
   .my__swiper__slide {
