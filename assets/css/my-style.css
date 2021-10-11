@@ -337,6 +337,43 @@
   color: #931a2e;
 }
 
+/* contact page*/
+/* ---------------- */
+.email > p {
+  color: #931a2e !important;
+}
+.email > p > span {
+  color: #252525 !important;
+}
+.email > i {
+  background-color: rgba(236, 170, 170, 0.2) !important;
+  color: #931a2e !important;
+  transition: all 0.5s !important;
+}
+.email > i:hover {
+  background-color: #931a2e !important;
+  color: white !important;
+}
+.form-element:focus {
+  outline: none;
+  box-shadow: none !important;
+  border-color: #931a2e !important;
+}
+.submit-btn {
+  background-color: white !important;
+  border: 1px solid #931a2e !important;
+  color: #931a2e !important;
+  transition: all 0.5s !important;
+}
+.submit-btn:hover {
+  background-color: #931a2e !important;
+  color: white !important;
+}
+/* select > option {
+  color: whitesmoke !important;
+  background-color: #931a2e !important;
+} */
+
 @media (max-width: 1199px) {
   .my__swiper__slide {
     width: 100% !important;
