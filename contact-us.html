@@ -49,6 +49,7 @@
         );
       });
     </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
 
   <body>
@@ -305,42 +306,9 @@
             </p> -->
           </div>
 
-          <div class="row no-gutters justify-content-center" data-aos="fade-up">
-            <div class="col-lg-10 d-flex align-items-stretch">
-              <div class="info">
-                <!-- <div class="address">
-                  <i class="bi bi-geo-alt"></i>
-                  <h4>Location:</h4>
-                  <p>A108 Adam Street, New York, NY 535022</p>
-                </div> -->
-
-                <div class="email mt-4">
-                  <i class="bi bi-envelope"></i>
-                  <h4>Email:</h4>
-                  <p>hello@brainworks.world</p>
-                </div>
-
-                <!-- <div class="phone mt-4">
-                  <i class="bi bi-phone"></i>
-                  <h4>Call:</h4>
-                  <p>+1 5589 55488 55s</p>
-                </div> -->
-              </div>
-            </div>
-
-            <!-- <div class="col-lg-5 d-flex align-items-stretch">
-              <iframe
-                style="border: 0; width: 100%; height: 270px"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                frameborder="0"
-                allowfullscreen
-              ></iframe>
-            </div> -->
-          </div>
-
           <div class="row mt-5 justify-content-center" data-aos="fade-up">
             <div class="col-lg-10">
-              <form class="php-email-form">
+              <form class="php-email-form" onsubmit="return contact(event)">
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <input
@@ -364,17 +332,10 @@
                   </div>
                 </div>
                 <div class="form-group mt-3">
-                  <!-- <input
-                    type="text"
-                    class="form-control"
-                    name="subject"
-                    id="subject"
-                    placeholder="Subject"
-                    required
-                  /> -->
                   <select
                     class="form-select form-element selectpicker"
-                    aria-label="Default select example"
+                    aria-label="select subject"
+                    name="subject"
                     required
                   >
                     <option selected disabled>Subject</option>
@@ -393,15 +354,14 @@
                     name="message"
                     rows="5"
                     placeholder="Message"
+                    id="message"
                     required
                   ></textarea>
                 </div>
                 <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">
-                    Your message has been sent. Thank you!
-                  </div>
+                  <div class="loading"></div>
+                  <div class="error-message">Something went wrong !!</div>
+                  <div class="sent-message">Thank you for your interest.</div>
                 </div>
                 <div class="text-center">
                   <button class="submit-btn" type="submit">Send Message</button>
@@ -409,19 +369,26 @@
               </form>
             </div>
           </div>
-          <div class="row no-gutters justify-content-center mt-5" data-aos="fade-up">
+          <div
+            class="row no-gutters justify-content-center mt-5"
+            data-aos="fade-up"
+          >
             <div class="col-lg-10 d-flex align-items-stretch">
               <div class="info">
-
                 <div class="email mt-4">
                   <h4>You can also write to us:</h4>
-                  <p><span>For partnering with us to grow your startup: </span>hello@brainworks.world</p>
-                  <p><span>For joining our squad to help startups grow: </span>workwithus@brainworks.world</p>
+                  <p>
+                    <span>For partnering with us to grow your startup: </span
+                    >hello@brainworks.world
+                  </p>
+                  <p>
+                    <span>For joining our squad to help startups grow: </span
+                    >workwithus@brainworks.world
+                  </p>
                 </div>
-
-               
               </div>
             </div>
+          </div>
         </div>
       </section>
       <!-- End Contact Section -->
@@ -448,5 +415,8 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="assets/js/contact-us.js"></script>
   </body>
 </html>
