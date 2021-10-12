@@ -26,7 +26,10 @@ const contact = async (event) => {
 
   // export const subscribe = async () => {
   try {
-    const response = await axios.post("http://localhost:3000/contact", body);
+    const response = await axios.post(
+      "https://brainworks-email-subscibers.herokuapp.com/contact",
+      body
+    );
     const msg = response.data;
     console.log(msg);
     // alert(msg);
