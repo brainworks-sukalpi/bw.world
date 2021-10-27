@@ -107,7 +107,7 @@
             <a href="../capabilities/index.html"><span>Capabilities</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="../capabilities/branding.html">Branding</a></li>
-              <li><a href="../capabilities/business-plan-and-investor-pitches.html">Business Plans & Investor Pitches</a></li>
+              <li><a href="../capabilities/business-plan-development.html">Business Plans & Investor Pitches</a></li>
               <li><a href="../capabilities/business-strategy.html">Business Strategy</a></li>
               <li><a href="../capabilities/data-science-and-analytics.html">Data Science & Analytics</a></li>
               <li><a href="../capabilities/design-thinking.html">Design Thinking</a></li>
@@ -656,7 +656,7 @@
               <ul id="portfolio-flters" class="portfolio__options">
                 <li data-filter="*" class="filter-active">All</li>
                 <li data-filter=".filter-branding">Branding</li>
-                <li data-filter=".filter-business-plan-and-investor-pitches">Business Plan & Investor Pitches</li>
+                <!-- <li data-filter=".filter-business-plan-development">Business Plan & Investor Pitches</li> -->
                 <li data-filter=".filter-business-strategy">Business Strategy</li>
                 <li data-filter=".filter-diversity-and-inclusion">Diversity & Inclusion</li>
                 <li data-filter=".filter-data-science-and-analytics">Data Science & Analytics</li>
@@ -664,10 +664,11 @@
                 <li data-filter=".filter-digital-marketing">Digital Marketing</li>
                 <li data-filter=".filter-experience-design">Experience Design</li>
                 <li data-filter=".filter-financial-modelling">Financial Modelling</li>
+                <li data-filter=".filter-investor-pitches">Investor Pitches</li>
                 <li data-filter=".filter-knowledge-and-asset-creation">Knowledge & Asset Creation</li>
-                <li data-filter=".filter-market-research-and-intelligence">Market Research & Intelligence</li>
+                <li data-filter=".filter-market-intelligence">Market Intelligence</li>
                 <li data-filter=".filter-marketing-and-pricing">Marketing & Pricing</li>
-                <li data-filter=".filter-mathematical-and-statistical-modelling">Mathematical & Statistical Modelling
+                <li data-filter=".filter-statistical-modelling">Statistical Modelling
                 </li>
                 <li data-filter=".filter-operations-planning">Operations Planning</li>
                 <li data-filter=".filter-sustainability-consulting">Sustainability Consulting</li>
@@ -677,27 +678,54 @@
           </div>
 
           <div class="row portfolio-container" data-aos="fade-up">
-            <div class="col-lg-4 col-md-6 portfolio-item filter-business-strategy">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
               <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <div class="portfolio-wrap">
+                <div class="portfolio-wrap" onclick="return setData('Consumer Products','US-based startup focussing on nursing-mother products wanted a refreshed brand.','We understood their target segment and their offered value and created a complete brand story and assets.','The startup has achieved significant growth in its followership on Social Media - its prime sales channel.','../assets/img/Impact Stories Images/6.jpg')">
                   <div class="portfolio__modify">
                     <div class="portfolio__modify__right">
-                      <p> Business Strategy</p>
+                      <p> Branding</p>
                       <p>x</p>
-                      <p>Strategy 1</p>
+                      <p>Consumer Products</p>
                     </div>
-                    <img src="../assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="" />
+                    <img src="../assets/img/Impact Stories Images/6.jpg" class="img-fluid" alt="" />
                   </div>
 
                   <div class="portfolio-info">
-                    <h5> Business Strategy</h5>
+                    <h5> Branding</h5>
                     <h5>x</h5>
-                    <h5>Strategy 1</h5>
+                    <h5>Consumer Products</h5>
 
                   </div>
                 </div>
               </a>
             </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="portfolio-wrap" onclick="return setData('Retail','Caribbean-based startup focussing on women\'s fitness outfits wanted to establish itself as a high-end brand.','We crafted the client\'s refreshed brand assets along with new positioning.','Implementation of the brand refresh is currently underway.','../assets/img/Impact Stories Images/7.jpg')">
+                  <div class="portfolio__modify">
+                    <div class="portfolio__modify__right">
+                      <p> Branding</p>
+                      <p>x</p>
+                      <p>Retail</p>
+                    </div>
+                    <img src="../assets/img/Impact Stories Images/7.jpg" class="img-fluid" alt="" />
+                  </div>
+
+                  <div class="portfolio-info">
+                    <h5> Branding</h5>
+                    <h5>x</h5>
+                    <h5>Retail</h5>
+
+                  </div>
+                </div>
+              </a>
+            </div>
+            
+
+
+
+
+            <!--     delete below containers  -->
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-business-strategy">
               <div class="portfolio-wrap">
@@ -1055,21 +1083,21 @@
         <div class="modal-body">
           <div class="portfolio__show__container__body__b1">
             <div class="portfolio__b1__left">
-              <img src="../assets/img/portfolio/portfolio-1.jpg" class="img-fluid pimg" alt="" />
+              <img id="modal-img" class="img-fluid pimg" alt="" />
             </div>
             <div class="portfolio__b1__right">
               <h3>Problem</h3>
-              <p>gjgjhgjjhjgjhg hsfhds sdjhfdshjf dhfsdj</p>
+              <p id="problem">gjgjhgjjhjgjhg hsfhds sdjhfdshjf dhfsdj</p>
             </div>
           </div>
           <div class="portfolio__show__container__body__b2">
             <div class="portfolio__b2__left">
               <h3>Solution</h3>
-              <p>gjgjhgjjhjgjh gajkdhja sdjhgjhsd</p>
+              <p id="solution">gjgjhgjjhjgjh gajkdhja sdjhgjhsd</p>
             </div>
             <div class="portfolio__b2__right">
               <h3>Impact</h3>
-              <p>gjgjhgjjhjgjhg jhsdgfhsgfd sdffshdfghs</p>
+              <p id="impact">gjgjhgjjhjgjhg jhsdgfhsgfd sdffshdfghs</p>
             </div>
           </div>
 
@@ -1085,6 +1113,16 @@
 </body>
 
 <script>
+
+  function setData(label,problem,solution,impact,url){
+    
+    document.getElementById("exampleModalLabel").innerHTML=label;
+    document.getElementById("problem").innerHTML=problem;
+    document.getElementById("solution").innerHTML=solution;
+    document.getElementById("impact").innerHTML=impact;
+    document.getElementById("modal-img").src=url;
+    return false;
+  }
 
   var info_cities = [
     [-33.818233, 151.180015, 1],
