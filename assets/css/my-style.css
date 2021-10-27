@@ -83,7 +83,7 @@
   position: absolute;
   right: 0;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   display: flex;
   flex-direction: column;
@@ -98,7 +98,7 @@
 .portfolio-info {
   /* border-top: 3px solid #931a2e !important;
   border-left: 3px solid #931a2e !important; */
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
 
