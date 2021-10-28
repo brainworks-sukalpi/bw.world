@@ -92,6 +92,9 @@
   font-weight: 200;
   transition: all 0.5s ease-in-out;
 }
+.portfolio__modify__right > p {
+  text-align: center;
+}
 .portfolio__modify__right > h1 {
   font-size: 1.2rem !important;
 }
