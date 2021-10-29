@@ -372,6 +372,10 @@
   background-color: #931a2e !important;
   color: white !important;
 }
+.process__icon {
+  height: 4rem;
+  width: 4rem;
+}
 /* select > option {
   color: whitesmoke !important;
   background-color: #931a2e !important;
