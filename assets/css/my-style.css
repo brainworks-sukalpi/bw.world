@@ -376,6 +376,15 @@
   height: 4rem;
   width: 4rem;
 }
+.about__subdata {
+  font-size: 2rem !important;
+}
+.about__data {
+  font-size: 4rem;
+}
+.about__title > p {
+  font-size: medium !important;
+}
 /* select > option {
   color: whitesmoke !important;
   background-color: #931a2e !important;
