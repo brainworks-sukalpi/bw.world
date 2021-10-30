@@ -389,6 +389,9 @@
   color: #931a2e;
   font-size: large;
 }
+.process__tag {
+  width: 250px !important;
+}
 /* select > option {
   color: whitesmoke !important;
   background-color: #931a2e !important;
