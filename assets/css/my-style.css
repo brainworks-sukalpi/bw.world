@@ -385,6 +385,10 @@
 .about__title > p {
   font-size: medium !important;
 }
+.highlight {
+  color: #931a2e;
+  font-size: large;
+}
 /* select > option {
   color: whitesmoke !important;
   background-color: #931a2e !important;
