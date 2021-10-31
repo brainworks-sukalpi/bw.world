@@ -102,9 +102,9 @@ async function calc_results(button_elem) {
     }
 
     if(score >= 30) {
-      message = "You are an excellent fit for Brainworks! Drop us an email and we’ll let you know the next steps.";
+      message = `You are an excellent fit for Brainworks! Write to us at workwithus@brainworks.world and we’ll let you know the next steps.`;
     } else if(score >= 21) {
-      message = "You can be a good fit for Brainworks. Drop us an email and we’ll let you know the next steps.";
+      message = `You can be a good fit for Brainworks. Write to us at workwithus@brainworks.world and we’ll let you know the next steps.`;
     } else {
       message = "We think Brainworks might not be the best choice for you. We wish you all the best! ";
     }
