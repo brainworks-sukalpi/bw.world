@@ -222,6 +222,39 @@
   margin-right: 20px;
 }
 
+@media (max-width: 768px) {
+  .carousel h4 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+  .carousel label {
+    float: left;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    background: #fff;
+    color: #000;
+    border: 2px solid #931a2e;
+    border-radius: 30px;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  #quiz-results-section .result {
+    width: 100%;
+  }
+
+  #quiz-results-message-section {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
 .close {
   background-color: transparent !important;
   width: 100%;

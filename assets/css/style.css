@@ -504,7 +504,7 @@ section {
   font-weight: 300;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #21413c;
+  color: #000;
 }
 
 .section-title p {
@@ -1263,7 +1263,7 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #21413c;
+  color: #000;
 }
 
 .contact .info p {

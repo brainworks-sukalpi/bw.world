@@ -132,7 +132,6 @@ hr {
         height: 40vh !important;
     }
 
-    
     .consulting .container {
         min-height: 40vh;
         display: flex;
@@ -144,9 +143,8 @@ hr {
     }
 
     .inner-page .consulting h1 {
-        width: 35vw;
-        font-size: 20px;
-        font-weight: 500;
+        font-size: 40px;
+        font-weight: 600;
         text-align: left;
         color: #fff;
     }
@@ -375,6 +373,21 @@ hr {
 	background: #000;
 	top: 41px;
 	right: 20px;
+}
+
+@media (max-width: 768px) {
+  .selection-process .icon-pills::before {
+    display: none;
+  }
+
+  .selection-process .nav-item .bi::after {
+    display: none;
+  }
+
+  .selection-process .nav-item h5 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
 }
 
 .selection-process .nav-pills > li > a.active > a,
@@ -635,4 +648,53 @@ hr {
   padding: 0 !important;
 
   border-left: 2px solid #931a2e;
+}
+
+@media (max-width: 768px) {
+  .steps .recruitment-background {
+    margin: 10px 10px !important;
+    padding: 30px 20px !important;
+    width: 90%;
+  }
+
+  .steps .recruitment-background h4 {
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 25px;
+  }
+
+  .steps .recruitment-background p {
+    line-height: 20px;
+    font-size: 15px;
+  }
+
+  .vertical-line {
+    display: none;
+  }  
+}
+
+@media (max-width: 992px) {
+  .experience-section {
+    padding-bottom: 0px !important;
+  }
+
+  .experience-box {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }  
+
+  .about .name {
+    margin-top: 10px;
+    font-size: 20px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .padding-left {
+    padding-left: 0 !important;
+  }
+
+  .padding-right {
+    padding-right: 0 !important;
+  }
 }
