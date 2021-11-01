@@ -120,7 +120,7 @@
 .modal-body {
   display: flex !important;
   flex-direction: column !important;
-  height: 600px !important;
+  min-height: 600px !important;
 }
 
 .portfolio__show__container__body__b1,
@@ -491,6 +491,22 @@
   .hero-h2 {
     width: 100% !important;
     text-align: left !important;
+  }
+
+  .portfolio #portfolio-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 8px 8px 8px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #444444;
+    margin-bottom: 5 px;
+    transition: all 0.3s ease-in-out;
+  }
+  .remove-mb {
+    margin-bottom: 0 !important;
   }
 }
 @media (max-width: 400px) {
