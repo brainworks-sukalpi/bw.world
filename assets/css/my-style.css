@@ -514,56 +514,15 @@
   .remove-mb {
     margin-bottom: 0 !important;
   }
+  .remove-mt {
+    margin-top: 0 !important;
+  }
   .takeways__navigate {
     width: 20px !important;
     height: 20px !important;
   }
   .takeways__navigate i {
     font-size: 18px;
-  }
-
-  /*--------------------------------------------------------------
-# Team
---------------------------------------------------------------*/
-  .team {
-    background-color: white;
-  }
-  .member {
-    text-align: center;
-    margin-bottom: 20px;
-    background: white !important;
-    position: unset !important;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .member-info {
-    position: unset !important;
-  }
-
-  .member-info-content {
-    position: unset !important;
-  }
-
-  .team .member .member-info-content h4 {
-    font-weight: 700 !important;
-    margin-bottom: 2px !important;
-    font-size: 18px !important;
-    color: #000 !important;
-  }
-
-  .team .member .member-info-content span {
-    font-style: italic !important;
-    font-size: 13px !important;
-    color: #000 !important;
-  }
-  .team .member .member-info {
-    opacity: 1 !important;
-  }
-  .team .member:hover .member-info {
-    background: none !important;
-    opacity: 1 !important;
-    transition: 0.4s;
   }
 }
 @media (max-width: 400px) {
