@@ -347,6 +347,12 @@
 
 /* contact page*/
 /* ---------------- */
+.contact .info p {
+  padding-left: 0 !important;
+}
+.contact .info h4 {
+  padding-left: 0 !important;
+}
 .email > p {
   color: #931a2e !important;
 }
