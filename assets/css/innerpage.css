@@ -669,6 +669,10 @@ hr {
   .vertical-line {
     display: none;
   }  
+
+  .navbar .dropdown i {
+    font-size: 20px !important;
+  }
 }
 
 @media (max-width: 992px) {
@@ -696,3 +700,4 @@ hr {
     padding-right: 0 !important;
   }
 }
+
