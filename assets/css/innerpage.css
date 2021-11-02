@@ -115,17 +115,13 @@ hr {
 @media (max-width: 768px) {
 
     .hero-img {
-        z-index: 5;
-        position: absolute;
-        min-height: 40vh;
-        width: 100%;
+      margin-top: 20px;
     }
     
     .hero-img img {
-        margin-top: 30px;
-        height: 40vh;
-        width: auto;
-        float: right;
+      height: auto;
+      position: absolute;
+      margin-top: 0;
     }
 
     .inner-page .consulting {
@@ -133,17 +129,19 @@ hr {
     }
 
     .consulting .container {
-        min-height: 40vh;
+        padding-top: 65px;
+        min-height: 40vh !important;
         display: flex;
-        align-items: center;
+        align-items:flex-start;
     }
 
     .inner-page .consulting .para {
-        width: 35vw;
+        width: 85vw;
     }
 
     .inner-page .consulting h1 {
-        font-size: 40px;
+        font-size: 33px;
+        line-height: 37px;
         font-weight: 600;
         text-align: left;
         color: #fff;
@@ -151,8 +149,8 @@ hr {
     
     .inner-page .consulting p {
         text-align: left;
-        font-size: 10px;
-        font-weight: 350;
+        font-size: 18px;
+        font-weight: 400;
         color: #fff;
     }
 }
