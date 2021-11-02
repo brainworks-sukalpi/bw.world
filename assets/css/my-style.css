@@ -120,16 +120,19 @@
 .modal-body {
   display: flex !important;
   flex-direction: column !important;
-  height: 500px !important;
+  min-height: 600px !important;
 }
 
 .portfolio__show__container__body__b1,
 .portfolio__show__container__body__b2 {
   display: flex;
   flex: 0.5;
-  align-items: center;
-  justify-content: center;
+
   background-color: white;
+  height: 300px;
+}
+.portfolio__show__container__body__b2 {
+  align-items: flex-start;
 }
 .portfolio__show__container__body__b1 {
   border-bottom: 1px solid #931a2e;
@@ -143,21 +146,23 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: 100%;
-  width: 100%;
+  justify-content: flex-start;
+  height: 100% !important;
+  width: 100% !important;
 }
 
-.portfolio__b1__right,
-.portfolio__b2__right {
+.portfolio__b2__right,
+.portfolio__b1__right {
   border-left: 1px solid #931a2e;
 }
+
 .portfolio__modify__right > p {
   margin-bottom: 0;
   font-weight: 300;
 }
 .pimg {
   height: 100%;
-  width: 100%;
+  width: auto;
   object-fit: cover;
 }
 .emgagement__mob__container {
@@ -342,6 +347,12 @@
 
 /* contact page*/
 /* ---------------- */
+.contact .info p {
+  padding-left: 0 !important;
+}
+.contact .info h4 {
+  padding-left: 0 !important;
+}
 .email > p {
   color: #931a2e !important;
 }
@@ -393,6 +404,27 @@
 .process__tag {
   width: 250px !important;
 }
+.priorities {
+  margin-bottom: 1rem;
+}
+.priorities > p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.bold {
+  font-weight: bold;
+}
+
+.desktop-stats {
+  display: flex;
+}
+.mobile-stats {
+  display: none;
+}
+.mobile-hero-img {
+  display: none;
+}
+
 /* select > option {
   color: whitesmoke !important;
   background-color: #931a2e !important;
@@ -433,10 +465,110 @@
   .emgagement__web__container {
     display: none;
   }
+  .desktop-stats {
+    display: none;
+  }
+  .mobile-stats {
+    display: flex;
+  }
+  .about__data {
+    text-align: center;
+  }
+  .about__subdata {
+    text-align: center;
+  }
+  .mobile-view-section {
+    margin-top: 0 !important;
+    padding: 0 0 !important;
+  }
+  .mobile-hero-img {
+    display: block;
+    height: 180px;
+    margin: auto;
+    width: auto;
+  }
+  #hero {
+    background: none;
+    width: 100%;
+    background-color: #931a2e;
+    margin-top: 60px;
+    padding: 0;
+  }
+  .hero-h2 {
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  .portfolio #portfolio-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 8px 8px 8px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #444444;
+    margin-bottom: 5 px;
+    transition: all 0.3s ease-in-out;
+  }
+  .remove-mb {
+    margin-bottom: 0 !important;
+  }
+  .takeways__navigate {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .takeways__navigate i {
+    font-size: 18px;
+  }
+
+  /*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+  .team {
+    background-color: white;
+  }
+  .member {
+    text-align: center;
+    margin-bottom: 20px;
+    background: white !important;
+    position: unset !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .member-info {
+    position: unset !important;
+  }
+
+  .member-info-content {
+    position: unset !important;
+  }
+
+  .team .member .member-info-content h4 {
+    font-weight: 700 !important;
+    margin-bottom: 2px !important;
+    font-size: 18px !important;
+    color: #000 !important;
+  }
+
+  .team .member .member-info-content span {
+    font-style: italic !important;
+    font-size: 13px !important;
+    color: #000 !important;
+  }
+  .team .member .member-info {
+    opacity: 1 !important;
+  }
+  .team .member:hover .member-info {
+    background: none !important;
+    opacity: 1 !important;
+    transition: 0.4s;
+  }
 }
 @media (max-width: 400px) {
   .testimonial-item > p {
-    min-height: 280px !important;
-    max-height: 280px !important;
+    min-height: 350px !important;
+    max-height: 350px !important;
   }
 }
