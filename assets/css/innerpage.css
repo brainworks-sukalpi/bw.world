@@ -24,7 +24,7 @@ hr {
 }
 
 .inner-page .consulting h1 {
-    font-size: 55px;
+    font-size: 53px;
     font-weight: 700;
     text-align: left;
     color: #fff;
@@ -60,9 +60,11 @@ hr {
 }
 
 .hero-img img {
-    bottom: 0;
-    height: 80vh;
-    float: right;
+  bottom: 0;
+  right: 0;
+  bottom: 0;
+  height: 80vh;
+  float: right;
 }
 
 .inner-page .consulting .para {
@@ -672,6 +674,10 @@ hr {
 
   .navbar .dropdown i {
     font-size: 20px !important;
+  }
+
+  .hide-me {
+    display: none;
   }
 }
 
