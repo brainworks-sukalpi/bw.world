@@ -70,7 +70,7 @@ hr {
 }
 
 .inner-page .consulting .para p {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .services .container {
@@ -117,11 +117,14 @@ hr {
 
     .hero-img {
       margin-top: 20px;
-      height: 60vh;
+      height: 65vh;
+      overflow: auto;
     }
     
     .hero-img img {
-      height: auto;
+      height: 60%;
+      /* width: 70%; */
+      right: 0;
       position: absolute;
       margin-top: 0;
     }
@@ -132,7 +135,7 @@ hr {
 
     .consulting .container {
         padding-top: 65px;
-        height: 60vh !important;
+        height: 65vh !important;
         display: flex;
         align-items:flex-start;
     }
@@ -151,7 +154,7 @@ hr {
     
     .inner-page .consulting p {
         text-align: left;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 400;
         color: #fff;
     }
