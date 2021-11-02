@@ -159,7 +159,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 12px 0;
-  font-size: 14px;
+  font-size: 15px;
   color: white;
   white-space: nowrap;
   transition: 0.3s;
@@ -168,7 +168,7 @@ h6 {
 
 .navbar a i,
 .navbar a:focus i {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 0;
   margin-left: 5px;
 }
@@ -222,7 +222,7 @@ h6 {
 
 .navbar .dropdown ul a {
   padding: 10px 15px;
-  font-size: 14px;
+  font-size: 15px;
   text-transform: none;
   font-weight: 500;
   color: black;
@@ -278,6 +278,19 @@ h6 {
 }
 
 @media (max-width: 991px) {
+  .navbar a,
+  .navbar a:focus {
+    padding: 10px 20px;
+  }
+
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover > a {
+    color: #931a2e;
+  }
+
+
   .mobile-nav-toggle {
     display: block;
   }
