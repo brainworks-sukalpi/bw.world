@@ -201,13 +201,11 @@ hr {
   transition: 0.3s;
   position: relative;
 }
-
 .icon-box .row .col-5 .col-12 > h4 > a,
 .icon-box .row .col-5 .col-12 > h4 > a:focus {
   font-size: 17px;
   line-height: 0;
 }
-
 .icon-box .row .col-5 .col-12 > h4 > a:before {
   content: "";
   position: absolute;
@@ -220,14 +218,12 @@ hr {
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
 }
-
 .icon-box .row .col-5 .col-12 > h4 > a:hover:before,
 .icon-box .row .col-5 .col-12 > h4:hover > a:before,
 .navbar .active:before {
   visibility: visible;
   width: 102%;
 }
-
 .icon-box .row .col-5 .col-12 > h4 > a:hover,
 .icon-box .row .col-5 .col-12 > h4.active,
 .icon-box .row .col-5 .col-12 > h4.active:focus,
