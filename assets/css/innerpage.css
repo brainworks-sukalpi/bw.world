@@ -122,8 +122,7 @@ hr {
     }
     
     .hero-img img {
-      height: 60%;
-      /* width: 70%; */
+      height: 50%;
       right: 0;
       position: absolute;
       margin-top: 0;
@@ -134,7 +133,7 @@ hr {
     }
 
     .consulting .container {
-        padding-top: 65px;
+        padding-top: 55px;
         height: 65vh !important;
         display: flex;
         align-items:flex-start;
@@ -145,8 +144,8 @@ hr {
     }
 
     .inner-page .consulting h1 {
-        font-size: 33px;
-        line-height: 37px;
+        font-size: 30px;
+        line-height: 32px;
         font-weight: 600;
         text-align: left;
         color: #fff;
