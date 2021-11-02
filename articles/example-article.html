@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Insights</title>
+    <title>Hit The Ground Running</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -19,7 +19,7 @@
     />
 
     <!-- Vendor CSS Files -->
-    <!-- <link href="../assets/vendor/aos/aos.css" rel="stylesheet"/> -->
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
     <link
       href="../assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
@@ -40,22 +40,16 @@
       href="../assets/vendor/swiper/swiper-bundle.min.css"
       rel="stylesheet"
     />
-    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
 
     <!-- Template Main CSS File -->
     <link href="../assets/css/style.css" rel="stylesheet" />
-    <link href="../assets/css/my-style.css" rel="stylesheet" />
+    <link href="../assets/css/innerpage.css" rel="stylesheet" />
 
-    <!-- navbar-templating-->
+    <!-- navbar-template-->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    ;
     <script type="text/javascript">
       console.log("running header");
       $(document).ready(function () {
-        // $("#header").load(
-        //   "https://brainworks-sukalpi.github.io/bw.world/assets/html/nav.html"
-        // );
         $("#footer").load(
           "https://brainworks-sukalpi.github.io/bw.world/assets/html/footer.html"
         );
@@ -75,11 +69,12 @@
               class="img-fluid"
           /></a>
         </div>
+
         <nav id="navbar" class="navbar">
           <ul>
             <li class="dropdown twoColumn">
-              <a href="../industries/index.html"
-                >Industries<i class="bi bi-chevron-down"></i
+              <a href="../industries/index.html" class=""
+                ><span>Industries</span> <i class="bi bi-chevron-down"></i
               ></a>
               <ul>
                 <li>
@@ -201,6 +196,11 @@
                   >
                 </li>
                 <li>
+                  <a href="../capabilities/statistical-modelling.html"
+                    >Statistical Modeling</a
+                  >
+                </li>
+                <li>
                   <a href="../capabilities/operations-planning.html"
                     >Operations Planning</a
                   >
@@ -208,11 +208,6 @@
                 <li>
                   <a href="../capabilities/research-and-analysis.html"
                     >Research & Analysis</a
-                  >
-                </li>
-                <li>
-                  <a href="../capabilities/statistical-modelling.html"
-                    >Statistical Modeling</a
                   >
                 </li>
                 <li>
@@ -228,12 +223,10 @@
               </ul>
             </li>
             <li>
-              <a class="nav-link active" href="../insights/index.html"
-                >Insights</a
-              >
+              <a class="nav-link" href="../insights/index.html">Insights</a>
             </li>
             <li class="dropdown">
-              <a href="../clients/index.html"
+              <a href="../clients/index.html" class=""
                 ><span>Clients</span> <i class="bi bi-chevron-down"></i
               ></a>
               <ul>
@@ -243,24 +236,18 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="../career/index.html" class=""
+              <a href="./index.html" class="active"
                 ><span>Careers</span> <i class="bi bi-chevron-down"></i
               ></a>
               <ul>
+                <li><a href="./index.html">WorkWithUs @ Brainworks</a></li>
+                <li><a href="./index.html">Experience @ Brainworks</a></li>
+                <li><a href="./index.html">Brainworks Fitment Quiz</a></li>
+                <li><a href="./index.html">Selection Process</a></li>
+                <li><a href="./index.html">For Campus</a></li>
+                <li><a href="./index.html">For Professionals</a></li>
                 <li>
-                  <a href="../career/index.html">WorkWithUs @ Brainworks</a>
-                </li>
-                <li>
-                  <a href="../career/index.html">Experience @ Brainworks</a>
-                </li>
-                <li>
-                  <a href="../career/index.html">Brainworks Fitment Quiz</a>
-                </li>
-                <li><a href="../career/index.html">Selection Process</a></li>
-                <li><a href="../career/index.html">For Campus</a></li>
-                <li><a href="../career/index.html">For Professionals</a></li>
-                <li>
-                  <a href="../career/hit-the-ground-running.html"
+                  <a href="./hit-the-ground-running.html"
                     >Hit The Ground Running</a
                   >
                 </li>
@@ -283,167 +270,73 @@
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
       </div>
-
-      <!-- Template Main JS File -->
-      <!-- <script src="../assets/js/main.js"></script> -->
     </header>
-
     <!-- End Header -->
 
     <main id="main">
-      <!-- ======= Services Section ======= -->
-      <section class="section-bg mt-4">
-        <div class="container mt-2">
-          <div
-            class="section-title publications__content mb-3"
-            data-aos="fade-in"
-            data-aos-delay="100"
-          >
-            <h2>Takeaways</h2>
-            <p>
-              Our regularly published key takeaways from the gold-standard
-              business and management publications and research of the world.
-              You can
-              <a
-                href="https://www.linkedin.com/showcase/takeaways-official/"
-                target="_blank"
-                >follow Takeaways on LinkedIn</a
-              >
-              to stay ahead of the curve.
-            </p>
-          </div>
-          <!-- ================= Carousel ======================-->
-          <div
-            id="carouselExampleIndicators"
-            class="carousel slide"
-            data-bs-interval="false"
-            data-aos="fade-in"
-            data-aos-delay="100"
-          >
-            <div
-              class="carousel-inner"
-              data-aos="fade-in"
-              data-aos-delay="100"
-            ></div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev"
-            >
-              <a href="#" class="takeways__navigate"
-                ><i class="bi bi-arrow-left-short"></i
-              ></a>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <a href="#" class="takeways__navigate"
-                ><i class="bi bi-arrow-right-short"></i
-              ></a>
-            </button>
-          </div>
+      <div class="inner-page">
+        <div class="hero-img">
+          <img
+            src="../assets/img/career/HTGR.png"
+            class="img-fluid"
+            alt="img"
+          />
         </div>
 
-        <!-- ================= Carousel ======================-->
-        <div
-          class="row mt-4 d-flex justify-content-center"
-          data-aos="fade-in"
-          data-aos-delay="100"
-        >
-          <button
-            onclick="window.open('https://www.linkedin.com/showcase/takeaways-official/','_blank')"
-            class="insight__btn"
-          >
-            Follow Takeaways
-          </button>
-        </div>
-      </section>
-      <!-- End Services Section -->
-      <section class="about mt-1">
-        <div class="container">
-          <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-            <h2>Publications</h2>
-          </div>
-
-          <div class="row mt-2">
-            <div class="col-xl-6 col-lg-6" data-aos="fade-right">
-              <img src="../assets/img/about-img.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="col-xl-6 col-lg-6 pt-5 pt-lg-0 d-flex">
-              <div
-                class="section-title publications__content"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <h6>Article Title</h6>
-                <p>Mayank Singh Sep 12 2021</p>
-                <p>
-                  The Hawaiian islands in the US are a pristine tourist
-                  destination with about a million of them arriving there every
-                  year. Two young entrepreneurs from the city of Hilo in Hawaii
-                  observe that there are no Hawaiian-themed bars or restaurants
-                  in their city.
-                </p>
-                <p>
-                  The Hawaiian islands in the US are a pristine tourist
-                  destination with about a million of them arriving there every
-                  year. Two young entrepreneurs from the city of Hilo in Hawaii
-                  observe that there are no Hawaiian-themed bars or restaurants
-                  in their city.
-                </p>
-                <a href="../articles/example-article.html">
-                  <button class="insight__btn">Read More</button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="row mt-4">
-            <div class="col-xl-6 col-lg-6" data-aos="fade-right">
-              <img src="../assets/img/about-img.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="col-xl-6 col-lg-6 pt-5 pt-lg-0 d-flex">
-              <div
-                class="section-title publications__content"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <h6>Article Title</h6>
-                <p>Mayank Singh Sep 12 2021</p>
-                <p>
-                  The Hawaiian islands in the US are a pristine tourist
-                  destination with about a million of them arriving there every
-                  year. Two young entrepreneurs from the city of Hilo in Hawaii
-                  observe that there are no Hawaiian-themed bars or restaurants
-                  in their city.
-                </p>
-                <p>
-                  The Hawaiian islands in the US are a pristine tourist
-                  destination with about a million of them arriving there every
-                  year. Two young entrepreneurs from the city of Hilo in Hawaii
-                  observe that there are no Hawaiian-themed bars or restaurants
-                  in their city.
-                </p>
-                <p>
-                  The Hawaiian islands in the US are a pristine tourist
-                  destination with about a million of them arriving there every
-                  year. Two young entrepreneurs from the city of Hilo in Hawaii
-                  observe that there are no Hawaiian-themed bars or restaurants
-                  in their city.
-                </p>
-
-                <a href="../articles/example-article.html"
-                  ><button class="insight__btn">Read More</button></a
-                >
+        <div class="consulting">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 d-flex align-items-center">
+                <div class="d-flex flex-column" data-aos="fade-up">
+                  <h1>Example Article</h1>
+                  <div class="para">
+                    <p class="lead my-3">
+                      A 10-day long, rigorous program to get you project-ready.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+
+        <section class="services section-bg">
+          <div class="container">
+            <div class="section-title" data-aos="fade-up">
+              <p>
+                We’ve designed the concept of HTGR (Hit-The-Ground-Running) for our team members joining directly from campuses.  It is a 10-12 day rigorous program intended to make the new members hands-on from the word go. During the program, they build a working rapport with us, quickly plug any skill gaps, and get project-ready.
+              </p>
+              <p class="mt-2">
+                Here’s how we execute HTGR:
+                <ol class="mt-1">
+                  <li>We send you learning reads/videos for the day</li>
+                  <li>We also send across the day’s problem statement</li>
+                  <li>You apply the learning from the reads/videos and deliver the output</li>
+                  <li>We share our feedback with you</li>
+                  <li>You revise and refine based on feedback and share again</li>
+                </ol>
+              </p>
+              <p>
+                Here are the key areas we focus on for HTGR:
+                <ul class="mt-1">
+                  <li>Managing Deliverables and Communication</li>
+                  <li>Effective Articulation</li>
+                  <li>Market Research – Primary and Secondary</li>
+                  <li>Digital Marketing</li>
+                  <li>Business Plan Development</li>
+                  <li>Mathematical Modelling</li>
+                  <li>Effective Business Presentations</li>
+                  <li>Business Research and analysis</li>
+                </ul>
+              </p>
+              <p class="mt-1">
+                Want to join us and go through HTGR? Write to us at <span style="text-decoration: underline; color: #931a2e;">workwithus@brainworks.world</span>.
+                For more details visit our <a href="../career/index.html"> Careers </a> section.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <!-- End #main -->
 
@@ -467,7 +360,6 @@
 
     <!-- Template Main JS File -->
     <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/linkedin.js"></script>
     <script src="../assets/js/newletter.js"></script>
   </body>
 </html>
