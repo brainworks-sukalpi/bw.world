@@ -102,12 +102,12 @@
    */
   on(
     "click",
-    ".navbar .dropdown > a",
+    ".navbar .dropdown > a > i",
     function (e) {
       console.log("clicked");
       if (select("#navbar").classList.contains("navbar-mobile")) {
         e.preventDefault();
-        this.nextElementSibling.classList.toggle("dropdown-active");
+        this.parentNode.nextElementSibling.classList.toggle("dropdown-active");
       }
     },
     true
