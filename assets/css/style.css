@@ -1104,33 +1104,6 @@ section {
   color: #fff;
 }
 
-.team .member .social {
-  position: absolute;
-  left: -50px;
-  top: 0;
-  bottom: 0;
-  width: 50px;
-  transition: left ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.5);
-  text-align: center;
-}
-
-.team .member .social a {
-  transition: color 0.3s;
-  display: block;
-  color: #fff;
-  margin-top: 15px;
-}
-
-.team .member .social a:hover {
-  color: #1bac91;
-}
-
-.team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
 .team .member:hover .member-info {
   background: linear-gradient(
     0deg,
@@ -1143,13 +1116,8 @@ section {
 }
 
 .team .member:hover .member-info-content {
-  bottom: 30px;
+  bottom: 10px;
   transition: bottom 0.4s;
-}
-
-.team .member:hover .social {
-  left: 0;
-  transition: left ease-in-out 0.3s;
 }
 
 /*--------------------------------------------------------------
