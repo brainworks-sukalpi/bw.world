@@ -28,6 +28,8 @@ hr {
     font-weight: 700;
     text-align: left;
     color: #fff;
+    width: 50vw;
+    background-color: pink;
 }
 
 .inner-page .consulting p {
