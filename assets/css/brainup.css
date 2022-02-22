@@ -1,0 +1,116 @@
+.margin_left {
+  margin-left: 2rem;
+}
+
+/* blocks */
+.blocks {
+  display: flex;
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.block_img {
+  height: 110px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+/* programs */
+.programs {
+  display: flex;
+  width: 100vw;
+}
+.program {
+  display: flex;
+  align-items: center;
+  flex: 0.5;
+  padding: 0.5rem;
+}
+.program_img {
+  height: 100px;
+  object-fit: contain;
+}
+.program_content {
+  margin-left: 0.5rem;
+}
+.last_program {
+  display: flex;
+  align-items: center;
+
+  padding: 0.5rem;
+}
+
+/* phases */
+.phase {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.phase_block {
+  display: flex;
+}
+.inner_block {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(180, 128, 128, 0.3);
+  border-radius: 10px;
+}
+.inner_block > p {
+  margin: 0;
+}
+/* .inner_block > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+.small {
+  flex: 0.2;
+}
+.big {
+  flex: 0.4;
+  align-items: flex-start;
+  padding-left: 1rem;
+}
+.heading_big {
+  flex: 0.4;
+  align-items: center;
+}
+
+.last {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.my_btn {
+  background-color: #931a2e;
+  text-align: center;
+  color: white;
+  border: transparent;
+  padding: 4px;
+  border-radius: 4px;
+  width: 100px;
+  height: 40px;
+  transition: all 0.3s ease-in;
+  margin-top: 0.5rem;
+}
+.my_btn:hover {
+  background-color: white;
+  border: 1px solid #931a2e;
+  color: #931a2e;
+}
+.enroll_btn {
+  width: 200px;
+}
+.red {
+  color: #931a2e;
+}
