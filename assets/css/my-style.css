@@ -63,8 +63,7 @@
 .testimonial-item > p {
   background-color: #931a2e !important;
   color: white;
-  min-height: 250px !important;
-  max-height: 250px !important;
+  min-height: 17em !important;
 }
 #map {
   min-width: 100% !important;
