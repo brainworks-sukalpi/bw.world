@@ -23,7 +23,7 @@
 /* programs */
 .programs {
   display: flex;
-  width: 100vw;
+  width: 100%;
 }
 .program {
   display: flex;
@@ -37,6 +37,8 @@
 }
 .program_content {
   margin-left: 0.5rem;
+
+  height: 100%;
 }
 .last_program {
   display: flex;
@@ -61,7 +63,7 @@
   padding: 0.5rem;
   justify-content: center;
   align-items: center;
-  background-color: rgba(180, 128, 128, 0.3);
+  background-color: rgba(73, 73, 73, 0.1);
   border-radius: 10px;
 }
 .inner_block > p {
@@ -113,4 +115,8 @@
 }
 .red {
   color: #931a2e;
+  font-weight: bold;
+}
+.left {
+  margin-left: 0.5rem !important;
 }
