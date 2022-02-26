@@ -19,6 +19,9 @@
   object-fit: contain;
   margin-bottom: 1rem;
 }
+.block_content {
+  height: 100%;
+}
 
 /* programs */
 .programs {
@@ -52,6 +55,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  font-size: medium;
 }
 .phase_block {
   display: flex;
@@ -69,13 +73,10 @@
 .inner_block > p {
   margin: 0;
 }
-/* .inner_block > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+
 .small {
   flex: 0.2;
+  font-size: medium;
 }
 .big {
   flex: 0.4;
@@ -119,4 +120,11 @@
 }
 .left {
   margin-left: 0.5rem !important;
+}
+
+@media (max-width: 768px) {
+  .blocks,
+  .programs {
+    flex-direction: column;
+  }
 }
