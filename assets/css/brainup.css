@@ -35,12 +35,11 @@
   padding: 0.5rem;
 }
 .program_img {
-  height: 100px;
+  height: 50px;
   object-fit: contain;
 }
 .program_content {
   margin-left: 0.5rem;
-
   height: 100%;
 }
 .last_program {
@@ -120,6 +119,11 @@
 }
 .left {
   margin-left: 0.5rem !important;
+}
+
+.youtube_video {
+  width: 100%;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
