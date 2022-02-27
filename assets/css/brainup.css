@@ -134,10 +134,17 @@
   display: flex;
   justify-content: space-around;
 }
+.program_content > p {
+  margin-bottom: 0rem !important;
+}
 
 @media (max-width: 768px) {
   .blocks,
   .programs {
     flex-direction: column;
+  }
+  .new_blocks {
+    flex-direction: column;
+    justify-content: space-around;
   }
 }
